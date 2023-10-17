@@ -1,8 +1,8 @@
 magic
 tech sky130A
-timestamp 1695294858
-use top_dac  top_dac_0
-timestamp 1695288709
-transform 1 0 7068 0 1 -9
-box 0 0 68000 84000
+timestamp 1697553457
+use dac_cell1  dac_cell1_0 ./layout_cell1
+timestamp 1697553457
+transform 1 0 9019 0 1 908
+box -1951 -917 5496 1506
 << end >>
