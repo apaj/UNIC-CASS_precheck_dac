@@ -1,11 +1,12 @@
 * NGSPICE file created from user_analog_project_wrapper.ext - technology: sky130A
 
 .subckt sky130_fd_pr__res_xhigh_po_0p69_MS44J6 a_n69_n6232# a_n69_5800# a_n199_n6362#
-X0 a_n69_n6232# a_n69_5800# a_n199_n6362# sky130_fd_pr__res_xhigh_po_0p69 l=5.8e+07u
+X0 a_n69_5800# a_n69_n6232# a_n199_n6362# sky130_fd_pr__res_xhigh_po_0p69 l=58
 .ends
 
-.subckt sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
-X0 a_100_n100# a_n100_n197# a_n158_n100# w_n358_n397# sky130_fd_pr__pfet_g5v0d10v5 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=1e+06u
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGUWVM a_n100_n197# a_100_n100# w_n358_n397#
++ a_n158_n100#
+X0 a_100_n100# a_n100_n197# a_n158_n100# w_n358_n397# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
 .ends
 
 .subckt dac_cell1 vsup iref vsw iout iout_n vbias vgnd
@@ -13,10 +14,10 @@ XXR1 parR sourceM2 vgnd sky130_fd_pr__res_xhigh_po_0p69_MS44J6
 XXR2 parR sourceM2 vgnd sky130_fd_pr__res_xhigh_po_0p69_MS44J6
 XXR3 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69_MS44J6
 XXR4 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69_MS44J6
-XXM1 sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
-XXM2 sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
-XXM3 sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
-XXM4 sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
+XXM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
+XXM2 iref sourceM3M4 vsup sourceM2 sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
+XXM3 vsw iout vsup sourceM3M4 sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
+XXM4 vbias iout_n vsup sourceM3M4 sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
 .ends
 
 .subckt user_analog_proj_example dac_cell1_0/iref dac_cell1_0/vbias dac_cell1_0/iout_n
@@ -113,7 +114,7 @@ Xdac_cell1_0 dac_cell1_0/vsup dac_cell1_0/iref dac_cell1_0/vsw dac_cell1_0/iout 
 + la_oenb[85] la_oenb[86] la_oenb[87] la_oenb[88] la_oenb[89] la_oenb[8] la_oenb[90]
 + la_oenb[91] la_oenb[92] la_oenb[93] la_oenb[94] la_oenb[95] la_oenb[96] la_oenb[97]
 + la_oenb[98] la_oenb[99] la_oenb[9] user_clock2 user_irq[0] user_irq[1] user_irq[2]
-+ vccd1 vccd2 vdda1 vdda2 vssa1 vssa2 vssd1 vssd2 wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0]
++ vccd1 vccd2 vdda1 vdda2 vssa2 vssd1 vssd2 wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0]
 + wbs_adr_i[10] wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13] wbs_adr_i[14] wbs_adr_i[15]
 + wbs_adr_i[16] wbs_adr_i[17] wbs_adr_i[18] wbs_adr_i[19] wbs_adr_i[1] wbs_adr_i[20]
 + wbs_adr_i[21] wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25] wbs_adr_i[26]
@@ -130,18 +131,8 @@ Xdac_cell1_0 dac_cell1_0/vsup dac_cell1_0/iref dac_cell1_0/vsw dac_cell1_0/iout 
 + wbs_dat_o[25] wbs_dat_o[26] wbs_dat_o[27] wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2]
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
-+ wbs_stb_i wbs_we_i
++ wbs_stb_i wbs_we_i vssa1
 Xuser_analog_proj_example_0 io_analog[7] io_analog[1] io_analog[0] vdda1 io_analog[2]
 + io_analog[3] vssa1 user_analog_proj_example
-R0 io_oeb[15] m3_780_462398# sky130_fd_pr__res_generic_m3 w=560000u l=600000u
-R1 m3_326794_695462# io_clamp_high[0] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
-R2 m3_581752_455628# io_oeb[11] sky130_fd_pr__res_generic_m3 w=560000u l=580000u
-R3 m3_222594_694428# io_clamp_low[1] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
-R4 io_oeb[16] m3_738_419176# sky130_fd_pr__res_generic_m3 w=560000u l=310000u
-R5 m3_324294_695462# io_clamp_low[0] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
-R6 m3_581752_500050# io_oeb[12] sky130_fd_pr__res_generic_m3 w=560000u l=490000u
-R7 m3_173394_694428# io_clamp_high[2] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
-R8 m3_225094_694428# io_clamp_high[1] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
-R9 m3_170894_694428# io_clamp_low[2] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
 .ends
 
