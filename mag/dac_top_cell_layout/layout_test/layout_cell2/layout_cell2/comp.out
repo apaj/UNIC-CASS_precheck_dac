@@ -1,0 +1,5 @@
+
+Cells have no pins;  pin matching not needed.
+Device classes dac_cell2.spice and dac_cell2_test.spice are equivalent.
+
+Final result: Verify:  cell dac_cell2_test.spice has no elements and/or nodes.  Not checked.

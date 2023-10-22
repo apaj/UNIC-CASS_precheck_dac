@@ -1,0 +1,24 @@
+magic
+tech sky130A
+timestamp 1697620687
+use dac_cell1  dac_cell1_0 ../../layout_test/layout_cell1
+timestamp 1697620687
+transform 1 0 7346 0 1 872
+box -1951 -917 5496 1506
+use dac_cell2  dac_cell2_0 ../../layout_test/layout_cell2
+timestamp 1697620687
+transform 1 0 1365 0 1 -2245
+box -1645 20 2505 2670
+use dac_cell3  dac_cell3_0 ../../layout_test/layout_cell3
+timestamp 1697617627
+transform 1 0 1972 0 1 -7211
+box -2352 -1059 526 2075
+use dac_cell4  dac_cell4_0 ../../layout_test/layout_cell4
+timestamp 1697461267
+transform 1 0 4729 0 1 -7339
+box -139 -966 2289 2939
+use miel21_opamp  miel21_opamp_0 ../../opamp/layout
+timestamp 1697619488
+transform 1 0 9308 0 1 -7935
+box -1748 -400 3518 5145
+<< end >>

@@ -1,0 +1,27 @@
+* NGSPICE file created from dac_cell3.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_0p69_RV3JGD a_n69_1300# a_n69_n1732# a_n199_n1862#
+X0 a_n69_n1732# a_n69_1300# a_n199_n1862# sky130_fd_pr__res_xhigh_po_0p69 l=1.3e+07u
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGUWVM a_n100_n197# a_100_n100# w_n358_n397#
++ a_n158_n100#
+X0 a_100_n100# a_n100_n197# a_n158_n100# w_n358_n397# sky130_fd_pr__pfet_g5v0d10v5 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=1e+06u
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGR8VM a_n100_n497# a_100_n400# w_n358_n697#
++ a_n158_n400#
+X0 a_100_n400# a_n100_n497# a_n158_n400# w_n358_n697# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16e+12p pd=8.58e+06u as=1.16e+12p ps=8.58e+06u w=4e+06u l=1e+06u
+.ends
+
+.subckt dac_cell3 vsup vgnd iref vsw iout iout_n vbias
+XXR1 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69_RV3JGD
+XXR2 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69_RV3JGD
+XXR3 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69_RV3JGD
+XXR4 vsup parR vgnd sky130_fd_pr__res_xhigh_po_0p69_RV3JGD
+XXM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
+XXM2 iref sourceM3M4 vsup sourceM2 sky130_fd_pr__pfet_g5v0d10v5_FGR8VM
+XXM3 vsw iout vsup sourceM3M4 sky130_fd_pr__pfet_g5v0d10v5_FGR8VM
+XXM4 vbias iout_n vsup sourceM3M4 sky130_fd_pr__pfet_g5v0d10v5_FGR8VM
+.ends
+

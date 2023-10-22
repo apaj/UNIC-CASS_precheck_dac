@@ -165,7 +165,7 @@ rect 286 -794 456 -774
 rect 286 -942 314 -794
 rect 438 -942 456 -794
 rect 286 -960 456 -942
-use sky130_fd_pr__pfet_g5v0d10v5_FGUWVM  XM1
+use sky130_fd_pr__pfet_g5v0d10v5_FGUWVM  XM1 layout_cell1
 timestamp 1697384985
 transform 1 0 -1354 0 1 281
 box -358 -397 358 397

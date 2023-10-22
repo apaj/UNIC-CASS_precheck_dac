@@ -1,0 +1,27 @@
+*.subckt dac_cell2 vsup vgnd iref vsw iout iout_n vbias
+*.iopin vsup
+*.iopin vgnd
+*.iopin iref
+*.iopin vsw
+*.iopin iout
+*.iopin iout_n
+*.iopin vbias
+XM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 net1 iref net2 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 iout vsw net1 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 iout_n vbias net1 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 net3 vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+XR2 net2 net3 vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+XR3 net3 vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+XR4 net2 net3 vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+*.ends
+** flattened .save nodes
+*.end
