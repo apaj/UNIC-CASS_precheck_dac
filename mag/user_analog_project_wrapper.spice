@@ -215,8 +215,8 @@ XXM4 vbias iout_n vsup sourceM3M4 sky130_fd_pr__pfet_g5v0d10v5_FGK6VM
 
 .subckt dac_top_cell in1 in2 in3 in4 vbias07 vgnd vsup out vbias18
 Xdac_cell3_0 vsup in_iref in3 vgnd dac_cell4_0/iout_n vbias07 vgnd dac_cell3
-Xsky130_fd_pr__res_high_po_5p73_6QQPRG_0 in_iref m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
 Xsky130_fd_pr__res_high_po_5p73_6QQPRG_1 in_iref m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
+Xsky130_fd_pr__res_high_po_5p73_6QQPRG_0 in_iref m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
 Xdac_cell1_0 vsup in_iref in1 vgnd dac_cell4_0/iout_n vbias07 vgnd dac_cell1
 Xsky130_fd_pr__res_high_po_5p73_6QQPRG_2 vgnd m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
 XXR1 vgnd m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG

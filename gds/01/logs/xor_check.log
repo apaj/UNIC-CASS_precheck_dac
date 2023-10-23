@@ -1,0 +1,188 @@
+Reading file /root/UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds for cell user_analog_project_wrapper
+dbu=0.001
+cell user_analog_project_wrapper dbu-bbox(ll;ur)=(-4000,-4000;2924000,3524000)
+cell user_analog_project_wrapper dbu-bbox(left,bottom,right,top)=(-4000,-4000,2924000,3524000)
+cell user_analog_project_wrapper dbu-size(width,height)=(2928000,3528000)
+cell user_analog_project_wrapper micron-bbox(left,bottom,right,top)=(-4.0,-4.0,2924.0,3524.0)
+cell user_analog_project_wrapper micron-size(width,height)=(2928.0,3528.0)
+Done.
+
+Magic 8.3 revision 392 - Compiled on Tue Sep 12 18:21:49 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/opt/checks/xor_check/erase_box.tcl" from command line.
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+CIF input style is now "sky130(vendor)"
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: user_analog_project_wrapper
+Reading "sky130_fd_pr__res_xhigh_po_0p35_PZAK34".
+Reading "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB".
+Reading "sky130_fd_pr__res_high_po_5p73_6QQPRG".
+Reading "sky130_fd_pr__res_xhigh_po_0p69_5CVACY".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_CNRWF7".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_AE43MT".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_X3UTN5".
+Reading "sky130_fd_pr__nfet_g5v0d10v5_2MGL8M".
+Reading "sky130_fd_pr__nfet_g5v0d10v5_CJGAEC".
+Reading "sky130_fd_pr__nfet_g5v0d10v5_NQCFE9".
+Reading "sky130_fd_pr__nfet_g5v0d10v5_FJGQ2Y".
+Reading "sky130_fd_pr__cap_mim_m3_1_C5B489".
+Reading "miel21_opamp".
+Reading "sky130_fd_pr__res_xhigh_po_0p69_C4MSH5".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_FG5HVM".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_FGUWVM".
+Reading "dac_cell4".
+Reading "sky130_fd_pr__res_xhigh_po_0p69_RV3JGD".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_FGR8VM".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_FGUWVM#2".
+Reading "dac_cell3".
+Reading "sky130_fd_pr__res_xhigh_po_0p69_XZX24Q".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_FGK6VM".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_FGUWVM#1".
+Reading "dac_cell2".
+Reading "sky130_fd_pr__res_xhigh_po_0p69_MS44J6".
+Reading "sky130_fd_pr__pfet_g5v0d10v5_FGUWVM#0".
+Reading "dac_cell1".
+Reading "dac_top_cell".
+Reading "user_analog_proj_example".
+Reading "user_analog_project_wrapper".
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  43.630 x 3520.000  (-43.630,  0.000), ( 0.000,  3520.000)  153577.594
+lambda:   4363.00 x 352000.00  (-4363.00,  0.00 ), (  0.00,  352000.00)  1535776000.00
+internal:   8726 x 704000  ( -8726,  0    ), (     0,  704000)  6143104000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  43.250 x 3520.000  ( 2920.000,  0.000), ( 2963.250,  3520.000)  152240.000
+lambda:   4325.00 x 352000.00  ( 292000.00,  0.00 ), ( 296325.00,  352000.00)  1522400000.00
+internal:   8650 x 704000  ( 584000,  0    ), ( 592650,  704000)  6089600000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3006.880 x 38.270  (-43.630, -38.270), ( 2963.250,  0.000)  115073.289
+lambda:   300688.00 x 3827.00  (-4363.00, -3827.00), ( 296325.00,  0.00 )  1150732928.00
+internal: 601376 x 7654    ( -8726, -7654 ), ( 592650,  0    )  4602931904
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3006.880 x 37.950  (-43.630,  3520.000), ( 2963.250,  3557.950)  114111.086
+lambda:   300688.00 x 3795.00  (-4363.00,  352000.00), ( 296325.00,  355795.00)  1141110912.00
+internal: 601376 x 7590    ( -8726,  704000), ( 592650,  711590)  4564443840
+   Generating output for cell xor_target
+
+Magic 8.3 revision 392 - Compiled on Tue Sep 12 18:21:49 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/opt/checks/xor_check/erase_box.tcl" from command line.
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+CIF input style is now "sky130(vendor)"
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: user_analog_project_wrapper_empty
+Reading "user_analog_project_wrapper".
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  43.630 x 3520.000  (-43.630,  0.000), ( 0.000,  3520.000)  153577.594
+lambda:   4363.00 x 352000.00  (-4363.00,  0.00 ), (  0.00,  352000.00)  1535776000.00
+internal:   8726 x 704000  ( -8726,  0    ), (     0,  704000)  6143104000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  43.250 x 3520.000  ( 2920.000,  0.000), ( 2963.250,  3520.000)  152240.000
+lambda:   4325.00 x 352000.00  ( 292000.00,  0.00 ), ( 296325.00,  352000.00)  1522400000.00
+internal:   8650 x 704000  ( 584000,  0    ), ( 592650,  704000)  6089600000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3006.880 x 38.270  (-43.630, -38.270), ( 2963.250,  0.000)  115073.289
+lambda:   300688.00 x 3827.00  (-4363.00, -3827.00), ( 296325.00,  0.00 )  1150732928.00
+internal: 601376 x 7654    ( -8726, -7654 ), ( 592650,  0    )  4602931904
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3006.880 x 37.950  (-43.630,  3520.000), ( 2963.250,  3557.950)  114111.086
+lambda:   300688.00 x 3795.00  (-4363.00,  352000.00), ( 296325.00,  355795.00)  1141110912.00
+internal: 601376 x 7590    ( -8726,  704000), ( 592650,  711590)  4564443840
+   Generating output for cell xor_target
+Reading /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/35056e47-c43b-47b2-8a81-96e01d8167f2/outputs/user_analog_project_wrapper_erased.gds ..
+Reading /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/35056e47-c43b-47b2-8a81-96e01d8167f2/outputs/user_analog_project_wrapper_empty_erased.gds ..
+--- Running XOR for 69/20 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 494 (flat)  494 (hierarchical)
+    Elapsed: 0.010s  Memory: 548.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 494 (flat)  494 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+XOR differences: 0
+"output" in: xor.rb.drc:43
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+--- Running XOR for 70/20 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 186 (flat)  186 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 184 (flat)  184 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 1 (flat)  1 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+XOR differences: 1
+"output" in: xor.rb.drc:43
+    Polygons (raw): 1 (flat)  1 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+--- Running XOR for 72/20 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 6 (flat)  6 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 6 (flat)  6 (hierarchical)
+    Elapsed: 0.010s  Memory: 548.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+XOR differences: 0
+"output" in: xor.rb.drc:43
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+--- Running XOR for 81/14 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 1 (flat)  1 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 1 (flat)  1 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+XOR differences: 0
+"output" in: xor.rb.drc:43
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 548.00M
+Writing layout file: /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/35056e47-c43b-47b2-8a81-96e01d8167f2/outputs/user_analog_project_wrapper.xor.gds ..
+Total elapsed: 0.050s  Memory: 548.00M

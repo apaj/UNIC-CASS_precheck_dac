@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>pin_label_purposes_overlapping_drawing.rb.drc, input=/root/UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds, topcell=user_analog_project_wrapper</description>
+ <original-file/>
+ <generator>drc: script='/opt/checks/drc_checks/klayout/pin_label_purposes_overlapping_drawing.rb.drc'</generator>
+ <top-cell>user_analog_project_wrapper</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>70/16: met3, pin/label not-over drawing:70/20</name>
+   <description/>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>71/16: met4, pin/label not-over drawing:71/20</name>
+   <description/>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>72/16: met5, pin/label not-over drawing:72/20</name>
+   <description/>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>user_analog_project_wrapper</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (879.47,3511.5;879.47,3518.2;879.5,3518.2;879.5,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (866.97,3511.5;866.97,3518.2;877.97,3518.2;877.97,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (854.47,3511.5;854.47,3518.2;865.47,3518.2;865.47,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (2911.7,2752.81;2911.7,2776.81;2912.1,2776.81;2912.1,2752.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (7.13,2797.21;7.13,2821.21;8.3,2821.21;8.3,2797.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (2911.5,3411.4;2911.5,3414.92;2911.54,3414.92;2911.54,3411.4)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1111.45,3511.5;1111.45,3516.9;1111.47,3516.9;1111.47,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (852.95,3511.5;852.95,3518.2;852.97,3518.2;852.97,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (2911.7,2702.81;2911.7,2726.81;2912.1,2726.81;2912.1,2702.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1112.97,3511.5;1112.97,3516.9;1123.97,3516.9;1123.97,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (7.13,2747.21;7.13,2771.21;8.3,2771.21;8.3,2747.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1125.47,3511.5;1125.47,3516.9;1136.47,3516.9;1136.47,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/16: met3, pin/label not-over drawing:70/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1137.97,3511.5;1137.97,3516.9;1138,3516.9;1138,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'71/16: met4, pin/label not-over drawing:71/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (879.47,3511.5;879.47,3518.2;879.5,3518.2;879.5,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'71/16: met4, pin/label not-over drawing:71/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1137.97,3511.5;1137.97,3516.9;1138,3516.9;1138,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'71/16: met4, pin/label not-over drawing:71/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (852.95,3511.5;852.95,3518.2;852.97,3518.2;852.97,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'71/16: met4, pin/label not-over drawing:71/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1111.45,3511.5;1111.45,3516.9;1111.47,3516.9;1111.47,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'72/16: met5, pin/label not-over drawing:72/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (879.47,3511.5;879.47,3518.2;879.5,3518.2;879.5,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'72/16: met5, pin/label not-over drawing:72/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1137.97,3511.5;1137.97,3516.9;1138,3516.9;1138,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'72/16: met5, pin/label not-over drawing:72/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (852.95,3511.5;852.95,3518.2;852.97,3518.2;852.97,3511.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'72/16: met5, pin/label not-over drawing:72/20'</category>
+   <cell>user_analog_project_wrapper</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (1111.45,3511.5;1111.45,3516.9;1111.47,3516.9;1111.47,3511.5)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
