@@ -1,0 +1,59 @@
+2023-10-25 22:01:33 - [INFO] - {{Project Git Info}} Repository: https:/repositories.efabless.com/apaj/UNIC-CASS_precheck_dac.git | Branch: main | Commit: a60bd1e4c771017ff88a56c60c6a2035f9a9dade
+2023-10-25 22:01:33 - [INFO] - {{EXTRACTING FILES}} Extracting compressed files in: UNIC-CASS_precheck_dac.git
+2023-10-25 22:01:33 - [INFO] - {{Project Type Info}} analog
+2023-10-25 22:01:33 - [INFO] - {{Project GDS Info}} user_analog_project_wrapper: 7cd8217e01cd97d22528eaeda46e02f846bf9c6a
+2023-10-25 22:01:34 - [INFO] - {{Tools Info}} KLayout: v0.28.5 | Magic: v8.3.392
+2023-10-25 22:01:34 - [INFO] - {{PDKs Info}} SKY130A: 49d3c73c2cd8ea42cdae5056440baef0f72e7e42 | Open PDKs: 12df12e2e74145e31c5a13de02f9a1e176b56e67
+2023-10-25 22:01:34 - [INFO] - {{START}} Precheck Started, the full log 'precheck.log' will be located in '/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs'
+2023-10-25 22:01:34 - [INFO] - {{PRECHECK SEQUENCE}} Precheck will run the following checks: [Makefile, Consistency, GPIO-Defines, XOR, Magic DRC, Klayout FEOL, Klayout BEOL, Klayout Offgrid, Klayout Metal Minimum Clear Area Density, Klayout Pin Label Purposes Overlapping Drawing, Klayout ZeroArea]
+2023-10-25 22:01:34 - [INFO] - {{STEP UPDATE}} Executing Check 1 of 11: Makefile
+2023-10-25 22:01:34 - [INFO] - {{MAKEFILE CHECK PASSED}} Makefile valid.
+2023-10-25 22:01:34 - [INFO] - {{STEP UPDATE}} Executing Check 2 of 11: Consistency
+2023-10-25 22:01:40 - [INFO] - PORTS CHECK PASSED: Netlist user_analog_project_wrapper ports match the golden wrapper ports
+2023-10-25 22:01:40 - [INFO] - COMPLEXITY CHECK PASSED: Netlist user_analog_project_wrapper contains at least 1 instances (11 instances). 
+2023-10-25 22:01:40 - [INFO] - MODELING CHECK PASSED: Netlist user_analog_project_wrapper is structural.
+2023-10-25 22:01:40 - [INFO] - LAYOUT CHECK PASSED: The GDS layout for user_analog_project_wrapper matches the provided structural netlist.
+2023-10-25 22:01:40 - [INFO] - {{NETLIST CONSISTENCY CHECK PASSED}} user_analog_project_wrapper netlist passed all consistency checks.
+2023-10-25 22:01:40 - [INFO] - {{CONSISTENCY CHECK PASSED}} The user netlist and the top netlist are valid.
+2023-10-25 22:01:40 - [INFO] - {{STEP UPDATE}} Executing Check 3 of 11: GPIO-Defines
+2023-10-25 22:01:40 - [INFO] - GPIO-DEFINES: Checking verilog/rtl/user_defines.v, parsing files: ['/opt/checks/gpio_defines_check/verilog_assets/gpio_modes_base.v', 'UNIC-CASS_precheck_dac.git/verilog/rtl/user_defines.v', '/opt/checks/gpio_defines_check/verilog_assets/gpio_modes_observe.v']
+2023-10-25 22:01:42 - [INFO] - GPIO-DEFINES report path: /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/gpio_defines.report
+2023-10-25 22:01:42 - [INFO] - {{GPIO-DEFINES CHECK PASSED}} The user verilog/rtl/user_defines.v is valid.
+2023-10-25 22:01:42 - [INFO] - {{STEP UPDATE}} Executing Check 4 of 11: XOR
+2023-10-25 22:01:45 - [INFO] - {{XOR CHECK UPDATE}} Total XOR differences: 0, for more details view /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/user_analog_project_wrapper.xor.gds
+2023-10-25 22:01:45 - [INFO] - {{XOR CHECK PASSED}} The GDS file has no XOR violations.
+2023-10-25 22:01:45 - [INFO] - {{STEP UPDATE}} Executing Check 5 of 11: Magic DRC
+2023-10-25 22:01:45 - [INFO] - 0 DRC violations
+2023-10-25 22:01:45 - [INFO] - {{MAGIC DRC CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2023-10-25 22:01:45 - [INFO] - {{STEP UPDATE}} Executing Check 6 of 11: Klayout FEOL
+2023-10-25 22:01:45 - [INFO] - in CUSTOM klayout_gds_drc_check
+2023-10-25 22:01:45 - [INFO] - run: klayout -b -r /opt/checks/tech-files/sky130A_mr.drc -rd input=UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/klayout_feol_check.xml -rd feol=true >& /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs/klayout_feol_check.log
+2023-10-25 22:01:47 - [INFO] - No DRC Violations found
+2023-10-25 22:01:47 - [INFO] - {{Klayout FEOL CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2023-10-25 22:01:47 - [INFO] - {{STEP UPDATE}} Executing Check 7 of 11: Klayout BEOL
+2023-10-25 22:01:47 - [INFO] - in CUSTOM klayout_gds_drc_check
+2023-10-25 22:01:47 - [INFO] - run: klayout -b -r /opt/checks/tech-files/sky130A_mr.drc -rd input=UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/klayout_beol_check.xml -rd beol=true >& /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs/klayout_beol_check.log
+2023-10-25 22:01:54 - [ERROR] - Total # of DRC violations is 44 Please check /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/klayout_beol_check.xml For more details
+2023-10-25 22:01:54 - [WARNING] - {{Klayout BEOL CHECK FAILED}} The GDS file, user_analog_project_wrapper.gds, has DRC violations.
+2023-10-25 22:01:54 - [INFO] - {{STEP UPDATE}} Executing Check 8 of 11: Klayout Offgrid
+2023-10-25 22:01:54 - [INFO] - in CUSTOM klayout_gds_drc_check
+2023-10-25 22:01:54 - [INFO] - run: klayout -b -r /opt/checks/tech-files/sky130A_mr.drc -rd input=UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/klayout_offgrid_check.xml -rd offgrid=true >& /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs/klayout_offgrid_check.log
+2023-10-25 22:01:56 - [INFO] - No DRC Violations found
+2023-10-25 22:01:56 - [INFO] - {{Klayout Offgrid CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2023-10-25 22:01:56 - [INFO] - {{STEP UPDATE}} Executing Check 9 of 11: Klayout Metal Minimum Clear Area Density
+2023-10-25 22:01:56 - [INFO] - in CUSTOM klayout_gds_drc_check
+2023-10-25 22:01:56 - [INFO] - run: klayout -b -r /opt/checks/drc_checks/klayout/met_min_ca_density.lydrc -rd input=UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/klayout_met_min_ca_density_check.xml >& /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs/klayout_met_min_ca_density_check.log
+2023-10-25 22:01:57 - [INFO] - No DRC Violations found
+2023-10-25 22:01:57 - [INFO] - {{Klayout Metal Minimum Clear Area Density CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2023-10-25 22:01:57 - [INFO] - {{STEP UPDATE}} Executing Check 10 of 11: Klayout Pin Label Purposes Overlapping Drawing
+2023-10-25 22:01:57 - [INFO] - in CUSTOM klayout_gds_drc_check
+2023-10-25 22:01:57 - [INFO] - run: klayout -b -r /opt/checks/drc_checks/klayout/pin_label_purposes_overlapping_drawing.rb.drc -rd input=UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/klayout_pin_label_purposes_overlapping_drawing_check.xml -rd top_cell_name=user_analog_project_wrapper >& /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs/klayout_pin_label_purposes_overlapping_drawing_check.log
+2023-10-25 22:01:59 - [INFO] - No DRC Violations found
+2023-10-25 22:01:59 - [INFO] - {{Klayout Pin Label Purposes Overlapping Drawing CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2023-10-25 22:01:59 - [INFO] - {{STEP UPDATE}} Executing Check 11 of 11: Klayout ZeroArea
+2023-10-25 22:01:59 - [INFO] - in CUSTOM klayout_gds_drc_check
+2023-10-25 22:01:59 - [INFO] - run: klayout -b -r /opt/checks/drc_checks/klayout/zeroarea.rb.drc -rd input=UNIC-CASS_precheck_dac.git/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/klayout_zeroarea_check.xml -rd cleaned_output=/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/user_analog_project_wrapper_no_zero_areas.gds >& /mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs/klayout_zeroarea_check.log
+2023-10-25 22:02:00 - [INFO] - No DRC Violations found
+2023-10-25 22:02:00 - [INFO] - {{Klayout ZeroArea CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2023-10-25 22:02:00 - [INFO] - {{FINISH}} Executing Finished, the full log 'precheck.log' can be found in '/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/logs'
+2023-10-25 22:02:00 - [CRITICAL] - {{FAILURE}} 1 Check(s) Failed: ['Klayout BEOL'] !!!

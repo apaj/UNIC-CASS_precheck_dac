@@ -1,0 +1,28 @@
+
+Magic 8.3 revision 392 - Compiled on Tue Sep 12 18:21:49 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Error parsing "/opt/checks/tech-files/sky130A.magicrc": can't read "::env(PDK_PATH)": no such variable
+Bad local startup file "/opt/checks/tech-files/sky130A.magicrc", continuing without.
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/opt/checks/drc_checks/magic/magic_drc_check.tcl" from command line.
+Don't know how to read GDS-II:
+Nothing in "cifinput" section of tech file.
+[INFO]: Loading user_analog_project_wrapper
+
+Cell user_analog_project_wrapper couldn't be read
+No such file or directory
+Creating new cell
+"drc(full)" is not one of the DRC styles Magic knows.
+The current style is "default".
+The DRC styles are: default.
+No errors found.
+[INFO]: COUNT: 0
+[INFO]: Should be divided by 3 or 4
+[INFO]: DRC Checking DONE (/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/reports/magic_drc_check.drc.report)
+[INFO]: Saving mag view with DRC errors(/mnt/users_data/jobs/apaj/UNIC-CASS_precheck_dac/47aef765-4fe1-4643-a89f-74c1ae153ba5/outputs/user_analog_project_wrapper.magic.drc.mag)
+[INFO]: Saved

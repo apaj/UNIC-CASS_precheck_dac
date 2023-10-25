@@ -1,9 +1,0 @@
-magic
-tech sky130A
-magscale 1 2
-timestamp 1697532705
-use sky130_fd_pr__res_xhigh_po_0p69_DCLBLU  sky130_fd_pr__res_xhigh_po_0p69_DCLBLU_0
-timestamp 1697532705
-transform 1 0 2998 0 1 1791
-box -621 -1198 621 1198
-<< end >>
