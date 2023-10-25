@@ -1,591 +1,880 @@
-timestamp 1698070835
+timestamp 1698257525
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use dac_cell4 dac_cell4_0 1 0 -1562 0 1 -15346
-use sky130_fd_pr__res_high_po_5p73_6QQPRG sky130_fd_pr__res_high_po_5p73_6QQPRG_0 0 1 -9495 -1 0 -13405
-use sky130_fd_pr__res_high_po_5p73_6QQPRG sky130_fd_pr__res_high_po_5p73_6QQPRG_1 0 1 -9505 -1 0 -14867
-use sky130_fd_pr__res_high_po_5p73_6QQPRG sky130_fd_pr__res_high_po_5p73_6QQPRG_2 0 1 -9517 -1 0 -16361
-use sky130_fd_pr__res_high_po_5p73_6QQPRG XR1 0 1 -9539 -1 0 -17825
-use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0 0 1 8741 -1 0 -10857
-use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2 0 1 8737 -1 0 -11757
-use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB XR2 0 1 8747 -1 0 -9957
-use dac_cell3 dac_cell3_0 1 0 1882 0 1 -5798
-use miel21_opamp miel21_opamp_0 1 0 12484 0 1 -6200
-use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1 0 1 8753 -1 0 -9063
-use dac_cell2 dac_cell2_0 1 0 -2028 0 1 -378
-use sky130_fd_pr__res_xhigh_po_0p35_PZAK34 sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1 0 1 16316 -1 0 5815
 use sky130_fd_pr__res_xhigh_po_0p35_PZAK34 XR3 0 1 16304 -1 0 5395
-use dac_cell1 dac_cell1_0 1 0 -1148 0 1 8720
-use sky130_fd_pr__res_xhigh_po_0p35_PZAK34 sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0 0 1 16306 -1 0 6255
+use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB XR2 0 1 8747 -1 0 -9957
+use sky130_fd_pr__res_high_po_5p73_6QQPRG XR1 0 1 -9539 -1 0 -17825
+use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2 0 1 8737 -1 0 -11757
+use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1 0 1 8753 -1 0 -9063
+use sky130_fd_pr__res_xhigh_po_2p85_5DPYAB sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0 0 1 8741 -1 0 -10857
 use sky130_fd_pr__res_xhigh_po_0p35_PZAK34 sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2 0 1 16296 -1 0 6683
-port "in4" 3 -376 -17006 -176 -16806 m3
-port "vbias18" 8 24480 -5904 24680 -5704 m3
-port "in3" 2 -810 -7778 -610 -7578 m3
-port "in2" 1 -4138 -70 -3938 130 m3
+use sky130_fd_pr__res_xhigh_po_0p35_PZAK34 sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1 0 1 16316 -1 0 5815
+use sky130_fd_pr__res_xhigh_po_0p35_PZAK34 sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0 0 1 16306 -1 0 6255
+use sky130_fd_pr__res_high_po_5p73_6QQPRG sky130_fd_pr__res_high_po_5p73_6QQPRG_2 0 1 -9517 -1 0 -16361
+use sky130_fd_pr__res_high_po_5p73_6QQPRG sky130_fd_pr__res_high_po_5p73_6QQPRG_1 0 1 -9505 -1 0 -14867
+use sky130_fd_pr__res_high_po_5p73_6QQPRG sky130_fd_pr__res_high_po_5p73_6QQPRG_0 0 1 -9495 -1 0 -13405
+use miel21_opamp miel21_opamp_0 1 0 12484 0 1 -6200
+use esd_structure esd_structure_5 1 0 -16758 0 1 -14100
+use esd_structure esd_structure_4 1 0 -16808 0 1 -8490
+use esd_structure esd_structure_3 -1 0 16354 0 -1 -11734
+use esd_structure esd_structure_2 1 0 -16808 0 1 2850
+use esd_structure esd_structure_1 1 0 -16856 0 1 8610
+use esd_structure esd_structure_0 1 0 -16808 0 1 -2800
+use dac_cell4 dac_cell4_0 1 0 -1562 0 1 -15346
+use dac_cell3 dac_cell3_0 1 0 1882 0 1 -5798
+use dac_cell2 dac_cell2_0 1 0 -2028 0 1 -378
+use dac_cell1 dac_cell1_0 1 0 -1148 0 1 8720
+port "vbias18" 8 26818 -11864 27018 -11664 m3
+port "vbias07" 4 -21726 -20602 -21526 -20402 m3
+port "in4" 3 -27444 -8652 -27244 -8452 m3
+port "in3" 2 -27482 -3166 -27282 -2966 m3
 port "out" 7 25188 -168 25388 32 m3
-port "vbias07" 4 -11190 -3892 -10990 -3692 m3
-port "in1" 0 -2966 6928 -2766 7128 m3
+port "in2" 1 -27480 2688 -27280 2888 m3
+port "in1" 0 -27704 8550 -27504 8750 m3
 port "vsup" 6 -4850 13056 -4650 13256 m3
 port "vgnd" 5 -6420 -20098 -6220 -19898 m3
 node "m2_n4628_1062#" 0 284.27 -4628 1062 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 291580 2176 0 0 0 0 0 0 0 0
-node "in4" 1 7506.48 -376 -17006 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 943260 4928 568792 3196 4827900 10400 0 0 0 0 0 0
+node "vbias18" 2 7462.46 26818 -11864 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2656916 12108 656512 3256 2284736 6780 0 0 0 0 0 0
 node "m1_8170_n12070#" 1 3351.81 8170 -12070 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1488888 7492 0 0 0 0 0 0 0 0 0 0
-node "vbias18" 1 25750.1 24480 -5904 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5343300 10616 2635468 6608 27675616 37484 0 0 0 0 0 0
-node "m1_n10096_n18392#" 1 9348.79 -10096 -18392 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2620720 12092 0 0 0 0 0 0 0 0 0 0
-node "in3" 1 8875.39 -810 -7778 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 943260 4928 359168 2448 11619708 29408 0 0 0 0 0 0
-node "in2" 1 6757.07 -4138 -70 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 943260 4928 419964 2720 8358496 22868 0 0 0 0 0 0
+node "m1_8656_n6082#" 2 21152.1 8656 -6082 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5895676 14088 2840904 8432 15191148 27828 0 0 0 0 0 0
+node "m1_n10096_n18392#" 1 9273.07 -10096 -18392 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2620720 12092 0 0 0 0 0 0 0 0 0 0
+node "vbias07" 1 5802.41 -21726 -20602 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195536 1776 148088 1548 5079032 15552 0 0 0 0 0 0
+node "in4" 1 4934.77 -27444 -8652 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 164260 1624 153520 1568 5073452 14256 0 0 0 0 0 0
+node "m1_n16204_n8150#" 2 25307 -16204 -8150 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3441412 11496 2262400 8424 40183432 52168 0 0 0 0 0 0
+node "in3" 1 4763.34 -27482 -3166 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 216108 1872 190344 1748 5771240 14724 0 0 0 0 0 0
+node "m1_n16240_n2458#" 3 18004.2 -16240 -2458 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8269900 21532 3331248 9392 15067468 33852 0 0 0 0 0 0
 node "op_amp_in" 0 28567.7 6706 -1744 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21965020 60708 0 0 0 0 0 0 0 0 0 0
 node "m1_15440_5366#" 0 1601.3 15440 5366 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 600236 3600 0 0 0 0 0 0 0 0 0 0
-node "out" 3 19313.7 25188 -168 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9264432 27260 3813988 8756 14303280 15136 0 0 0 0 0 0
-node "m1_n734_n28#" 0 54494.7 -734 -28 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36998184 92588 0 0 0 0 0 0 0 0 0 0
-node "vbias07" 0 45863.8 -11190 -3892 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14707412 69812 21538116 50832 15342720 17456 0 0 0 0 0 0
-node "in1" 2 7343.41 -2966 6928 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 945160 4948 504172 3056 6749884 24512 0 0 0 0 0 0
-node "vsup" 0 85108.7 -4850 13056 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20609068 64484 80725544 122488 9245780 14376 0 0 0 0 0 0
-node "in_iref" 20 32377.6 -194 -5092 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44520 844 10896788 45004 20461076 56136 2052824 18484 0 0 0 0 0 0
-substrate "vgnd" 0 0 -6420 -20098 m3 0 0 0 0 0 0 0 0 0 0 1343300 4680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1699036 21908 20841572 104348 49924640 145728 2606800 6580 0 0 0 0 0 0
-cap "in_iref" "m1_n10096_n18392#" 387.96
-cap "in3" "in_iref" 2422.31
-cap "in_iref" "vsup" 9277.32
-cap "out" "m1_15440_5366#" 23.04
-cap "op_amp_in" "m1_n734_n28#" 49.5917
-cap "in3" "vbias07" 4741.07
-cap "in2" "vsup" 3749.87
-cap "vbias07" "vsup" 19205.4
-cap "in1" "vsup" 2959.7
-cap "op_amp_in" "m1_15440_5366#" 62.7953
-cap "op_amp_in" "m1_8170_n12070#" 259.032
+node "out" 3 17700.1 25188 -168 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9264432 27260 3813988 8756 14303280 15136 0 0 0 0 0 0
+node "in2" 1 4902 -27480 2688 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146688 1532 104280 1292 4985064 14700 0 0 0 0 0 0
+node "m1_n16176_3182#" 3 11966.7 -16176 3182 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1766132 8776 1059532 6008 13088504 33060 0 0 0 0 0 0
+node "m1_n734_n28#" 0 54538.8 -734 -28 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36998184 92588 0 0 0 0 0 0 0 0 0 0
+node "in1" 1 4694.55 -27704 8550 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 95992 1244 75852 1104 4121160 14284 0 0 0 0 0 0
+node "m1_n16262_8954#" 3 13212 -16262 8954 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2010124 9376 1326756 6844 14846192 32924 0 0 0 0 0 0
+node "vsup" 0 249512 -4850 13056 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20609068 64484 256672644 319464 9245780 14376 0 0 0 0 0 0
+node "vbias_v" 14 52147.2 -6552 -12600 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 443928 2668 24533624 94424 21507300 50856 0 0 0 0 0 0 0 0
+node "in_iref" 21 31932.6 -194 -5092 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44520 844 11060928 45520 20716836 58168 2052824 18484 0 0 0 0 0 0
+substrate "vgnd" 0 0 -6420 -20098 m3 0 0 0 0 0 0 0 0 0 0 1343300 4680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1699036 21908 68560508 190556 104863872 239200 2606800 6580 0 0 0 0 0 0
+cap "vbias_v" "m1_n16176_3182#" 3762.02
+cap "vsup" "m1_n16262_8954#" 4059.8
+cap "vsup" "out" 9650.53
+cap "vbias_v" "m1_n16204_n8150#" 8474.55
+cap "vsup" "vbias07" 5153.79
 cap "m1_8170_n12070#" "m1_n734_n28#" 232.97
-cap "in2" "in_iref" 2411.07
-cap "m2_n4628_1062#" "in_iref" 1092.07
-cap "in_iref" "vbias07" 13140.8
-cap "in1" "in_iref" 2133.54
-cap "op_amp_in" "vsup" 2181.02
-cap "m2_n4628_1062#" "in2" 32.0697
-cap "in2" "vbias07" 3755.97
-cap "op_amp_in" "vbias18" 304.436
-cap "m2_n4628_1062#" "vbias07" 20.3517
-cap "in1" "vbias07" 731.174
-cap "m1_15440_5366#" "vsup" 1.92832
-cap "vbias07" "in4" 1607.87
-cap "in3" "vsup" 3935.74
-cap "vbias07" "m1_n734_n28#" 197.175
 cap "out" "op_amp_in" 47.8884
-cap "XR1/a_n573_125#" "XR1/a_n573_n557#" -129.663
-cap "dac_cell4_0/XM4/w_n358_n1097#" "dac_cell4_0/iout" 1.40559
-cap "dac_cell4_0/vsw" "dac_cell4_0/iout" 0.0878589
-cap "dac_cell4_0/vbias" "dac_cell4_0/iout" 0.0561954
-cap "dac_cell4_0/XM4/w_n358_n1097#" "dac_cell4_0/iout" 1.048
-cap "dac_cell4_0/iout" "dac_cell4_0/vbias" 0.256351
-cap "dac_cell4_0/iout" "dac_cell4_0/iout_n" 0.772787
-cap "XR1/a_n573_n557#" "XR1/a_n573_125#" 3.49503
-cap "XR1/a_n573_n557#" "XR1/a_n573_125#" -71.2834
-cap "dac_cell4_0/vsw" "dac_cell4_0/XM3/w_n358_n1097#" 14.745
-cap "dac_cell4_0/XM3/a_n158_n800#" "dac_cell4_0/vsw" 7.56793
-cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/vbias" 0.196106
-cap "dac_cell4_0/iout" "dac_cell4_0/vsw" 0.652113
-cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/vbias" 3.61038
-cap "dac_cell4_0/iout" "dac_cell4_0/XM4/w_n358_n1097#" 2.88955
-cap "dac_cell4_0/iout" "dac_cell4_0/XM3/w_n358_n1097#" 0.556523
-cap "dac_cell4_0/vsw" "dac_cell4_0/XM3/a_n158_n800#" 4.68979
-cap "dac_cell4_0/vsw" "dac_cell4_0/vbias" 0.507188
-cap "dac_cell4_0/vsw" "dac_cell4_0/iout" -32.4218
-cap "dac_cell4_0/vbias" "dac_cell4_0/XM4/a_n158_n800#" 1.83845
-cap "dac_cell4_0/iout" "dac_cell4_0/vbias" -18.3028
+cap "vbias_v" "m1_n734_n28#" 197.175
+cap "out" "m1_15440_5366#" 23.04
+cap "vsup" "op_amp_in" 2181.02
+cap "vsup" "m1_15440_5366#" 1.92832
+cap "m1_8656_n6082#" "op_amp_in" 304.436
+cap "in_iref" "m2_n4628_1062#" 1092.07
+cap "vbias_v" "m1_n16240_n2458#" 4737.53
+cap "vbias_v" "in_iref" 11312.9
+cap "m1_n16176_3182#" "in_iref" 2411.06
+cap "m1_n16240_n2458#" "m1_n16204_n8150#" 935.579
+cap "op_amp_in" "m1_15440_5366#" 62.7953
+cap "vsup" "in3" 9422.73
+cap "m1_n16204_n8150#" "in_iref" 14.1458
+cap "vbias_v" "m1_n16262_8954#" 906.574
+cap "vbias_v" "m1_n10096_n18392#" 133.408
+cap "vsup" "vbias_v" 9379.72
+cap "vsup" "m1_n16176_3182#" 3750.24
+cap "m1_n10096_n18392#" "m1_n16204_n8150#" 838.761
+cap "m1_n16240_n2458#" "in_iref" 2422.31
+cap "m1_8170_n12070#" "op_amp_in" 259.032
+cap "vsup" "m1_n16204_n8150#" 60.016
+cap "vsup" "in1" 5504.16
+cap "vsup" "in4" 7657.01
+cap "in_iref" "m1_n16262_8954#" 3078.65
+cap "vsup" "m1_n16240_n2458#" 3935.74
+cap "vbias18" "vsup" 289.946
+cap "vsup" "in2" 7446.91
+cap "m1_n10096_n18392#" "in_iref" 387.96
+cap "vsup" "in_iref" 9277.32
+cap "vbias_v" "m2_n4628_1062#" 20.3517
+cap "op_amp_in" "m1_n734_n28#" 49.5917
+cap "m1_n16176_3182#" "m2_n4628_1062#" 32.0079
+cap "XR1/a_n573_125#" "XR1/a_n573_n557#" -9.14203
+cap "XR1/a_n573_n557#" "XR1/a_n573_125#" -69.1178
+cap "m1_n16204_n8150#" "XR1/a_n573_125#" 0.1714
+cap "dac_cell4_0/iout" "dac_cell4_0/vsw" 0.0878589
+cap "dac_cell4_0/iout" "dac_cell4_0/vbias" 0.312546
+cap "dac_cell4_0/iout" "dac_cell4_0/XM4/w_n358_n1097#" 2.45359
+cap "dac_cell4_0/iout_n" "dac_cell4_0/iout" 0.0249286
+cap "dac_cell4_0/iout" "dac_cell4_0/iout_n" 0.747858
+cap "vbias07" "vgnd" -5.68434e-14
+cap "vgnd" "esd_structure_5/vsup" 0.098015
+cap "esd_structure_5/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "vbias07" 53.2135
+cap "esd_structure_5/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_5/vsup" 26.0101
+cap "esd_structure_5/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "vgnd" 27.5767
+cap "vbias07" "esd_structure_5/vsup" 52.2563
+cap "XR1/a_n573_125#" "XR1/a_n573_n557#" 31.4199
+cap "m1_n16204_n8150#" "XR1/a_n573_125#" 14.8061
+cap "m1_n16204_n8150#" "XR1/a_n573_n557#" 0.0882472
+cap "XR1/a_n573_125#" "m1_n16204_n8150#" 60.8994
+cap "XR1/a_n573_n557#" "m1_n16204_n8150#" 0.0540864
+cap "XR1/a_n573_n557#" "XR1/a_n573_125#" -102.277
+cap "dac_cell4_0/iout" "dac_cell4_0/vbias" 0.397188
+cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/vsw" 18.4302
+cap "dac_cell4_0/iout" "dac_cell4_0/vsw" -17.5846
+cap "dac_cell4_0/XM3/a_n158_n800#" "dac_cell4_0/vsw" 10.7556
+cap "dac_cell4_0/vbias" "dac_cell4_0/vsw" 2.46479
+cap "dac_cell4_0/vbias" "dac_cell4_0/XM3/w_n358_n1097#" 0.315861
+cap "dac_cell4_0/vbias" "dac_cell4_0/iout_n" -28.9102
+cap "dac_cell4_0/vbias" "dac_cell4_0/iout" -19.3847
+cap "dac_cell4_0/iout" "dac_cell4_0/vsw" -14.2999
+cap "dac_cell4_0/iout" "m1_n16204_n8150#" -0.1094
+cap "dac_cell4_0/vbias" "dac_cell4_0/vsw" -2.64444
+cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/iout" 0.556523
+cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/vbias" 2.81826
 cap "dac_cell4_0/iout" "dac_cell4_0/XM4/a_n158_n800#" 10.857
-cap "dac_cell4_0/XM4/w_n358_n1097#" "dac_cell4_0/vbias" 5.7897
-cap "dac_cell4_0/vsw" "dac_cell4_0/XM3/w_n358_n1097#" 8.51012
-cap "dac_cell4_0/iout_n" "dac_cell4_0/vbias" -50.8575
-cap "dac_cell4_0/XM4/w_n358_n1097#" "dac_cell4_0/iout" 0.102868
-cap "dac_cell4_0/vbias" "dac_cell4_0/iout" 0.0351589
-cap "dac_cell4_0/iout_n" "dac_cell4_0/iout" -8.88178e-16
-cap "dac_cell4_0/vbias" "dac_cell4_0/XM4/w_n358_n1097#" 0.740337
-cap "dac_cell4_0/iout_n" "dac_cell4_0/XM4/w_n358_n1097#" 0.518293
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "XR1/a_n573_n557#" -90.8166
-cap "XR1/a_n703_n687#" "XR1/a_n573_n557#" 82.5751
-cap "XR1/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" 7.30916
-cap "XR1/a_n573_125#" "XR1/a_n573_n557#" -52.1915
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "XR1/a_n573_125#" 2.94188
+cap "dac_cell4_0/vbias" "dac_cell4_0/XM4/a_n158_n800#" 1.12104
+cap "dac_cell4_0/iout_n" "dac_cell4_0/XM4/w_n358_n1097#" 0.207347
+cap "dac_cell4_0/iout" "dac_cell4_0/XM4/w_n358_n1097#" 2.80254
+cap "dac_cell4_0/vbias" "dac_cell4_0/XM4/w_n358_n1097#" 6.19614
+cap "dac_cell4_0/vbias" "dac_cell4_0/iout_n" -22.1655
+cap "esd_structure_5/vsup" "esd_structure_5/vgnd" 71.5451
+cap "esd_structure_5/vsup" "esd_structure_5/pad" 282.171
+cap "m1_n16204_n8150#" "XR1/a_n703_n687#" 2.58613
+cap "m1_n16204_n8150#" "XR1/a_n573_n557#" 2.84217e-14
+cap "XR1/a_n573_n557#" "XR1/a_n703_n687#" 37.4225
+cap "m1_n16204_n8150#" "XR1/a_n703_n687#" 19.4686
+cap "m1_n16204_n8150#" "XR1/a_n573_n557#" 1.42109e-14
+cap "m1_n16204_n8150#" "XR1/a_n573_125#" 5.5824
+cap "XR1/a_n573_n557#" "XR1/a_n703_n687#" 49.1852
+cap "m1_n16204_n8150#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" 0.869943
 cap "XR1/a_n703_n687#" "XR1/a_n573_125#" 5.10076
-cap "dac_cell4_0/sourceM3M4" "dac_cell4_0/vsw" 8.93928
+cap "XR1/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" 5.82395
+cap "XR1/a_n573_n557#" "XR1/a_n573_125#" -96.8069
+cap "XR1/a_n573_n557#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" -46.9477
+cap "XR1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" 2.94188
+cap "dac_cell4_0/vbias" "dac_cell4_0/iout" 0.344275
+cap "dac_cell4_0/vbias" "dac_cell4_0/vsw" 0.68684
+cap "dac_cell4_0/vbias" "dac_cell4_0/XM3/w_n358_n1097#" 0.336182
+cap "dac_cell4_0/iout" "dac_cell4_0/vsw" 0.740711
+cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/vsw" 9.60869
+cap "dac_cell4_0/sourceM3M4" "dac_cell4_0/vsw" 12.2656
 cap "dac_cell4_0/iout" "dac_cell4_0/sourceM3M4" 10.384
-cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/sourceM3M4" 3.41061e-13
-cap "dac_cell4_0/vbias" "dac_cell4_0/sourceM3M4" 0.0421233
-cap "dac_cell4_0/vsw" "dac_cell4_0/sourceM3M4" 1.25795
-cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/iout_n" 2.7644
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" 276.722
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" 85.0137
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" -149.371
+cap "dac_cell4_0/iout" "dac_cell4_0/vbias" 0.375573
+cap "dac_cell4_0/iout" "m1_n16204_n8150#" 0.0394261
+cap "dac_cell4_0/sourceM3M4" "dac_cell4_0/vbias" 0.759537
+cap "dac_cell4_0/iout_n" "dac_cell4_0/vbias" 0.218169
+cap "dac_cell4_0/iout" "dac_cell4_0/XM3/w_n358_n1097#" 0.189886
+cap "dac_cell4_0/sourceM3M4" "dac_cell4_0/XM3/w_n358_n1097#" 3.41061e-13
+cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/vbias" 0.670077
+cap "dac_cell4_0/XM3/w_n358_n1097#" "dac_cell4_0/iout_n" 0.310946
+cap "dac_cell4_0/iout_n" "dac_cell4_0/XM3/w_n358_n1097#" 0.566702
+cap "esd_structure_5/vsup" "esd_structure_5/pad" 152.791
+cap "esd_structure_5/vsup" "esd_structure_5/vgnd" 18.2171
+cap "esd_structure_5/pad" "esd_structure_5/vgnd" 104.265
+cap "esd_structure_5/vsup" "esd_structure_5/pad" -4.54747e-13
+cap "esd_structure_5/vgnd" "esd_structure_5/pad" 3.37772
+cap "esd_structure_5/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_5/gate" 2.12465
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" "m1_n16204_n8150#" 1.87498
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" 35.6081
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" 0.60094
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" "vbias_v" 0.000994687
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" "m1_n16204_n8150#" 0.0506328
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" -149.106
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" 45.3731
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" 254.489
 cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" 0.29897
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" 0.0566276
-cap "dac_cell4_0/sourceM3M4" "m1_n734_n28#" 0.613117
-cap "dac_cell4_0/XM4/a_100_n800#" "m1_n734_n28#" 4.41649
-cap "dac_cell4_0/w_2166_2774#" "m1_n734_n28#" 8.07331
-cap "dac_cell4_0/XM4/a_n100_n897#" "m1_n734_n28#" 1.79736
-cap "m1_n734_n28#" "dac_cell4_0/sourceM3M4" 0.441728
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" -73.2731
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" -0.529815
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" 59.6798
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" 0.0272993
+cap "m1_n734_n28#" "dac_cell4_0/sourceM3M4" 0.384278
+cap "m1_n734_n28#" "dac_cell4_0/XM4/a_100_n800#" 7.21888
+cap "m1_n734_n28#" "dac_cell4_0/w_2166_2774#" 2.07744
+cap "m1_n734_n28#" "dac_cell4_0/vbias" 0.911551
+cap "m1_n734_n28#" "dac_cell4_0/sourceM3M4" 0.277257
+cap "m1_n734_n28#" "dac_cell4_0/XM3/w_n358_n1097#" 8.19357
+cap "m1_n734_n28#" "dac_cell4_0/XM4/a_100_n800#" 7.29789
+cap "m1_n734_n28#" "dac_cell4_0/vbias" 0.885814
+cap "esd_structure_3/vgnd" "esd_structure_3/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1332_n1000#" 3.45692
+cap "esd_structure_5/vgnd" "esd_structure_5/pad" 23.1413
+cap "esd_structure_5/pad" "esd_structure_5/vgnd" 28.5804
+cap "esd_structure_5/gate" "esd_structure_5/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 3.57831
+cap "esd_structure_5/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_5/gate" 25.8813
+cap "vbias_v" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" 38.4175
+cap "m1_n16204_n8150#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" 1.80295
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" -5.72575
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" "m1_n16204_n8150#" 0.145398
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" "vbias_v" 0.537001
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" 1.47701
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" -117.407
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" "vbias_v" 82.1219
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" 82.7965
 cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" 1.01999
-cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" 0.049065
-cap "dac_cell4_0/iref" "dac_cell4_0/w_2166_2774#" 8.44181
-cap "dac_cell4_0/sourceM2" "dac_cell4_0/iref" 9.29855
+cap "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" 0.0783933
+cap "dac_cell4_0/sourceM2" "dac_cell4_0/iref" 0.898207
+cap "dac_cell4_0/w_2166_2774#" "dac_cell4_0/sourceM2" -4.54747e-13
 cap "dac_cell4_0/vgnd" "dac_cell4_0/sourceM2" -0.229608
-cap "dac_cell4_0/sourceM2" "dac_cell4_0/w_2166_2774#" -2.27374e-13
-cap "dac_cell4_0/w_2166_2774#" "dac_cell4_0/iref" 8.93441
+cap "dac_cell4_0/iref" "dac_cell4_0/sourceM2" 8.40035
+cap "dac_cell4_0/w_2166_2774#" "dac_cell4_0/iref" 0.0817067
 cap "dac_cell4_0/sourceM3M4" "dac_cell4_0/vgnd" 0.0186554
-cap "m1_n734_n28#" "dac_cell4_0/sourceM3M4" 5.46715
-cap "m1_n734_n28#" "dac_cell4_0/sourceM3M4" 5.1855
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" -10.3822
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n415_n687#" 5.52681
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n415_n687#" 57.3453
-cap "dac_cell4_0/sourceM2" "dac_cell4_0/iref" 390.63
-cap "dac_cell4_0/iref" "dac_cell4_0/vsup" 259.005
-cap "dac_cell4_0/iref" "dac_cell4_0/vgnd" 35.1532
-cap "dac_cell4_0/iref" "dac_cell4_0/vsup" 110.708
-cap "dac_cell4_0/iref" "dac_cell4_0/sourceM2" 191.417
-cap "dac_cell4_0/XM2/a_100_n800#" "dac_cell4_0/vgnd" 0.0110622
-cap "m1_n734_n28#" "dac_cell4_0/vgnd" 0.0793999
-cap "dac_cell4_0/iref" "dac_cell4_0/vgnd" -0.290419
-cap "dac_cell4_0/vgnd" "m1_n734_n28#" 7.10543e-15
-cap "XR2/a_n415_n687#" "XR2/a_n285_n557#" 68.5819
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "XR2/a_n285_125#" 0.429296
-cap "XR2/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" 115.469
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "XR2/a_n285_n557#" -146.562
+cap "m1_n734_n28#" "dac_cell4_0/sourceM3M4" 5.69599
+cap "m1_n734_n28#" "dac_cell4_0/sourceM3M4" 5.34998
+cap "esd_structure_3/pad" "esd_structure_3/vgnd" 9.87692
+cap "esd_structure_5/vgnd" "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1332_n1000#" 10.2609
+cap "esd_structure_5/vgnd" "esd_structure_4/vsup" 64.5841
+cap "esd_structure_4/vsup" "esd_structure_5/vgnd" 154.58
+cap "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1332_n1000#" "esd_structure_5/vgnd" 35.8623
+cap "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n716_n1000#" "esd_structure_5/vgnd" 22.2987
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n100_n1000#" 23.3712
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 154.457
+cap "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_1132_n1000#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 23.2406
+cap "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_516_n1000#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 25.131
+cap "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_1132_n1000#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 4.32262
+cap "esd_structure_5/gate" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 0.0546708
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 17.4638
+cap "esd_structure_5/gate" "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_996_n1136#" 0.079911
+cap "dac_cell4_0/vsup" "dac_cell4_0/iref" 292.065
+cap "dac_cell4_0/sourceM2" "dac_cell4_0/iref" 518.208
+cap "dac_cell4_0/XR4/a_n199_n1192#" "dac_cell4_0/iref" 5.97079
+cap "dac_cell4_0/iref" "dac_cell4_0/vsup" 94.9423
+cap "dac_cell4_0/iref" "dac_cell4_0/vgnd" 29.4334
+cap "dac_cell4_0/iref" "dac_cell4_0/sourceM2" 63.8394
+cap "dac_cell4_0/iref" "dac_cell4_0/vgnd" -0.541439
+cap "dac_cell4_0/vgnd" "m1_n734_n28#" 0.0529333
+cap "dac_cell4_0/vgnd" "dac_cell4_0/sourceM3M4" 0.0110622
+cap "XR2/a_n415_n687#" "XR2/a_n285_n557#" 36.5216
+cap "XR2/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" 0.792397
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "XR2/a_n415_n687#" 165.786
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "XR2/a_n285_n557#" -114.765
+cap "XR2/a_n415_n687#" "XR2/a_n285_n557#" 55.9098
+cap "esd_structure_3/gate" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 4.34408
+cap "esd_structure_3/gate" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/a_n285_n285#" 7.33778
+cap "esd_structure_3/pad" "esd_structure_3/gate" 0.00328941
+cap "esd_structure_3/gate" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/a_n285_n285#" 40.9534
+cap "esd_structure_3/gate" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 81.2574
+cap "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/a_n285_n285#" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 1.13687e-13
+cap "esd_structure_3/gate" "esd_structure_3/sky130_fd_pr__res_high_po_0p35_JFN4DV_0/a_n35_n1432#" 3.01587
+cap "esd_structure_3/gate" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/a_n285_n285#" 0.00540972
+cap "esd_structure_3/sky130_fd_pr__res_high_po_0p35_JFN4DV_0/a_n35_n1432#" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/a_n285_n285#" -4.54747e-13
+cap "esd_structure_3/vgnd" "esd_structure_3/pad" 15.3654
+cap "esd_structure_3/vgnd" "esd_structure_3/vsup" 30.4598
+cap "esd_structure_3/pad" "esd_structure_3/vsup" -9.09495e-13
+cap "esd_structure_3/pad" "esd_structure_3/vsup" 2.04695
+cap "esd_structure_3/vsup" "esd_structure_3/vgnd" -10.8706
+cap "esd_structure_3/pad" "esd_structure_3/vgnd" 16.4093
+cap "esd_structure_3/pad" "esd_structure_3/vgnd" 2.84217e-14
+cap "esd_structure_4/vsup" "esd_structure_4/vgnd" 63.3469
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 0.081289
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_4/gate" 0.49823
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 9.55146
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" "esd_structure_4/gate" 17.0631
+cap "esd_structure_5/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_996_n1136#" "esd_structure_4/gate" 1.54326
+cap "dac_cell4_0/vsup" "dac_cell4_0/XR4/a_n199_n1192#" -0.000475876
+cap "vbias_v" "dac_cell4_0/XR4/a_n199_n1192#" 0.341752
+cap "vbias_v" "dac_cell4_0/vsup" 15.63
+cap "dac_cell4_0/XR4/a_n199_n1192#" "dac_cell4_0/vsup" 0.803797
+cap "dac_cell4_0/XR4/a_n199_n1192#" "dac_cell4_0/iref" 3.31227e-05
 cap "dac_cell4_0/iref" "dac_cell4_0/vsup" 0.227956
-cap "vbias07" "dac_cell4_0/vsup" 10.35
-cap "dac_cell4_0/XR4/a_n199_n1192#" "dac_cell4_0/vsup" 0.400858
-cap "dac_cell3_0/vbias" "dac_cell4_0/vgnd" 0.356611
-cap "dac_cell3_0/vbias" "dac_cell4_0/vsup" 13.3666
-cap "dac_cell3_0/vsw" "dac_cell4_0/vgnd" 0.00584392
-cap "dac_cell4_0/iref" "dac_cell4_0/vgnd" 3.31227e-05
-cap "dac_cell4_0/vgnd" "dac_cell4_0/vsup" 0.402463
-cap "dac_cell3_0/vbias" "dac_cell4_0/parR" 4.83131
-cap "dac_cell4_0/vgnd" "dac_cell4_0/parR" 1.97434
-cap "dac_cell4_0/vgnd" "dac_cell3_0/iout_n" 0.129133
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" -103.312
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" 205.087
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" 123.728
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" 0.591337
-cap "vbias07" "dac_cell4_0/vsup" 10.35
-cap "dac_cell3_0/vsw" "dac_cell3_0/vbias" 1.52156
-cap "dac_cell3_0/vbias" "dac_cell3_0/XM3/w_n358_n697#" 3.35946
-cap "dac_cell4_0/vsup" "dac_cell3_0/vbias" 13.3792
-cap "dac_cell3_0/vbias" "dac_cell4_0/vgnd" 4.20674
-cap "dac_cell3_0/vsw" "dac_cell4_0/vgnd" -7.69084
-cap "dac_cell3_0/XM4/w_n358_n697#" "dac_cell4_0/vgnd" 4.71131
-cap "dac_cell4_0/parR" "dac_cell3_0/vbias" 4.83131
-cap "dac_cell4_0/parR" "dac_cell4_0/vgnd" 4.64531
-cap "dac_cell3_0/vbias" "dac_cell3_0/iout_n" -0.730693
-cap "dac_cell3_0/vsw" "dac_cell3_0/vbias" 0.00512384
+cap "dac_cell4_0/XR4/a_n199_n1192#" "dac_cell3_0/vsw" 0.00560042
+cap "vbias_v" "dac_cell4_0/vgnd" 0.0148588
+cap "vbias_v" "dac_cell4_0/vsup" 8.08663
+cap "dac_cell4_0/vgnd" "dac_cell3_0/vsw" 0.000243497
+cap "dac_cell4_0/parR" "vbias_v" 4.83131
+cap "m1_n734_n28#" "dac_cell4_0/vgnd" 0.155599
+cap "dac_cell4_0/parR" "dac_cell4_0/vgnd" 1.97434
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" 57.0114
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" 0.269549
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" -42.179
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" 1.02063
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" -78.3172
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" 6.23557
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" 81.7154
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" 69.1386
+cap "esd_structure_3/sky130_fd_pr__res_high_po_0p35_JFN4DV_0/a_n35_n1432#" "esd_structure_3/gate" 1.23919
+cap "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/a_n285_n285#" "esd_structure_3/gate" 5.55366
+cap "esd_structure_3/gate" "esd_structure_3/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 77.7675
+cap "esd_structure_3/vsup" "esd_structure_3/vgnd" 103.004
+cap "esd_structure_4/vgnd" "esd_structure_4/vsup" 16.2459
+cap "esd_structure_4/vsup" "esd_structure_4/pad" 49.8248
+cap "esd_structure_4/vgnd" "esd_structure_4/pad" 174.165
+cap "esd_structure_4/vgnd" "esd_structure_4/pad" 3.78594
+cap "esd_structure_4/vsup" "esd_structure_4/pad" -9.09495e-13
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 1.13687e-13
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_4/gate" 5.71927
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" "esd_structure_4/gate" 59.9524
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_4/gate" 30.746
+cap "dac_cell4_0/vsup" "vbias_v" 15.63
+cap "dac_cell4_0/XR4/a_n199_n1192#" "vbias_v" 0.185936
+cap "dac_cell3_0/vbias" "dac_cell4_0/vsup" 8.09919
+cap "dac_cell3_0/vbias" "dac_cell4_0/vgnd" 1.44638
 cap "dac_cell4_0/vgnd" "dac_cell3_0/iout_n" 1.62304
-cap "dac_cell3_0/vsw" "dac_cell4_0/vgnd" -8.39276
-cap "dac_cell3_0/XM4/a_n158_n400#" "dac_cell3_0/vbias" 2.26442
-cap "dac_cell3_0/XM4/a_n158_n400#" "dac_cell4_0/vgnd" 0.0984422
-cap "dac_cell3_0/XM4/w_n358_n697#" "dac_cell3_0/vbias" 2.77534
-cap "dac_cell3_0/vbias" "dac_cell4_0/vgnd" 0.0566159
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" 64.5655
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" -52.9054
-cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" -2.45091
-cap "dac_cell3_0/iout" "dac_cell3_0/vsw" 0.384366
-cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell3_0/iout" 0.190619
-cap "dac_cell3_0/vsw" "dac_cell3_0/iout" -20.0554
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/vbias" 0.290818
+cap "dac_cell4_0/vgnd" "dac_cell3_0/XM4/a_n158_n400#" 0.0984422
+cap "dac_cell4_0/parR" "dac_cell3_0/vbias" 4.83131
+cap "dac_cell4_0/vgnd" "dac_cell3_0/XM4/w_n358_n697#" 4.71131
+cap "dac_cell4_0/vgnd" "dac_cell3_0/vbias" 1.91999
+cap "dac_cell4_0/parR" "dac_cell4_0/vgnd" 4.64531
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" 4.76147
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" 18.9915
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" 26.5956
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" 114.124
+cap "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" -77.9003
+cap "esd_structure_3/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_3/vsup" 41.8708
+cap "esd_structure_4/vgnd" "esd_structure_4/pad" 24.2182
+cap "esd_structure_4/vgnd" "esd_structure_4/pad" 28.9787
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_4/gate" 1.61046
+cap "m1_n16240_n2458#" "esd_structure_4/gate" 0.0570325
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "m1_n16240_n2458#" 0.190724
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_4/gate" 44.3095
+cap "esd_structure_4/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "m1_n16240_n2458#" 0.210931
+cap "esd_structure_4/gate" "m1_n16240_n2458#" 0.0570325
+cap "dac_cell3_0/iout" "dac_cell3_0/vsw" 0.275404
+cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell4_0/vgnd" 1.61583
+cap "dac_cell4_0/vgnd" "dac_cell3_0/vsw" -56.6777
+cap "dac_cell4_0/vgnd" "dac_cell3_0/vbias" -3.83662
+cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/vsw" 30.0684
 cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell3_0/vsw" 18.8964
-cap "dac_cell3_0/iout" "dac_cell3_0/vbias" 2.91145
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/vsw" 31.8018
-cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell3_0/vbias" 0.73115
-cap "dac_cell3_0/vsw" "dac_cell3_0/vbias" -0.279525
-cap "dac_cell3_0/vbias" "dac_cell3_0/XM3/w_n358_n697#" 3.07964
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/iout" 22.5317
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/XM3/w_n358_n697#" 5.68434e-14
-cap "dac_cell3_0/iout" "dac_cell3_0/vsw" -20.5387
-cap "dac_cell3_0/vbias" "dac_cell3_0/sourceM3M4" 2.15639
-cap "dac_cell3_0/vbias" "dac_cell3_0/vsw" -1.01871
-cap "dac_cell3_0/iout" "dac_cell3_0/iout_n" 0.0299561
-cap "dac_cell3_0/iout" "dac_cell3_0/XM3/w_n358_n697#" 16.4224
+cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell3_0/vbias" 4.09061
+cap "dac_cell3_0/vsw" "dac_cell3_0/vbias" 1.24204
+cap "dac_cell3_0/sourceM3M4" "dac_cell4_0/vgnd" 3.90791
+cap "dac_cell3_0/vbias" "dac_cell4_0/vgnd" -9.70172
+cap "dac_cell3_0/iout_n" "dac_cell4_0/vgnd" 0.0299561
+cap "dac_cell3_0/iout_n" "dac_cell3_0/vbias" -48.2447
+cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell4_0/vgnd" 14.9972
+cap "dac_cell3_0/sourceM3M4" "dac_cell4_0/vgnd" 7.69089
+cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell3_0/vbias" 5.85498
+cap "dac_cell3_0/vbias" "dac_cell3_0/sourceM3M4" 3.02151
 cap "dac_cell3_0/XM3/w_n358_n697#" "dac_cell3_0/iout_n" 0.116539
-cap "dac_cell3_0/vbias" "dac_cell3_0/iout_n" -47.5141
-cap "dac_cell3_0/vbias" "dac_cell3_0/iout" -17.1608
-cap "dac_cell3_0/iout_n" "dac_cell3_0/XM3/w_n358_n697#" 0.0653895
-cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/iref" 251.426
-cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/sourceM2" -0.513693
-cap "dac_cell3_0/XM2/a_100_n400#" "dac_cell3_0/XM1/w_n358_n397#" -0.00139856
-cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/iref" 626.541
-cap "dac_cell3_0/iref" "dac_cell3_0/sourceM2" 3.57669
-cap "dac_cell3_0/iref" "dac_cell3_0/sourceM3M4" 7.392
-cap "dac_cell3_0/iref" "dac_cell3_0/XM1/w_n358_n397#" 156.202
-cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/sourceM2" -0.505223
-cap "dac_cell3_0/vsw" "dac_cell3_0/XM1/w_n358_n397#" 0.0534884
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/XM1/w_n358_n397#" 2.27374e-13
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/XM1/w_n358_n397#" 1.13687e-13
-cap "dac_cell3_0/iref" "dac_cell3_0/sourceM3M4" 3.31782
-cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/vbias" 0.146197
-cap "dac_cell3_0/XM2/a_n158_n400#" "dac_cell3_0/sourceM3M4" 5.55112e-17
-cap "dac_cell3_0/iout" "dac_cell3_0/XM1/w_n358_n397#" 0.668186
-cap "dac_cell3_0/iout_n" "dac_cell3_0/XM3/w_n358_n697#" 0.25375
-cap "vbias18" "miel21_opamp_0/ground" 1.96691
-cap "miel21_opamp_0/ground" "vbias18" 1.19613
-cap "vbias18" "miel21_opamp_0/outSingle" 3.50037
-cap "vbias18" "miel21_opamp_0/outSingle" 12.7272
-cap "vbias18" "miel21_opamp_0/outSingle" 0.740168
-cap "vbias18" "miel21_opamp_0/outSingle" 12.4233
-cap "miel21_opamp_0/outSingle" "vbias18" 0.876965
-cap "miel21_opamp_0/outSingle" "vbias18" 12.4233
-cap "miel21_opamp_0/outSingle" "vbias18" 13.6115
-cap "vbias18" "miel21_opamp_0/outSingle" 0.527432
-cap "vbias18" "miel21_opamp_0/outSingle" 1.31969
-cap "dac_cell3_0/vsup" "dac_cell3_0/iref" 154.641
-cap "dac_cell3_0/sourceM2" "dac_cell3_0/vsup" -2.28637
-cap "dac_cell3_0/iref" "dac_cell3_0/sourceM2" 47.1821
-cap "dac_cell3_0/iref" "dac_cell3_0/XR2/a_n199_n1862#" 0.0937639
-cap "dac_cell3_0/iref" "dac_cell3_0/vsup" 308.936
-cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell3_0/iref" 4.56615
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/iref" 1.35608
-cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/sourceM2" -0.69267
-cap "dac_cell3_0/iref" "dac_cell3_0/XM1/w_n358_n397#" 31.2025
-cap "dac_cell3_0/iref" "dac_cell3_0/sourceM2" 36.144
-cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/iref" 1.06782
-cap "m1_n734_n28#" "dac_cell3_0/vgnd" 0.155906
+cap "dac_cell3_0/vsw" "dac_cell3_0/vbias" -1.01359
+cap "esd_structure_4/vgnd" "esd_structure_4/pad" 10.915
+cap "esd_structure_4/vgnd" "esd_structure_0/vsup" 53.9915
+cap "esd_structure_0/vsup" "esd_structure_4/vgnd" 126.456
+cap "esd_structure_4/pad" "esd_structure_4/vgnd" 54.0811
+cap "esd_structure_4/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1332_n1000#" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 56.6054
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 126.375
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "m1_n16240_n2458#" 0.0715216
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 14.6925
+cap "esd_structure_4/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_996_n1136#" "m1_n16240_n2458#" 0.111907
+cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/sourceM3M4" 2.27374e-13
+cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/iout" 0.668186
+cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/vsw" 0.0534884
+cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/vbias" 0.290818
+cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/iout" 3.87393
+cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/vsw" 1.73342
+cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/iref" 1.70369
+cap "dac_cell3_0/iout" "dac_cell3_0/sourceM3M4" 7.05901
+cap "dac_cell3_0/vbias" "dac_cell3_0/XM3/w_n358_n697#" 0.146197
+cap "dac_cell3_0/vbias" "dac_cell3_0/sourceM3M4" 1.3993
+cap "dac_cell3_0/XM4/w_n358_n697#" "dac_cell3_0/iout_n" 0.31914
+cap "esd_structure_0/vsup" "esd_structure_4/vgnd" 61.606
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 0.075048
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 7.88004
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_0/gate" 0.584798
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" "esd_structure_0/gate" 95.6407
+cap "dac_cell3_0/iref" "dac_cell3_0/XM1/w_n358_n397#" 648.448
+cap "dac_cell3_0/iref" "dac_cell3_0/sourceM2" 4.51434
+cap "dac_cell3_0/sourceM2" "dac_cell3_0/iref" 25.6683
+cap "dac_cell3_0/iref" "dac_cell3_0/XM1/w_n358_n397#" 728.426
+cap "dac_cell3_0/sourceM3M4" "dac_cell3_0/XM1/w_n358_n397#" -0.00139856
+cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell3_0/iref" 1.78769
+cap "dac_cell3_0/sourceM2" "dac_cell3_0/XM1/w_n358_n397#" -0.513693
+cap "dac_cell3_0/iref" "dac_cell3_0/sourceM2" 25.3149
+cap "dac_cell3_0/iref" "dac_cell3_0/vgnd" 0.495385
+cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/sourceM3M4" 1.13687e-13
+cap "dac_cell3_0/iref" "dac_cell3_0/sourceM3M4" 11.43
+cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/sourceM2" -0.839336
+cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/iref" 52.165
+cap "m1_n734_n28#" "dac_cell3_0/vgnd" 0.0856148
+cap "miel21_opamp_0/ground" "miel21_opamp_0/inNeg" 7.98019
+cap "miel21_opamp_0/inNeg" "miel21_opamp_0/ground" 2.4113
+cap "m1_8656_n6082#" "miel21_opamp_0/ground" 0.612453
+cap "m1_8656_n6082#" "miel21_opamp_0/outSingle" 11.8902
+cap "miel21_opamp_0/outSingle" "m1_8656_n6082#" 2.77734
+cap "esd_structure_0/vsup" "esd_structure_0/vgnd" 25.6411
+cap "esd_structure_0/pad" "esd_structure_0/vsup" 85.2754
+cap "esd_structure_0/pad" "esd_structure_0/vgnd" 257.184
+cap "esd_structure_0/pad" "esd_structure_0/vgnd" 1.66516
+cap "esd_structure_0/vsup" "esd_structure_0/pad" -9.09495e-13
+cap "esd_structure_0/gate" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 4.08416
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" "esd_structure_0/gate" 121.856
+cap "esd_structure_0/gate" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 8.48124
+cap "dac_cell3_0/sourceM2" "dac_cell3_0/vsup" -0.24164
+cap "dac_cell3_0/sourceM2" "vgnd" 3.26265
+cap "dac_cell3_0/iref" "dac_cell3_0/sourceM2" 4.51434
+cap "dac_cell3_0/vsup" "dac_cell3_0/sourceM2" -2.32772
+cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell3_0/iref" 1.88146
+cap "dac_cell3_0/iref" "dac_cell3_0/sourceM2" 25.2247
+cap "vgnd" "dac_cell3_0/sourceM2" 1.21702
+cap "dac_cell3_0/XM1/w_n358_n397#" "dac_cell3_0/sourceM2" -0.0755703
+cap "dac_cell3_0/sourceM2" "dac_cell3_0/iref" 1.66627
+cap "dac_cell3_0/vgnd" "dac_cell3_0/iref" 0.495385
+cap "dac_cell3_0/vgnd" "dac_cell3_0/parR" 26.1764
+cap "m1_n734_n28#" "dac_cell3_0/vgnd" 1.80488
+cap "miel21_opamp_0/inPos" "miel21_opamp_0/ground" 7.49031
 cap "miel21_opamp_0/ground" "miel21_opamp_0/inNeg" 4.54747e-13
-cap "miel21_opamp_0/inNeg" "miel21_opamp_0/ground" 24.4493
-cap "miel21_opamp_0/inNeg" "miel21_opamp_0/ground" 0.314285
-cap "vbias18" "miel21_opamp_0/outSingle" 2.26678
-cap "vbias18" "miel21_opamp_0/outSingle" 10.7212
-cap "vbias18" "miel21_opamp_0/outSingle" 10.7212
-cap "vbias18" "miel21_opamp_0/outSingle" 10.7212
-cap "miel21_opamp_0/outSingle" "vbias18" 10.7884
-cap "vbias18" "miel21_opamp_0/outSingle" 0.847477
-cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell3_0/vsup" 0.00441111
-cap "vgnd" "dac_cell3_0/sourceM2" 4.47967
-cap "dac_cell3_0/vsup" "dac_cell3_0/sourceM2" -2.84217e-14
-cap "vgnd" "dac_cell3_0/XR4/a_n69_1300#" 0.00504909
-cap "dac_cell3_0/parR" "dac_cell3_0/vgnd" 35.2572
-cap "m1_n734_n28#" "dac_cell3_0/vgnd" 2.11728
-cap "miel21_opamp_0/inNeg" "miel21_opamp_0/inPos" -22.133
-cap "miel21_opamp_0/ground" "miel21_opamp_0/inPos" 2.40037
-cap "miel21_opamp_0/ground" "miel21_opamp_0/bias" 193.424
-cap "miel21_opamp_0/inPos" "miel21_opamp_0/inNeg" -25.3649
-cap "miel21_opamp_0/ground" "miel21_opamp_0/inNeg" 13.5283
-cap "miel21_opamp_0/ground" "miel21_opamp_0/inPos" 5.52374
-cap "miel21_opamp_0/bias" "miel21_opamp_0/inNeg" 156.356
-cap "miel21_opamp_0/ground" "miel21_opamp_0/XM5/a_n1023_n688#" 6.41301
-cap "miel21_opamp_0/ground" "vbias18" 1.8402
-cap "miel21_opamp_0/ground" "miel21_opamp_0/inNeg" 2.88027
-cap "vbias18" "miel21_opamp_0/ground" 0.76083
-cap "vbias18" "miel21_opamp_0/outSingle" 1.22412
-cap "vbias18" "miel21_opamp_0/outSingle" 1.45037
-cap "vbias18" "miel21_opamp_0/outSingle" 0.872291
-cap "dac_cell3_0/vsup" "dac_cell2_0/iout" 9.4547
-cap "dac_cell3_0/vsup" "dac_cell2_0/vbias" 17.9188
+cap "miel21_opamp_0/ground" "miel21_opamp_0/bias" 199.837
+cap "miel21_opamp_0/inNeg" "miel21_opamp_0/bias" 143.419
+cap "miel21_opamp_0/ground" "miel21_opamp_0/inPos" 0.433802
+cap "miel21_opamp_0/inNeg" "miel21_opamp_0/ground" 29.4402
+cap "miel21_opamp_0/ground" "miel21_opamp_0/inNeg" 5.00313
+cap "miel21_opamp_0/XM3/a_n381_n722#" "m1_8656_n6082#" 0.389567
+cap "esd_structure_0/pad" "esd_structure_0/vgnd" 19.4067
+cap "esd_structure_0/vsup" "esd_structure_0/vgnd" -6.88961
+cap "esd_structure_0/pad" "esd_structure_0/vgnd" 28.8495
+cap "esd_structure_0/gate" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n100_n1000#" -7.10543e-15
+cap "esd_structure_0/gate" "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 0.0020291
+cap "esd_structure_0/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_0/gate" 7.2085
+cap "dac_cell2_0/iout" "dac_cell3_0/sourceM2" 3.26265
 cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell3_0/vsup" 0.137549
-cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell2_0/iout" 13.6024
-cap "dac_cell2_0/XM4/a_n158_n200#" "dac_cell2_0/iout" 0.0726761
-cap "dac_cell2_0/vbias" "dac_cell2_0/iout" 0.62115
-cap "dac_cell2_0/XM4/w_n358_n497#" "dac_cell2_0/iout" 4.29009
-cap "dac_cell3_0/vsup" "dac_cell3_0/XR2/a_n199_n1862#" 0.111485
-cap "dac_cell3_0/sourceM2" "dac_cell2_0/iout" 5.66661
-cap "dac_cell3_0/vsup" "dac_cell2_0/vbias" 18.5562
-cap "dac_cell2_0/iout_n" "dac_cell2_0/iout" 1.2093
-cap "dac_cell3_0/vsup" "dac_cell2_0/iout" 44.3884
-cap "dac_cell2_0/iout" "dac_cell3_0/sourceM2" 0.0646922
-cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell2_0/iout" 27.7975
-cap "dac_cell2_0/iout" "dac_cell3_0/XR4/a_n69_1300#" 2.10715
-cap "dac_cell3_0/parR" "dac_cell3_0/vgnd" 10.1744
-cap "m1_n734_n28#" "dac_cell3_0/vgnd" 0.703975
-cap "dac_cell3_0/parR" "dac_cell3_0/vgnd" 25.6229
-cap "miel21_opamp_0/ground" "miel21_opamp_0/inPos" 2.48992
-cap "miel21_opamp_0/inNeg" "miel21_opamp_0/inPos" 14.2251
-cap "miel21_opamp_0/bias" "miel21_opamp_0/inPos" 21.247
-cap "miel21_opamp_0/inNeg" "miel21_opamp_0/inPos" 80.3109
-cap "miel21_opamp_0/ground" "miel21_opamp_0/inPos" 12.5934
-cap "miel21_opamp_0/inNeg" "miel21_opamp_0/bias" 4.00268
-cap "miel21_opamp_0/inPos" "miel21_opamp_0/ground" 4.19261
-cap "miel21_opamp_0/bias" "miel21_opamp_0/inPos" 0.389614
-cap "dac_cell2_0/iref" "in2" 1.77636e-15
-cap "dac_cell2_0/XM1/w_n358_n397#" "in2" 0.15456
-cap "dac_cell2_0/iref" "in2" -1.33227e-15
-cap "dac_cell2_0/XM1/a_n100_n197#" "dac_cell2_0/vsw" 0.0109372
-cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/vsw" 17.5129
-cap "vbias07" "dac_cell2_0/vsw" -1.13687e-13
-cap "dac_cell2_0/sourceM3M4" "vbias07" 0.544048
-cap "dac_cell2_0/vsw" "dac_cell2_0/iout" 0.62852
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/vsw" 10.8262
-cap "dac_cell2_0/iref" "dac_cell2_0/vsw" 6.81248
-cap "dac_cell2_0/vbias" "dac_cell2_0/vsw" -2.57244
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/vsw" 52.8115
-cap "dac_cell2_0/vbias" "dac_cell2_0/sourceM3M4" 1.23243
-cap "dac_cell2_0/iout" "dac_cell2_0/XM1/w_n358_n397#" 2.26688
-cap "dac_cell2_0/vsw" "dac_cell2_0/iout" -48.4424
-cap "dac_cell2_0/vbias" "dac_cell2_0/iout" -6.88723
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/iout" 38.7464
-cap "dac_cell2_0/vsw" "dac_cell2_0/XM1/w_n358_n397#" 21.3064
-cap "dac_cell2_0/vbias" "dac_cell2_0/XM1/w_n358_n397#" 3.15304
-cap "dac_cell2_0/iout_n" "dac_cell2_0/iout" 1.62686
-cap "dac_cell2_0/XM3/w_n358_n497#" "dac_cell2_0/iout" 1.14636
-cap "dac_cell2_0/iout_n" "dac_cell2_0/vbias" -19.2302
-cap "dac_cell2_0/vbias" "dac_cell2_0/XM3/w_n358_n497#" 5.96487
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/iout" 14.205
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/vbias" 9.3916
-cap "dac_cell2_0/vbias" "dac_cell2_0/iout" -11.6597
-cap "dac_cell2_0/vsw" "dac_cell2_0/vbias" -4.69408
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/XM3/w_n358_n497#" -1.42109e-14
-cap "vbias07" "dac_cell2_0/iref" 0.158943
-cap "dac_cell2_0/XM1/w_n358_n397#" "vbias07" 1.38694
-cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/iref" 39.669
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/iref" 14.7832
-cap "dac_cell2_0/vsw" "dac_cell2_0/XM1/w_n358_n397#" 12.5808
-cap "dac_cell2_0/iref" "dac_cell2_0/XM1/w_n358_n397#" 158.144
-cap "dac_cell2_0/vsw" "dac_cell2_0/iref" 6.84442
-cap "vbias07" "dac_cell2_0/iref" 0.158943
+cap "dac_cell2_0/vbias" "dac_cell3_0/vsup" 15.192
+cap "dac_cell2_0/iout" "dac_cell3_0/vsup" 17.4395
+cap "dac_cell2_0/vbias" "dac_cell3_0/vsup" 3.04549
+cap "dac_cell2_0/iout" "dac_cell3_0/XR2/a_n199_n1862#" 20.4181
+cap "dac_cell3_0/XR2/a_n199_n1862#" "dac_cell3_0/vsup" 0.115896
+cap "dac_cell2_0/iout" "dac_cell3_0/sourceM2" 2.46865
+cap "dac_cell2_0/iout" "dac_cell3_0/vsup" 38.5158
+cap "dac_cell3_0/parR" "dac_cell3_0/vgnd" 44.878
+cap "dac_cell3_0/vgnd" "m1_n734_n28#" 1.08667
+cap "miel21_opamp_0/bias" "miel21_opamp_0/inPos" -8.46594
+cap "miel21_opamp_0/inNeg" "miel21_opamp_0/inPos" 30.7692
+cap "miel21_opamp_0/ground" "miel21_opamp_0/inPos" 6.02502
+cap "miel21_opamp_0/inPos" "miel21_opamp_0/inNeg" 16.2689
+cap "miel21_opamp_0/inPos" "miel21_opamp_0/ground" 13.2509
+cap "miel21_opamp_0/inPos" "miel21_opamp_0/bias" 30.1025
+cap "miel21_opamp_0/ground" "miel21_opamp_0/inNeg" 1.09944
+cap "miel21_opamp_0/bias" "miel21_opamp_0/inNeg" 16.9389
+cap "esd_structure_0/vgnd" "esd_structure_2/vsup" 49.3062
+cap "esd_structure_0/vgnd" "esd_structure_0/pad" 12.4731
+cap "esd_structure_0/pad" "esd_structure_0/vgnd" 60.4435
+cap "esd_structure_2/vsup" "esd_structure_0/vgnd" 139.114
+cap "esd_structure_0/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1332_n1000#" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 62.7764
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 139.015
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 15.5321
+cap "dac_cell2_0/iref" "dac_cell2_0/vsw" 0.000582216
+cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/vsw" 0.139245
+cap "dac_cell2_0/vsw" "dac_cell2_0/iref" 5.76746
+cap "dac_cell2_0/vsw" "dac_cell3_0/vsup" 8.88178e-16
+cap "dac_cell2_0/iout" "dac_cell2_0/vsw" 0.437299
+cap "dac_cell2_0/vsw" "dac_cell2_0/XM1/w_n358_n397#" 17.0321
+cap "dac_cell2_0/vsw" "dac_cell2_0/sourceM3M4" 20.25
+cap "dac_cell2_0/iout" "dac_cell2_0/iout_n" 0.912989
+cap "dac_cell2_0/vbias" "dac_cell2_0/sourceM3M4" 4.80143
+cap "dac_cell2_0/vbias" "dac_cell2_0/XM1/w_n358_n397#" 6.90841
+cap "dac_cell2_0/iout" "dac_cell2_0/sourceM3M4" 30.3948
+cap "dac_cell2_0/iout" "dac_cell2_0/XM1/w_n358_n397#" 4.93024
+cap "dac_cell2_0/vsw" "dac_cell2_0/sourceM3M4" 8.40583
+cap "dac_cell2_0/vsw" "dac_cell2_0/XM1/w_n358_n397#" 13.2546
+cap "dac_cell2_0/iout" "dac_cell2_0/vbias" -20.9017
+cap "dac_cell2_0/vsw" "dac_cell2_0/vbias" -8.19784
+cap "dac_cell2_0/iout" "dac_cell2_0/vsw" -48.4616
+cap "dac_cell2_0/vbias" "dac_cell3_0/vsup" 15.192
+cap "dac_cell2_0/iout" "dac_cell2_0/iout_n" 1.91756
+cap "dac_cell2_0/iout" "dac_cell2_0/vbias" 0.521839
+cap "dac_cell2_0/iout" "dac_cell2_0/XM3/w_n358_n497#" 2.21177
+cap "dac_cell2_0/vbias" "dac_cell2_0/iout_n" -19.2302
+cap "dac_cell2_0/vbias" "dac_cell3_0/vsup" 3.04549
+cap "dac_cell2_0/vbias" "dac_cell2_0/XM3/w_n358_n497#" 0.776065
+cap "vsup" "miel21_opamp_0/outSingle" 0.0293365
+cap "vsup" "miel21_opamp_0/outSingle" 0.0408179
+cap "esd_structure_2/vsup" "esd_structure_0/vgnd" 62.7083
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 0.0780439
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_2/gate" 0.567675
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 8.19461
+cap "esd_structure_2/gate" "esd_structure_2/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 51.6245
+cap "esd_structure_0/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_996_n1136#" "esd_structure_2/gate" 1.19595
+cap "esd_structure_2/gate" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_1092_n1000#" 0.117066
+cap "vbias_v" "dac_cell2_0/iref" 0.158943
+cap "dac_cell2_0/iref" "dac_cell2_0/vsw" 0.0515108
+cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/vsw" 1.45764
+cap "dac_cell2_0/iref" "vbias_v" 0.158943
+cap "dac_cell2_0/iref" "dac_cell2_0/XM3/a_n158_n200#" -1.62447
+cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/iref" 127.275
+cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/iref" 16.4077
+cap "dac_cell2_0/vsw" "dac_cell2_0/iout" 0.185764
+cap "dac_cell2_0/iref" "dac_cell2_0/XM1/w_n358_n397#" 0.0701886
+cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/vsw" 27.2756
+cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/vbias" 1.77648
+cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/vsw" 3.75308
+cap "dac_cell2_0/iref" "dac_cell2_0/vsw" 7.96437
+cap "dac_cell2_0/vbias" "dac_cell2_0/sourceM3M4" 4.59016
+cap "dac_cell2_0/vbias" "dac_cell2_0/vsw" 0.931319
 cap "dac_cell2_0/iref" "dac_cell2_0/XM1/w_n358_n397#" 7.04905
-cap "dac_cell2_0/vsw" "dac_cell2_0/XM1/w_n358_n397#" 0.154412
-cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/iout" 0.0947452
-cap "dac_cell2_0/vbias" "dac_cell2_0/XM1/w_n358_n397#" 0.0474903
+cap "dac_cell2_0/vbias" "dac_cell2_0/iout" 2.34694
+cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/vsw" 8.88163
+cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/iout" 26.3859
+cap "dac_cell2_0/vbias" "dac_cell2_0/XM1/w_n358_n397#" 1.6328
+cap "dac_cell2_0/vsw" "dac_cell2_0/XM1/w_n358_n397#" 3.50307
 cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/XM1/w_n358_n397#" -2.27374e-13
-cap "dac_cell2_0/vsw" "dac_cell2_0/sourceM3M4" 1.17532
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/iout" 3.75662
-cap "dac_cell2_0/vbias" "dac_cell2_0/XM3/w_n358_n497#" 0.21827
-cap "dac_cell2_0/sourceM3M4" "dac_cell2_0/XM3/w_n358_n497#" -5.68434e-14
-cap "miel21_opamp_0/power" "miel21_opamp_0/d1" 0.354428
-cap "miel21_opamp_0/d1" "miel21_opamp_0/power" 0.46891
-cap "dac_cell2_0/vsup" "vbias07" 17.0055
-cap "dac_cell2_0/sourceM2" "vbias07" 11.9222
-cap "dac_cell2_0/vsup" "dac_cell2_0/iref" 17.0381
-cap "vbias07" "dac_cell2_0/sourceM2" 11.9222
-cap "m1_n734_n28#" "dac_cell2_0/vgnd" 0.677211
-cap "miel21_opamp_0/XR1/a_n199_n1162#" "miel21_opamp_0/power" 1.21558
-cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n69_600#" 1.0399
-cap "miel21_opamp_0/XM6/a_n328_n797#" "miel21_opamp_0/power" 0.680503
-cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n69_600#" 0.697142
-cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n199_n1162#" 8.42597
-cap "op_amp_in" "miel21_opamp_0/XR1/a_n199_n1162#" 0.0361054
-cap "miel21_opamp_0/power" "miel21_opamp_0/XM7/a_n228_n700#" 0.0122315
-cap "op_amp_in" "miel21_opamp_0/XR1/a_n199_n1162#" 0.0361054
-cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n199_n1162#" 5.27444
-cap "miel21_opamp_0/power" "miel21_opamp_0/XM6/a_n328_n797#" 0.594404
-cap "miel21_opamp_0/power" "miel21_opamp_0/XR3/a_n69_600#" 6.4869
-cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM8/a_n2591_n1300#" 0.00828876
-cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM8/a_n2691_n1397#" 2.93897
-cap "op_amp_in" "miel21_opamp_0/XM8/a_n2691_n1397#" 14.6327
-cap "op_amp_in" "miel21_opamp_0/XM8/a_n2749_n1300#" 0.348332
-cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XM8/a_n2749_n1300#" 6.44425
-cap "miel21_opamp_0/w_730_6170#" "op_amp_in" 0.09708
-cap "miel21_opamp_0/XM8/a_n2691_n1397#" "op_amp_in" 17.6268
-cap "miel21_opamp_0/XM8/a_n1579_n1397#" "miel21_opamp_0/XM8/w_n2949_n1597#" 5.68434e-14
-cap "miel21_opamp_0/XM8/a_n1579_n1397#" "op_amp_in" 9.59495
-cap "out" "miel21_opamp_0/XM8/a_1023_n1300#" 0.404697
-cap "miel21_opamp_0/outSingle" "out" 15.2358
-cap "miel21_opamp_0/outSingle" "out" 1.00688
-cap "vbias07" "dac_cell2_0/sourceM2" 3.30876
-cap "vbias07" "dac_cell2_0/vsup" 10.9178
-cap "dac_cell2_0/XR1/a_n199_n3262#" "dac_cell2_0/vsup" -0.0108578
+cap "dac_cell2_0/XM1/w_n358_n397#" "dac_cell2_0/iout" 0.472702
+cap "dac_cell2_0/iout" "dac_cell2_0/iout_n" 0.00561522
+cap "dac_cell2_0/XM3/w_n358_n497#" "dac_cell2_0/vbias" 0.0663994
+cap "dac_cell2_0/XM3/w_n358_n497#" "dac_cell2_0/iout" 0.183364
+cap "dac_cell2_0/iout" "dac_cell2_0/vbias" 0.107179
+cap "miel21_opamp_0/XR1/a_n199_n1162#" "miel21_opamp_0/w_730_6170#" -7.10543e-15
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/d1" -2.50111e-12
+cap "miel21_opamp_0/d2" "miel21_opamp_0/w_730_6170#" 2.84217e-14
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/d2" 9.09495e-13
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/d1" 5.68434e-14
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XM8/a_n2591_n1300#" 1.95399e-14
+cap "esd_structure_2/pad" "esd_structure_2/vsup" 17.8802
+cap "esd_structure_2/vsup" "esd_structure_2/vgnd" 38.6339
+cap "esd_structure_2/pad" "esd_structure_2/vgnd" 77.9704
+cap "esd_structure_2/vgnd" "esd_structure_2/pad" 0.899188
+cap "esd_structure_2/vsup" "esd_structure_2/pad" 9.09495e-13
+cap "esd_structure_2/gate" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 4.54398
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" "esd_structure_2/gate" 68.5802
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_1092_n1000#" "esd_structure_2/gate" 2.44939
+cap "esd_structure_2/gate" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 19.4275
+cap "dac_cell2_0/sourceM2" "vbias_v" 7.14731
+cap "dac_cell2_0/vsup" "vbias_v" 7.18751
+cap "dac_cell2_0/vsup" "m1_n16176_3182#" 0.0292166
+cap "dac_cell2_0/vsup" "dac_cell2_0/vsw" 0.139245
+cap "m1_n16176_3182#" "dac_cell2_0/vsup" 0.00032686
+cap "dac_cell2_0/vsup" "vbias_v" 7.49177
+cap "vbias_v" "dac_cell2_0/sourceM2" 7.14731
+cap "dac_cell2_0/iref" "dac_cell2_0/vsup" 84.3526
+cap "dac_cell2_0/vsw" "dac_cell2_0/vsup" 11.0236
+cap "dac_cell2_0/vsup" "m1_n16176_3182#" 0.0119849
+cap "dac_cell2_0/iref" "dac_cell2_0/vsup" 3.1535
+cap "dac_cell2_0/vsup" "m1_n16176_3182#" 1.38708
+cap "dac_cell2_0/iref" "m1_n16176_3182#" 0.00267807
+cap "dac_cell2_0/vgnd" "m1_n734_n28#" 0.214307
+cap "miel21_opamp_0/XR1/a_n199_n1162#" "op_amp_in" 0.0353532
+cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n199_n1162#" 1.73772
+cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n199_n1162#" 2.42989
+cap "miel21_opamp_0/power" "miel21_opamp_0/XM6/a_n328_n797#" 0.66665
+cap "op_amp_in" "miel21_opamp_0/XR1/a_n199_n1162#" 0.000752197
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XM6/a_n328_n797#" 0.156688
+cap "miel21_opamp_0/w_730_6170#" "op_amp_in" 0.445412
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XR3/a_n69_600#" 4.32948
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XM8/a_n2691_n1397#" 2.00256
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XR3/a_n199_n1162#" 2.1884
+cap "op_amp_in" "miel21_opamp_0/XM8/a_n2691_n1397#" 1.46184
+cap "op_amp_in" "miel21_opamp_0/XR3/a_n199_n1162#" 0.0361054
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/w_730_6170#" 1.13687e-13
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM8/a_n2691_n1397#" 0.880738
+cap "op_amp_in" "miel21_opamp_0/XM8/a_n2691_n1397#" 17.6258
+cap "miel21_opamp_0/XM8/a_n2691_n1397#" "op_amp_in" 17.6228
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XM8/a_n2691_n1397#" -5.68434e-14
+cap "miel21_opamp_0/XM8/a_n1301_n1397#" "op_amp_in" 5.14409
+cap "out" "miel21_opamp_0/XM8/a_1579_n1300#" 14.5148
+cap "out" "miel21_opamp_0/outSingle" 20.3032
+cap "esd_structure_2/vgnd" "esd_structure_2/vsup" -7.11202
+cap "esd_structure_2/pad" "esd_structure_2/vgnd" 15.3324
+cap "esd_structure_2/pad" "esd_structure_2/vgnd" 28.8448
+cap "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_2/gate" 0.683479
+cap "esd_structure_2/gate" "esd_structure_2/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 59.2589
+cap "vbias_v" "dac_cell2_0/vsup" 6.83193
+cap "vbias_v" "dac_cell2_0/sourceM2" 8.08365
+cap "vbias_v" "dac_cell2_0/vsup" 7.6729
 cap "dac_cell2_0/sourceM2" "dac_cell2_0/vsup" 0.894906
-cap "dac_cell2_0/sourceM2" "vbias07" 3.24332
-cap "dac_cell2_0/vsup" "vbias07" 4.41517
-cap "dac_cell2_0/vsup" "dac_cell2_0/XR1/a_n199_n3262#" 0.457319
-cap "vbias07" "dac_cell2_0/vsup" 1.0479
-cap "dac_cell2_0/parR" "dac_cell2_0/vgnd" 0.7648
-cap "dac_cell2_0/vgnd" "dac_cell2_0/parR" 2.087
-cap "dac_cell2_0/vgnd" "m1_n734_n28#" 2.21287
-cap "op_amp_in" "miel21_opamp_0/power" 18.2248
-cap "miel21_opamp_0/XR1/a_n199_n1162#" "miel21_opamp_0/power" -0.107244
-cap "miel21_opamp_0/XR1/a_n69_600#" "miel21_opamp_0/power" -0.201773
-cap "miel21_opamp_0/power" "op_amp_in" 4.0722
-cap "op_amp_in" "miel21_opamp_0/XR1/a_n199_n1162#" 0.290416
-cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n199_n1162#" -0.673254
-cap "miel21_opamp_0/power" "miel21_opamp_0/w_730_6170#" -0.101726
-cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n69_600#" -0.369511
-cap "miel21_opamp_0/power" "op_amp_in" 0.810423
-cap "miel21_opamp_0/XR1/a_n199_n1162#" "op_amp_in" 0.300108
-cap "miel21_opamp_0/XM8/a_n2691_n1397#" "op_amp_in" 14.4079
-cap "op_amp_in" "miel21_opamp_0/XM8/a_n2749_n1300#" 0.833278
-cap "op_amp_in" "miel21_opamp_0/w_730_6170#" 6.20483
+cap "vbias_v" "dac_cell2_0/sourceM2" 8.0182
+cap "dac_cell2_0/vsup" "dac_cell2_0/XR1/a_n199_n3262#" 0.00747871
+cap "dac_cell2_0/vsup" "dac_cell2_0/XR1/a_n199_n3262#" 0.0677461
+cap "m1_n734_n28#" "dac_cell2_0/vgnd" 2.24484
+cap "op_amp_in" "miel21_opamp_0/power" 22.2487
+cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n199_n1162#" 1.49458
+cap "op_amp_in" "miel21_opamp_0/XR1/a_n199_n1162#" 0.0364656
+cap "miel21_opamp_0/XR1/a_n69_600#" "miel21_opamp_0/power" 1.01041
+cap "miel21_opamp_0/power" "miel21_opamp_0/XM6/w_n586_n997#" 0.272234
+cap "miel21_opamp_0/XM6/a_n386_n700#" "miel21_opamp_0/power" 0.00182833
+cap "miel21_opamp_0/XR1/a_n69_600#" "miel21_opamp_0/power" 0.155351
+cap "miel21_opamp_0/XM6/a_50_n700#" "miel21_opamp_0/power" 0.00200981
+cap "miel21_opamp_0/power" "miel21_opamp_0/XM7/a_n228_n700#" 0.000652223
+cap "miel21_opamp_0/XM6/a_n108_n700#" "miel21_opamp_0/power" 0.00182833
+cap "miel21_opamp_0/XM6/a_n328_n797#" "miel21_opamp_0/power" 0.96068
+cap "miel21_opamp_0/XM6/a_50_n700#" "miel21_opamp_0/power" 0.00204979
+cap "miel21_opamp_0/XM6/a_n108_n700#" "miel21_opamp_0/power" 0.00200981
+cap "miel21_opamp_0/XM6/a_n228_n700#" "miel21_opamp_0/power" 0.00182833
+cap "op_amp_in" "miel21_opamp_0/XR1/a_n199_n1162#" 0.339246
+cap "miel21_opamp_0/XM6/a_n108_n700#" "miel21_opamp_0/power" 0.00204979
+cap "miel21_opamp_0/XM6/a_n228_n700#" "miel21_opamp_0/power" 0.00200981
+cap "miel21_opamp_0/power" "miel21_opamp_0/XR1/a_n199_n1162#" 4.18314
+cap "op_amp_in" "miel21_opamp_0/power" 0.0482395
+cap "miel21_opamp_0/power" "miel21_opamp_0/XM7/a_n386_n700#" 0.000652223
+cap "miel21_opamp_0/XM7/a_n228_n700#" "miel21_opamp_0/power" 0.000498707
+cap "miel21_opamp_0/XM7/a_n386_n700#" "miel21_opamp_0/power" 0.000360844
+cap "miel21_opamp_0/XM6/a_n386_n700#" "miel21_opamp_0/power" 0.00204979
+cap "miel21_opamp_0/power" "miel21_opamp_0/XM6/a_50_n700#" 0.00182833
+cap "miel21_opamp_0/XM6/a_170_n700#" "miel21_opamp_0/power" 0.00204979
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/power" 1.31126
+cap "miel21_opamp_0/XM7/a_n228_n700#" "miel21_opamp_0/power" 0.000601407
+cap "miel21_opamp_0/XM6/a_n386_n700#" "miel21_opamp_0/power" 0.00200981
+cap "miel21_opamp_0/XM6/a_170_n700#" "miel21_opamp_0/power" 0.00200981
+cap "miel21_opamp_0/XM7/a_n386_n700#" "miel21_opamp_0/power" 0.00037403
+cap "miel21_opamp_0/XM6/a_170_n700#" "miel21_opamp_0/power" 0.00182833
+cap "miel21_opamp_0/power" "miel21_opamp_0/XM6/a_n228_n700#" 0.00204979
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_328_n700#" 0.00204478
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_n228_n700#" 0.000601407
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "XR3/a_n165_n982#" 2.10176
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XR3/a_n69_600#" 2.15742
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_328_n700#" 0.00143378
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_n108_n700#" 0.000217408
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "op_amp_in" 1.54624
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_50_n700#" 0.00204478
+cap "op_amp_in" "XR3/a_n165_n982#" 0.214812
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_170_n700#" 0.00143378
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_170_n700#" 0.00204478
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/w_730_6170#" 4.49498
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_328_n700#" 0.00130445
+cap "op_amp_in" "miel21_opamp_0/w_730_6170#" 1.8953
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_170_n700#" 0.00130445
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM6/a_n328_n797#" 0.302451
+cap "op_amp_in" "miel21_opamp_0/XM8/a_n2691_n1397#" 1.41351
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_50_n700#" 0.00143378
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_50_n700#" 0.00130445
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM7/a_n228_n700#" 0.000311692
+cap "miel21_opamp_0/XM8/a_n2591_n1300#" "miel21_opamp_0/XM8/a_n2749_n1300#" 0.00828876
 cap "XR3/a_n35_420#" "miel21_opamp_0/XM8/a_n2691_n1397#" 17.3589
-cap "XR3/a_n35_420#" "miel21_opamp_0/w_730_6170#" 5.757
-cap "XR3/a_n35_420#" "miel21_opamp_0/XM8/a_n1579_n1397#" 9.45586
-cap "XR3/a_n35_420#" "miel21_opamp_0/XM8/w_n2949_n1597#" 3.13858
-cap "vbias07" "dac_cell2_0/XR1/a_n199_n3262#" 0.0960961
-cap "dac_cell2_0/vsup" "dac_cell2_0/XR1/a_n199_n3262#" 1.13841
-cap "dac_cell1_0/iout" "dac_cell1_0/vbias" 0.0601821
-cap "dac_cell1_0/iout" "dac_cell2_0/XR1/a_n199_n3262#" 4.69453
-cap "dac_cell1_0/iout" "dac_cell1_0/w_n996_n116#" 0.462847
-cap "dac_cell1_0/iout" "dac_cell2_0/XR1/a_n199_n3262#" 9.36905
-cap "dac_cell1_0/iout_n" "dac_cell1_0/iout" 0.368447
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/iout" 0.725098
-cap "dac_cell1_0/iout" "dac_cell1_0/vbias" 0.0631179
-cap "dac_cell2_0/vgnd" "dac_cell2_0/parR" 1.49494
-cap "dac_cell2_0/vgnd" "dac_cell2_0/parR" 4.0794
-cap "dac_cell2_0/vgnd" "m1_n734_n28#" 0.39575
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" "vsup" 0.0189834
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "vsup" 0.381956
-cap "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 12.565
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" "XR3/a_n35_420#" -1.47471
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 201.644
-cap "vsup" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 1.15174
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" -0.130921
-cap "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" -2.11417
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 0.242584
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" -0.129352
-cap "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 185.459
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" 24.5156
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" 3.89541
-cap "vbias07" "dac_cell2_0/XR4/a_n199_n3262#" 0.185878
-cap "vbias07" "dac_cell2_0/XR4/a_n69_2700#" 4.41517
-cap "dac_cell1_0/iout" "dac_cell1_0/vsw" 0.714566
-cap "dac_cell1_0/iref" "dac_cell1_0/vsw" 1.19158
-cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/vsw" 8.34752
-cap "dac_cell1_0/vbias" "dac_cell2_0/XR4/a_n199_n3262#" 0.407598
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" 18.3969
-cap "dac_cell1_0/vbias" "dac_cell2_0/XR4/a_n69_2700#" 1.05149
-cap "dac_cell1_0/iout" "dac_cell1_0/vsw" -75.0711
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" 17.7189
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/iout" 56.1639
-cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/vsw" 8.48339
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "miel21_opamp_0/XM8/a_n2691_n1397#" 0.0556763
+cap "miel21_opamp_0/w_730_6170#" "XR3/a_n35_420#" 5.757
+cap "miel21_opamp_0/w_730_6170#" "miel21_opamp_0/XM8/a_n2749_n1300#" 0.16397
+cap "miel21_opamp_0/XM8/a_n2749_n1300#" "XR3/a_n35_420#" 0.0974571
+cap "XR3/a_n35_420#" "miel21_opamp_0/XM8/a_n2691_n1397#" 17.3597
+cap "XR3/a_n35_420#" "miel21_opamp_0/w_730_6170#" 5.75756
+cap "miel21_opamp_0/XM8/w_n2949_n1597#" "XR3/a_n35_420#" 1.69055
+cap "miel21_opamp_0/XM8/a_n1301_n1397#" "XR3/a_n35_420#" 5.09051
+cap "esd_structure_2/vgnd" "esd_structure_2/pad" 13.3387
+cap "esd_structure_2/vgnd" "esd_structure_1/vsup" 18.0478
+cap "esd_structure_1/vsup" "esd_structure_2/vgnd" 55.1964
+cap "esd_structure_2/pad" "esd_structure_2/vgnd" 50.9154
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 56.2391
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_2/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1332_n1000#" 48.2798
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" 11.388
+cap "vbias_v" "dac_cell2_0/vsup" 0.126143
+cap "dac_cell2_0/vsup" "dac_cell2_0/XR1/a_n199_n3262#" 0.700156
+cap "vbias_v" "dac_cell2_0/XR1/a_n199_n3262#" 0.0960961
+cap "dac_cell2_0/vsup" "dac_cell2_0/XR1/a_n199_n3262#" 0.809494
+cap "vbias_v" "dac_cell2_0/vsup" 5.46308
+cap "dac_cell1_0/iout" "dac_cell2_0/XR1/a_n199_n3262#" 7.05018
+cap "dac_cell2_0/vgnd" "dac_cell2_0/parR" 8.42614
+cap "dac_cell2_0/vgnd" "m1_n734_n28#" 0.826678
+cap "vsup" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 1.06098
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" -0.230751
+cap "vsup" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 0.0189834
+cap "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 1.78327
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 93.5408
+cap "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 55.9325
+cap "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" -3.58888
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 0.153917
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "XR3/a_n35_420#" 140.308
+cap "esd_structure_2/vgnd" "esd_structure_1/vsup" 85.1036
+cap "esd_structure_2/vgnd" "esd_structure_1/vsup" 53.878
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 52.791
+cap "m1_n16262_8954#" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 0.0217437
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/w_n1490_n1198#" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 7.38399
+cap "m1_n16262_8954#" "esd_structure_1/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 42.3379
+cap "m1_n16262_8954#" "esd_structure_2/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_996_n1136#" 0.0673506
+cap "vbias_v" "dac_cell2_0/XR3/a_n199_n3262#" 0.28836
+cap "vbias_v" "dac_cell2_0/vsup" 5.46667
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" -0.673605
+cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/vsw" -0.289918
+cap "dac_cell1_0/iout" "dac_cell1_0/vsw" 0.311832
+cap "dac_cell2_0/XR3/a_n199_n3262#" "dac_cell1_0/vbias" 0.407598
+cap "dac_cell1_0/vbias" "dac_cell1_0/w_n996_n116#" 3.34861
+cap "dac_cell1_0/vsw" "dac_cell1_0/vbias" -3.55082
+cap "dac_cell1_0/iout" "dac_cell1_0/vbias" -17.0718
+cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/vbias" 2.31099
+cap "dac_cell1_0/iout_n" "dac_cell1_0/vbias" -21.4963
+cap "dac_cell1_0/vsw" "dac_cell1_0/w_n996_n116#" -0.145076
+cap "dac_cell1_0/iout" "dac_cell1_0/w_n996_n116#" 56.9005
+cap "dac_cell1_0/iout_n" "dac_cell1_0/w_n996_n116#" 0.397181
+cap "dac_cell2_0/XR3/a_n199_n3262#" "dac_cell1_0/vbias" 0.332483
+cap "dac_cell1_0/iout" "dac_cell1_0/iout_n" 0.0242623
+cap "dac_cell1_0/iout" "dac_cell1_0/vsw" -75.5383
 cap "dac_cell1_0/iout" "dac_cell1_0/sourceM3M4" 20.9746
-cap "dac_cell1_0/vbias" "dac_cell1_0/vsw" -5.67809
-cap "dac_cell1_0/vbias" "dac_cell1_0/iout" -16.6914
-cap "dac_cell1_0/iout_n" "dac_cell1_0/iout" 0.0242623
-cap "dac_cell2_0/XR4/a_n199_n3262#" "dac_cell1_0/vbias" 0.407598
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vbias" 6.11626
-cap "dac_cell1_0/vbias" "dac_cell1_0/sourceM3M4" 2.95959
-cap "dac_cell1_0/iout" "dac_cell1_0/w_n996_n116#" 0.0233395
-cap "dac_cell1_0/vbias" "dac_cell1_0/iout_n" -42.4093
-cap "dac_cell1_0/iout" "dac_cell1_0/iout_n" 0.00461128
-cap "dac_cell2_0/XR4/a_n199_n3262#" "dac_cell1_0/vbias" 0.0273673
-cap "dac_cell1_0/iout_n" "dac_cell1_0/w_n996_n116#" 0.923167
-cap "dac_cell1_0/vbias" "dac_cell1_0/w_n996_n116#" 0.539426
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "vsup" 0.276892
-cap "vsup" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 1.11022e-16
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 99.9957
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 0.116774
-cap "vsup" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 0.183291
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" -2.05109
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 0.12732
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" -2.0458
-cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 253.1
-cap "dac_cell1_0/iref" "dac_cell1_0/w_n996_n116#" 108.527
-cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/iref" 3.93231
-cap "dac_cell1_0/vbias" "dac_cell1_0/sourceM3M4" 0.424892
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" 7.49167
-cap "dac_cell1_0/iref" "dac_cell1_0/vsw" 3.91313
-cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/vsw" 11.6089
-cap "dac_cell1_0/iref" "dac_cell1_0/w_n996_n116#" 117.448
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/iout" 3.72584
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vbias" 0.16086
-cap "dac_cell1_0/vbias" "dac_cell1_0/iout" 2.12249
-cap "dac_cell1_0/iref" "dac_cell1_0/w_n996_n116#" 0.446418
-cap "dac_cell1_0/vsw" "dac_cell1_0/sourceM3M4" 9.60753
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" 0.00882775
-cap "dac_cell1_0/vsw" "dac_cell1_0/vbias" 0.59971
-cap "dac_cell1_0/iref" "dac_cell1_0/vsw" 0.368432
+cap "dac_cell2_0/vgnd" "dac_cell1_0/iout_n" 0.373058
+cap "dac_cell1_0/iout_n" "dac_cell1_0/w_n996_n116#" 0.529574
+cap "dac_cell2_0/vgnd" "dac_cell1_0/w_n996_n116#" 0.0233289
+cap "dac_cell1_0/iout_n" "dac_cell1_0/vbias" -21.4963
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 13.2725
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "vsup" 0.932895
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" 0.116774
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" 195.058
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" -4.35716
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 33.6784
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" 0.215988
+cap "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" 243.937
+cap "esd_structure_1/pad" "esd_structure_1/vgnd" 53.0196
+cap "esd_structure_1/vgnd" "esd_structure_1/vsup" 33.8325
+cap "esd_structure_1/pad" "esd_structure_1/vsup" 36.2302
+cap "esd_structure_1/pad" "esd_structure_1/vsup" 9.09495e-13
+cap "esd_structure_1/pad" "esd_structure_1/vgnd" 0.104434
+cap "esd_structure_1/gate" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 6.73806
+cap "esd_structure_1/gate" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_1092_n1000#" 4.50989
+cap "esd_structure_1/gate" "esd_structure_1/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 101.367
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_1/gate" 22.135
+cap "m1_n16262_8954#" "dac_cell1_0/XM1/w_n358_n397#" 0.443468
+cap "dac_cell1_0/XM1/w_n358_n397#" "dac_cell1_0/iref" 2.15902
+cap "dac_cell1_0/vsw" "dac_cell1_0/w_n996_n116#" 13.7191
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/iref" 139.79
+cap "dac_cell1_0/vbias" "dac_cell1_0/vsw" 0.361567
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vbias" 0.230984
+cap "dac_cell1_0/iref" "dac_cell1_0/vsw" 3.43446
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/iref" 196.767
+cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/vbias" 0.424892
+cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/iref" 36.7977
+cap "dac_cell1_0/iout" "dac_cell1_0/vsw" 0.935646
+cap "dac_cell1_0/sourceM2" "dac_cell1_0/iref" 1.583
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" 41.6459
+cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/vsw" 38.3118
+cap "dac_cell1_0/vbias" "dac_cell1_0/iout" 2.62614
+cap "dac_cell1_0/vsw" "dac_cell1_0/iout" 0.46724
+cap "dac_cell1_0/iout_n" "dac_cell1_0/vbias" 0.29162
+cap "dac_cell1_0/iout" "dac_cell1_0/sourceM3M4" 19.6889
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/iout" 4.17719
+cap "dac_cell1_0/vsw" "dac_cell1_0/vbias" -1.88913
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vbias" 3.23282
+cap "dac_cell1_0/vbias" "dac_cell1_0/sourceM3M4" 3.53322
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vsw" 0.343005
+cap "dac_cell1_0/vsw" "dac_cell1_0/sourceM3M4" 0.0254581
 cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/sourceM3M4" -0.00504948
-cap "dac_cell1_0/sourceM3M4" "dac_cell1_0/iout" 19.6889
-cap "dac_cell1_0/vbias" "dac_cell1_0/sourceM3M4" 2.88462
-cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/vbias" -0.00412811
-cap "dac_cell1_0/iref" "dac_cell1_0/sourceM2" 2.49734
-cap "dac_cell1_0/sourceM2" "dac_cell1_0/iref" 2.3077
+cap "dac_cell1_0/w_n996_n116#" "dac_cell1_0/iout_n" -0.00358813
+cap "dac_cell1_0/vbias" "dac_cell1_0/iout_n" 0.29162
+cap "esd_structure_1/vgnd" "esd_structure_1/pad" -11.1441
+cap "esd_structure_1/vgnd" "esd_structure_1/vsup" -6.51908
+cap "esd_structure_1/pad" "esd_structure_1/vgnd" 26.4826
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" "esd_structure_1/gate" 13.587
+cap "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n100_n1000#" "esd_structure_1/gate" -1.42109e-14
+cap "esd_structure_1/gate" "esd_structure_1/sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/a_n1634_n1342#" 64.6801
+cap "esd_structure_1/gate" "esd_structure_1/sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/w_n183_n183#" 6.37023
+cap "dac_cell1_0/vsup" "dac_cell1_0/iref" 2.15902
 cap "dac_cell1_0/XR4/a_n199_n6362#" "dac_cell1_0/iref" 0.122643
-cap "vgnd" "dac_cell1_0/XR1/a_n199_n6362#" 40.603
-cap "vgnd" "dac_cell1_0/XR1/a_n199_n6362#" 25.8385
-cap "dac_cell1_0/parR" "dac_cell1_0/vgnd" 31.5906
-cap "dac_cell1_0/parR" "dac_cell1_0/vgnd" 64.4894
-cap "dac_cell1_0/vsup" "vsup" 0.947244
-cap "dac_cell1_0/vsup" "dac_cell1_0/XR4/a_n199_n6362#" 0.00413548
-cap "vsup" "dac_cell1_0/XR4/a_n199_n6362#" 0.405872
-cap "vsup" "dac_cell1_0/vsup" 1.0249
-cap "dac_cell1_0/vsup" "dac_cell1_0/XR4/a_n199_n6362#" 0.0873842
-cap "vsup" "dac_cell1_0/parR" 0.426676
-cap "dac_cell1_0/vgnd" "vsup" 0.405872
-cap "dac_cell1_0/vgnd" "dac_cell1_0/parR" 72.6829
-cap "dac_cell1_0/parR" "vsup" 0.306923
-cap "vsup" "dac_cell1_0/vsup" 2.23441
-cap "vsup" "dac_cell1_0/XR4/a_n199_n6362#" 1.66172
-cap "dac_cell1_0/vsup" "vsup" 1.42601
-cap "dac_cell1_0/XR4/a_n199_n6362#" "vsup" 2.05177
-cap "dac_cell1_0/XR4/a_n199_n6362#" "vsup" 2.05177
-cap "dac_cell1_0/XR2/a_n199_n6362#" "vsup" 2.05177
-cap "vsup" "dac_cell1_0/XR2/a_n199_n6362#" 2.05177
-cap "dac_cell1_0/XR2/a_n199_n6362#" "vsup" 2.05177
-cap "dac_cell1_0/XR2/a_n199_n6362#" "vsup" 2.05177
-cap "vsup" "dac_cell1_0/XR2/a_n199_n6362#" 2.05177
-cap "dac_cell1_0/parR" "vsup" 0.601695
-cap "dac_cell1_0/vgnd" "vsup" 1.92165
-cap "dac_cell1_0/vgnd" "vsup" 0.354898
-cap "dac_cell1_0/parR" "vsup" 0.444064
-merge "dac_cell1_0/vgnd" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" -46661.5 0 0 0 0 0 0 0 0 0 0 -1343300 -4680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1639152 -21696 -9606032 -54766 -20980733 -60330 -1674586 -5903 0 0 0 0 0 0
+cap "dac_cell1_0/iref" "dac_cell1_0/sourceM2" 4.07772
+cap "dac_cell1_0/vsup" "dac_cell1_0/iref" 41.2514
+cap "dac_cell1_0/sourceM2" "dac_cell1_0/iref" 1.95115
+cap "dac_cell1_0/vsw" "dac_cell1_0/iref" 0.16789
+cap "dac_cell1_0/XR1/a_n199_n6362#" "vgnd" 8.8504
+cap "dac_cell1_0/XR1/a_n199_n6362#" "vgnd" 38.2491
+cap "dac_cell1_0/parR" "dac_cell1_0/vgnd" 75.2717
+cap "esd_structure_1/vgnd" "vsup" 5.75378
+cap "esd_structure_1/vgnd" "esd_structure_1/pad" 16.8673
+cap "vsup" "esd_structure_1/vgnd" 29.9397
+cap "esd_structure_1/pad" "vsup" 0.970196
+cap "esd_structure_1/pad" "esd_structure_1/vgnd" 19.5472
+cap "esd_structure_1/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1468_n1136#" "vsup" 29.777
+cap "vsup" "esd_structure_1/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1332_n1000#" 1.11588
+cap "esd_structure_1/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n236_n1136#" "vsup" 7.07885
+cap "dac_cell1_0/XR4/a_n199_n6362#" "dac_cell1_0/vsup" 0.00413548
+cap "dac_cell1_0/vsup" "vsup" 0.200858
+cap "dac_cell1_0/vsup" "vsup" 0.957923
+cap "dac_cell1_0/XR4/a_n199_n6362#" "dac_cell1_0/vsup" 0.0873842
+cap "dac_cell1_0/vgnd" "dac_cell1_0/parR" 92.9209
+cap "vsup" "esd_structure_1/vgnd" 5.53957
+cap "esd_structure_1/vgnd" "vsup" 25.4842
+cap "vsup" "esd_structure_1/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n1468_n1136#" 25.4842
+cap "vsup" "esd_structure_1/sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/a_n236_n1136#" 6.77151
+cap "vsup" "dac_cell1_0/vsup" 0.959008
+cap "dac_cell1_0/vsup" "vsup" 1.77628
+cap "vsup" "dac_cell1_0/XR4/a_n199_n6362#" 0.75256
+cap "vsup" "dac_cell1_0/XR4/a_n69_5800#" 1.73849
+cap "vsup" "dac_cell1_0/XR4/a_n199_n6362#" 1.8309
+cap "vsup" "dac_cell1_0/XR4/a_n199_n6362#" 2.05177
+cap "dac_cell1_0/XR1/a_n199_n6362#" "vsup" 2.05177
+cap "vsup" "dac_cell1_0/XR1/a_n199_n6362#" 2.05177
+cap "vsup" "dac_cell1_0/XR1/a_n199_n6362#" 2.05177
+cap "dac_cell1_0/XR1/a_n199_n6362#" "vsup" 2.05177
+cap "vsup" "dac_cell1_0/XR1/a_n199_n6362#" 2.05177
+cap "dac_cell1_0/vgnd" "vsup" 2.05177
+cap "dac_cell1_0/vgnd" "vsup" 2.16655
+cap "dac_cell1_0/vgnd" "dac_cell1_0/parR" 0.570379
+cap "dac_cell1_0/parR" "vsup" 1.77936
+merge "dac_cell1_0/vgnd" "esd_structure_1/vgnd" -55855.2 0 0 0 0 0 0 0 0 0 0 -1114540 -3006 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1395272 -19992 -9891493 -50677 -23660847 -83379 -656346 -3404 0 0 0 0 0 0
+merge "esd_structure_1/vgnd" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#"
 merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n165_n982#" "dac_cell1_0/iout"
 merge "dac_cell1_0/iout" "dac_cell1_0/VSUBS"
 merge "dac_cell1_0/VSUBS" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0/a_n165_n982#"
 merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0/a_n165_n982#" "XR3/a_n165_n982#"
 merge "XR3/a_n165_n982#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n165_n982#"
-merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n165_n982#" "dac_cell2_0/vgnd"
-merge "dac_cell2_0/vgnd" "dac_cell2_0/iout"
+merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n165_n982#" "esd_structure_1/VSUBS"
+merge "esd_structure_1/VSUBS" "dac_cell2_0/vgnd"
+merge "dac_cell2_0/vgnd" "esd_structure_2/vgnd"
+merge "esd_structure_2/vgnd" "dac_cell2_0/iout"
 merge "dac_cell2_0/iout" "dac_cell2_0/VSUBS"
-merge "dac_cell2_0/VSUBS" "miel21_opamp_0/ground"
+merge "dac_cell2_0/VSUBS" "esd_structure_2/VSUBS"
+merge "esd_structure_2/VSUBS" "esd_structure_0/vgnd"
+merge "esd_structure_0/vgnd" "miel21_opamp_0/ground"
 merge "miel21_opamp_0/ground" "dac_cell3_0/vgnd"
-merge "dac_cell3_0/vgnd" "dac_cell3_0/iout"
+merge "dac_cell3_0/vgnd" "esd_structure_0/VSUBS"
+merge "esd_structure_0/VSUBS" "dac_cell3_0/iout"
 merge "dac_cell3_0/iout" "dac_cell3_0/VSUBS"
-merge "dac_cell3_0/VSUBS" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#"
+merge "dac_cell3_0/VSUBS" "esd_structure_4/vgnd"
+merge "esd_structure_4/vgnd" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#"
 merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n415_n687#" "XR2/a_n415_n687#"
 merge "XR2/a_n415_n687#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n415_n687#"
 merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n415_n687#" "dac_cell4_0/vgnd"
-merge "dac_cell4_0/vgnd" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n415_n687#"
-merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n415_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_0/a_n703_n687#"
-merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_0/a_n703_n687#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#"
+merge "dac_cell4_0/vgnd" "esd_structure_4/VSUBS"
+merge "esd_structure_4/VSUBS" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n415_n687#"
+merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n415_n687#" "esd_structure_3/vgnd"
+merge "esd_structure_3/vgnd" "esd_structure_3/VSUBS"
+merge "esd_structure_3/VSUBS" "sky130_fd_pr__res_high_po_5p73_6QQPRG_0/a_n703_n687#"
+merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_0/a_n703_n687#" "esd_structure_5/vgnd"
+merge "esd_structure_5/vgnd" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#"
 merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n703_n687#" "dac_cell4_0/iout"
 merge "dac_cell4_0/iout" "dac_cell4_0/VSUBS"
 merge "dac_cell4_0/VSUBS" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_125#"
 merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#"
-merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" "XR1/a_n573_125#"
+merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n703_n687#" "esd_structure_5/VSUBS"
+merge "esd_structure_5/VSUBS" "XR1/a_n573_125#"
 merge "XR1/a_n573_125#" "XR1/a_n703_n687#"
 merge "XR1/a_n703_n687#" "vgnd"
-merge "dac_cell1_0/iout_n" "dac_cell2_0/iout_n" -20911.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17436178 -50448 0 0 0 0 0 0 0 0 0 0
-merge "dac_cell2_0/iout_n" "dac_cell3_0/iout_n"
-merge "dac_cell3_0/iout_n" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_125#"
-merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#"
-merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "dac_cell4_0/iout_n"
-merge "dac_cell4_0/iout_n" "m1_n734_n28#"
 merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_n557#" "XR2/a_n285_n557#" -1970.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -919432 -7768 0 0 0 0 0 0 0 0 0 0
-merge "XR2/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_n557#"
-merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_n557#"
-merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_n557#" "m1_8170_n12070#"
-merge "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n35_420#" -13632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9524840 -37216 0 0 0 0 0 0 0 0 0 0
+merge "XR2/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_n557#"
+merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_n557#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_n557#"
+merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_n557#" "m1_8170_n12070#"
+merge "dac_cell1_0/iout_n" "dac_cell2_0/iout_n" -25128.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22382262 -56040 0 0 0 0 0 0 0 0 0 0
+merge "dac_cell2_0/iout_n" "dac_cell3_0/iout_n"
+merge "dac_cell3_0/iout_n" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#"
+merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_2/a_n285_125#" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_125#"
+merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0/a_n285_125#" "dac_cell4_0/iout_n"
+merge "dac_cell4_0/iout_n" "m1_n734_n28#"
+merge "XR3/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n35_420#" -17118.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11990808 -46126 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n35_420#" "miel21_opamp_0/inPos"
 merge "miel21_opamp_0/inPos" "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#"
 merge "sky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1/a_n285_125#" "XR2/a_n285_125#"
 merge "XR2/a_n285_125#" "op_amp_in"
-merge "dac_cell1_0/iref" "dac_cell2_0/iref" -10917.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2933026 -20468 -1181568 -7370 -1234334 -11118 0 0 0 0 0 0
+merge "esd_structure_2/pad" "in2" -503.189 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -55104 -940 0 0 0 0 0 0 0 0 0 0
+merge "dac_cell1_0/iref" "dac_cell2_0/iref" -9411.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2266634 -17030 -306700 -3828 -1270824 -11204 0 0 0 0 0 0
 merge "dac_cell2_0/iref" "m2_n4628_1062#"
 merge "m2_n4628_1062#" "dac_cell3_0/iref"
 merge "dac_cell3_0/iref" "dac_cell4_0/iref"
 merge "dac_cell4_0/iref" "sky130_fd_pr__res_high_po_5p73_6QQPRG_0/a_n573_125#"
 merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_0/a_n573_125#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#"
 merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_125#" "in_iref"
-merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0/a_n35_420#" -7867.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3776180 -15968 -529660 -3448 -1607664 -4079 0 0 0 0 0 0
+merge "esd_structure_1/gate" "dac_cell1_0/vsw" -3295.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -103900 -1824 0 0 -3237724 -8895 0 0 0 0 0 0
+merge "dac_cell1_0/vsw" "m1_n16262_8954#"
+merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_420#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0/a_n35_420#" -8695.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4158416 -16604 -911260 -4084 -1680316 -7596 0 0 0 0 0 0
 merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0/a_n35_420#" "miel21_opamp_0/outSingle"
 merge "miel21_opamp_0/outSingle" "out"
 merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_2/a_n35_n852#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0/a_n35_n852#" -893.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -83750 -3750 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_0/a_n35_n852#" "XR3/a_n35_n852#"
 merge "XR3/a_n35_n852#" "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n35_n852#"
 merge "sky130_fd_pr__res_xhigh_po_0p35_PZAK34_1/a_n35_n852#" "m1_15440_5366#"
-merge "dac_cell1_0/vsup" "dac_cell2_0/vsup" -22810.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4185658 -18604 -13079631 -54631 -837322 -4354 0 0 0 0 0 0
+merge "esd_structure_0/gate" "dac_cell3_0/vsw" -5021.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2376788 -6351 0 0 -2550364 -9081 0 0 0 0 0 0
+merge "dac_cell3_0/vsw" "m1_n16240_n2458#"
+merge "esd_structure_5/pad" "vbias07" -817.282 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -37632 -784 0 0 0 0 0 0 0 0 0 0
+merge "dac_cell1_0/vsup" "esd_structure_1/vsup" -42663.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3230138 -15108 -28749211 -130040 -837322 -4354 0 0 0 0 0 0
+merge "esd_structure_1/vsup" "dac_cell2_0/vsup"
 merge "dac_cell2_0/vsup" "miel21_opamp_0/power"
-merge "miel21_opamp_0/power" "dac_cell3_0/vsup"
-merge "dac_cell3_0/vsup" "dac_cell4_0/vsup"
-merge "dac_cell4_0/vsup" "vsup"
-merge "dac_cell1_0/vsw" "in1" -1642.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -93820 -1368 0 0 -1351942 -5256 0 0 0 0 0 0
-merge "dac_cell2_0/vsw" "in2" -1550.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -87540 -1292 -44556 -662 -1843132 -5466 0 0 0 0 0 0
-merge "dac_cell1_0/vbias" "dac_cell2_0/vbias" -19221.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6072554 -33996 -12389412 -32418 -1382346 -3597 0 0 0 0 0 0
+merge "miel21_opamp_0/power" "esd_structure_2/vsup"
+merge "esd_structure_2/vsup" "dac_cell3_0/vsup"
+merge "dac_cell3_0/vsup" "esd_structure_0/vsup"
+merge "esd_structure_0/vsup" "dac_cell4_0/vsup"
+merge "dac_cell4_0/vsup" "esd_structure_3/vsup"
+merge "esd_structure_3/vsup" "esd_structure_4/vsup"
+merge "esd_structure_4/vsup" "esd_structure_5/vsup"
+merge "esd_structure_5/vsup" "vsup"
+merge "esd_structure_1/pad" "in1" -451.205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52416 -916 0 0 0 0 0 0 0 0 0 0
+merge "dac_cell1_0/vbias" "dac_cell2_0/vbias" -27063.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -241680 -1396 -13771738 -50077 -13052448 -33066 0 0 0 0 0 0 0 0
 merge "dac_cell2_0/vbias" "dac_cell3_0/vbias"
-merge "dac_cell3_0/vbias" "dac_cell4_0/vbias"
-merge "dac_cell4_0/vbias" "vbias07"
-merge "dac_cell3_0/vsw" "in3" -2019.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90536 -1332 0 0 -2214834 -6124 0 0 0 0 0 0
-merge "dac_cell4_0/vsw" "in4" -349.168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90612 -1340 0 0 0 0 0 0 0 0 0 0
+merge "dac_cell3_0/vbias" "esd_structure_5/gate"
+merge "esd_structure_5/gate" "dac_cell4_0/vbias"
+merge "dac_cell4_0/vbias" "vbias_v"
+merge "esd_structure_4/gate" "dac_cell4_0/vsw" -13295.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -99212 -1784 0 0 -21624867 -39016 0 0 0 0 0 0
+merge "dac_cell4_0/vsw" "m1_n16204_n8150#"
+merge "esd_structure_0/pad" "in3" -602.533 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56448 -952 0 0 0 0 0 0 0 0 0 0
+merge "esd_structure_4/pad" "in4" -541.609 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52416 -916 0 0 0 0 0 0 0 0 0 0
+merge "miel21_opamp_0/inNeg" "esd_structure_3/gate" -6575.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -218992 -2920 0 0 -8788284 -13968 0 0 0 0 0 0
+merge "esd_structure_3/gate" "m1_8656_n6082#"
+merge "esd_structure_2/gate" "dac_cell2_0/vsw" -2144.72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -91324 -1680 0 0 -1987278 -6157 0 0 0 0 0 0
+merge "dac_cell2_0/vsw" "m1_n16176_3182#"
 merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_0/a_n573_n557#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" -3269.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1860950 -12372 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_1/a_n573_n557#" "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#"
 merge "sky130_fd_pr__res_high_po_5p73_6QQPRG_2/a_n573_n557#" "XR1/a_n573_n557#"
 merge "XR1/a_n573_n557#" "m1_n10096_n18392#"
-merge "miel21_opamp_0/inNeg" "vbias18" -664.624 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -207640 -2444 0 0 0 0 0 0 0 0 0 0
+merge "esd_structure_3/pad" "vbias18" -160.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16576 -596 0 0 0 0 0 0 0 0 0 0

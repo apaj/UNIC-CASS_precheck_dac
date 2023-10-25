@@ -56,6 +56,20 @@ Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__res_high_po and Circuit 2 cell sky130_fd_pr__res_high_po are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po       |Circuit 2: sky130_fd_pr__res_high_po       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po and sky130_fd_pr__res_high_po are equivalent.
+
 Circuit 1 cell sky130_fd_pr__res_high_po_5p73 and Circuit 2 cell sky130_fd_pr__res_high_po_5p73 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__res_high_po_5p73 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__res_high_po_5p73 is a placeholder, treated as a black box.
@@ -264,13 +278,20 @@ iref                                       |iref
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes dac_cell2 and dac_cell2 are equivalent.
+Flattening unmatched subcell esd_cell in circuit dac_top_cell (0)(6 instances)
 Flattening unmatched subcell sky130_fd_pr__res_high_po_5p73_6QQPRG in circuit dac_top_cell (1)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_5DPYAB in circuit dac_top_cell (1)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_PZAK34 in circuit dac_top_cell (1)(4 instances)
+Flattening unmatched subcell esd_structure in circuit dac_top_cell (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit dac_top_cell (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_JFN4DV in circuit dac_top_cell (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_11v0_2UARL4 in circuit dac_top_cell (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_11v0_PWJNKD in circuit dac_top_cell (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_05v5_K4SERG in circuit dac_top_cell (1)(6 instances)
 
-Class dac_top_cell (0):  Merged 6 parallel devices.
+Class dac_top_cell (0):  Merged 54 parallel devices.
 Class dac_top_cell (0):  Merged 3 series devices.
-Class dac_top_cell (1):  Merged 6 parallel devices.
+Class dac_top_cell (1):  Merged 54 parallel devices.
 Class dac_top_cell (1):  Merged 3 series devices.
 Subcircuit summary:
 Circuit 1: dac_top_cell                    |Circuit 2: dac_top_cell                    
@@ -283,21 +304,122 @@ dac_cell1 (1)                              |dac_cell1 (1)
 sky130_fd_pr__res_xhigh_po_2p85 (4->1)     |sky130_fd_pr__res_xhigh_po_2p85 (4->1)     
 sky130_fd_pr__res_xhigh_po_0p35 (4->1)     |sky130_fd_pr__res_xhigh_po_0p35 (4->1)     
 sky130_fd_pr__res_high_po_5p73 (4->1)      |sky130_fd_pr__res_high_po_5p73 (4->1)      
-Number of devices: 8                       |Number of devices: 8                       
-Number of nets: 12                         |Number of nets: 12                         
+sky130_fd_pr__diode_pd2nw_11v0 (30->6)     |sky130_fd_pr__diode_pd2nw_11v0 (30->6)     
+sky130_fd_pr__diode_pd2nw_05v5 (6)         |sky130_fd_pr__diode_pd2nw_05v5 (6)         
+sky130_fd_pr__diode_pw2nd_05v5 (6)         |sky130_fd_pr__diode_pw2nd_05v5 (6)         
+sky130_fd_pr__res_high_po (6)              |sky130_fd_pr__res_high_po (6)              
+sky130_fd_pr__diode_pw2nd_11v0 (30->6)     |sky130_fd_pr__diode_pw2nd_11v0 (30->6)     
+Number of devices: 38                      |Number of devices: 38                      
+Number of nets: 18                         |Number of nets: 18                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+Netlists match uniquely with property errors.
+esd_cell:10/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_5//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:10/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_5//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:8/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_0//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:8/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_0//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:6/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_1//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:6/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_1//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:7/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_2//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:7/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_2//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:11/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_3//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:11/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_3//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:9/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_4//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:9/sky130_fd_pr__diode_pw2nd_11v0:8 vs. esd_structure_4//sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:11/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_3//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:11/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_3//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:9/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_4//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:9/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_4//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:8/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_0//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:8/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_0//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:7/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_2//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:7/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_2//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:6/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_1//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:6/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_1//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:10/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_5//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:10/sky130_fd_pr__diode_pw2nd_05v5:4 vs. esd_structure_5//sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:11/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_3//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:11/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_3//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:9/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_4//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:9/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_4//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:8/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_0//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:8/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_0//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:7/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_2//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:7/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_2//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:6/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_1//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:6/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_1//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:10/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_5//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+ area circuit1: 2.03e+17   circuit2: 0.203   (delta=200%, cutoff=2%)
+esd_cell:10/sky130_fd_pr__diode_pd2nw_05v5:3 vs. esd_structure_5//sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:10/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_5//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:10/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_5//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:8/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_0//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:8/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_0//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:6/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_1//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:6/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_1//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:7/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_2//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:7/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_2//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:11/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_3//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:11/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_3//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+esd_cell:9/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_4//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+ area circuit1: 1e+19   circuit2: 10   (delta=200%, cutoff=2%)
+esd_cell:9/sky130_fd_pr__diode_pd2nw_11v0:1 vs. esd_structure_4//sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
 
 Subcircuit pins:
 Circuit 1: dac_top_cell                    |Circuit 2: dac_top_cell                    
 -------------------------------------------|-------------------------------------------
-out                                        |out                                        
-vbias07                                    |vbias07                                    
-in3                                        |in3                                        
-in1                                        |in1                                        
 vbias18                                    |vbias18                                    
 in4                                        |in4                                        
+in3                                        |in3                                        
 in2                                        |in2                                        
+in1                                        |in1                                        
+vbias07                                    |vbias07                                    
+out                                        |out                                        
 vgnd                                       |vgnd                                       
 vsup                                       |vsup                                       
 ---------------------------------------------------------------------------------------
@@ -1625,14 +1747,14 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: user_analog_project_wrapper     |Circuit 2: user_analog_project_wrapper     
 -------------------------------------------|-------------------------------------------
-io_analog[7]                               |io_analog[7]                               
 io_analog[3]                               |io_analog[3]                               
+io_analog[7]                               |io_analog[7]                               
 io_analog[4]                               |io_analog[4]                               
-io_analog[2]                               |io_analog[2]                               
 io_analog[1]                               |io_analog[1]                               
 io_analog[0]                               |io_analog[0]                               
-io_analog[6]                               |io_analog[6]                               
 io_analog[5]                               |io_analog[5]                               
+io_analog[6]                               |io_analog[6]                               
+io_analog[2]                               |io_analog[2]                               
 vssa1                                      |vssa1                                      
 vdda1                                      |vdda1                                      
 vdda2                                      |vdda2                                      
@@ -2294,3 +2416,6 @@ Device classes user_analog_project_wrapper and user_analog_project_wrapper are e
 
 Final result: Circuits match uniquely.
 .
+
+The following cells had property errors:
+ dac_top_cell

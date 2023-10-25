@@ -145,23 +145,29 @@ x1 io_analog[0] io_analog[1] io_analog[2] io_analog[3] io_analog[4] io_analog[5]
 *.iopin vsup
 *.iopin out
 *.iopin vbias18
-x2 vsup in_iref vgnd in2 vbias07 net1 vgnd dac_cell2
-x3 vsup vgnd in_iref in3 vbias07 net1 vgnd dac_cell3
-x4 vsup in_iref vgnd in4 vbias07 net1 vgnd dac_cell4
-x5 vsup out op_amp_in vbias18 vgnd miel21_opamp
-x1 vsup in_iref vgnd in1 vbias07 net1 vgnd dac_cell1
-XR1 net2 net1 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
-XR2 op_amp_in net2 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
-XR4 net2 net1 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
-XR3 op_amp_in net2 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
-XR5 net3 op_amp_in vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
-XR6 out net3 vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
-XR7 net3 op_amp_in vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
-XR8 out net3 vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
-XR9 net4 in_iref vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
-XR10 net4 in_iref vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
-XR11 vgnd net4 vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
-XR12 vgnd net4 vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+x2 vsup in_iref vgnd net2 vbias_v net5 vgnd dac_cell2
+x3 vsup vgnd in_iref net3 vbias_v net5 vgnd dac_cell3
+x4 vsup in_iref vgnd net4 vbias_v net5 vgnd dac_cell4
+x5 vsup out op_amp_in net9 vgnd miel21_opamp
+x1 vsup in_iref vgnd net1 vbias_v net5 vgnd dac_cell1
+XR1 net6 net5 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR2 op_amp_in net6 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR4 net6 net5 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR3 op_amp_in net6 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR5 net7 op_amp_in vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR6 out net7 vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR7 net7 op_amp_in vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR8 out net7 vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR9 net8 in_iref vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+XR10 net8 in_iref vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+XR11 vgnd net8 vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+XR12 vgnd net8 vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+x6 vsup in1 net1 vgnd esd_cell
+x7 vsup in2 net2 vgnd esd_cell
+x8 vsup in3 net3 vgnd esd_cell
+x9 vsup in4 net4 vgnd esd_cell
+x10 vsup vbias07 vbias_v vgnd esd_cell
+x11 vsup vbias18 net9 vgnd esd_cell
 .ends
 
 
@@ -322,6 +328,30 @@ XR1 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
 XR2 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
 XR3 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
 XR4 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /opt/uniccass/dev/esd_cell/tb/esd_cell.sym # of pins=4
+* sym_path: /opt/uniccass/dev/esd_cell/tb/esd_cell.sym
+* sch_path: /opt/uniccass/dev/esd_cell/tb/esd_cell.sch
+.subckt esd_cell  vsup pad gate vgnd
+*.iopin vsup
+*.iopin pad
+*.iopin vgnd
+*.iopin gate
+D1 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D3 gate vsup sky130_fd_pr__diode_pd2nw_05v5 area=0.203e+18
+D4 vgnd gate sky130_fd_pr__diode_pw2nd_05v5 area=0.203e+18
+XR1 gate pad vgnd sky130_fd_pr__res_high_po W=0.35 L=10 mult=1 m=1
+D8 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D2 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D5 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D6 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D7 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D9 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D10 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D11 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D12 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
 .ends
 
 ** flattened .save nodes

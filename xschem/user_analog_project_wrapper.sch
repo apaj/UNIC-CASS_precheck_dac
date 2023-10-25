@@ -51,7 +51,7 @@ C {devices/lab_pin.sym} 4040 -160 2 0 {name=l5 sig_type=std_logic lab=io_analog[
 C {devices/lab_pin.sym} 4040 -220 2 0 {name=l6 sig_type=std_logic lab=io_analog[2]}
 C {devices/lab_pin.sym} 4040 -120 2 0 {name=l7 sig_type=std_logic lab=io_analog[7]}
 C {devices/lab_pin.sym} 4040 -180 2 0 {name=l4 sig_type=std_logic lab=io_analog[4]}
-C {tb/dac_top_cell.sym} 3650 -180 0 0 {name=x1}
 C {devices/lab_pin.sym} 4040 -260 2 0 {name=l1 sig_type=std_logic lab=io_analog[0]}
 C {devices/lab_pin.sym} 4040 -240 2 0 {name=l8 sig_type=std_logic lab=io_analog[1]}
 C {devices/lab_pin.sym} 4040 -200 2 0 {name=l9 sig_type=std_logic lab=io_analog[3]}
+C {tb/dac_top_cell.sym} 3650 -180 0 0 {name=x1}

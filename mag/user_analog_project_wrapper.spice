@@ -163,6 +163,44 @@ XXM8 outSingle power outSingle outSingle outSingle outSingle power d2 d2 power p
 XXC1 outSingle d2 sky130_fd_pr__cap_mim_m3_1_C5B489
 .ends
 
+.subckt sky130_fd_pr__diode_pw2nd_05v5_FT76RJ a_n147_n147# a_n45_n45#
+D0 a_n147_n147# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 pj=1.8 area=0.203
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_JFN4DV a_n35_n1432# a_n35_1000# a_n165_n1562#
+X0 a_n35_1000# a_n35_n1432# a_n165_n1562# sky130_fd_pr__res_high_po w=0.35 l=10
+.ends
+
+.subckt sky130_fd_pr__diode_pw2nd_11v0_2UARL4 a_1132_n1000# a_516_n1000# a_n1332_n1000#
++ a_n100_n1000# a_n716_n1000# a_n1468_n1136# a_380_n1136# a_n852_n1136#
+D0 a_n1468_n1136# a_n716_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10
+D1 a_n1468_n1136# a_n1332_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10
+D2 a_n1468_n1136# a_n100_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10
+D3 a_n1468_n1136# a_1132_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10
+D4 a_n1468_n1136# a_516_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10
+.ends
+
+.subckt sky130_fd_pr__diode_pd2nw_11v0_PWJNKD a_n696_n1000# a_1092_n1000# a_n100_n1000#
++ a_n1292_n1000# w_n1490_n1198# a_496_n1000#
+D0 a_n1292_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10
+D1 a_1092_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10
+D2 a_n696_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10
+D3 a_n100_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10
+D4 a_496_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10
+.ends
+
+.subckt sky130_fd_pr__diode_pd2nw_05v5_K4SERG a_n45_n45# w_n183_n183#
+D0 a_n45_n45# w_n183_n183# sky130_fd_pr__diode_pd2nw_05v5 pj=1.8 area=0.203
+.ends
+
+.subckt esd_structure vsup pad gate vgnd
+Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 vgnd gate sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
+Xsky130_fd_pr__res_high_po_0p35_JFN4DV_0 pad gate vgnd sky130_fd_pr__res_high_po_0p35_JFN4DV
+Xsky130_fd_pr__diode_pw2nd_11v0_2UARL4_0 pad pad pad pad pad vgnd vgnd vgnd sky130_fd_pr__diode_pw2nd_11v0_2UARL4
+Xsky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0 pad pad pad pad vsup pad sky130_fd_pr__diode_pd2nw_11v0_PWJNKD
+Xsky130_fd_pr__diode_pd2nw_05v5_K4SERG_0 gate vsup sky130_fd_pr__diode_pd2nw_05v5_K4SERG
+.ends
+
 .subckt sky130_fd_pr__res_xhigh_po_0p69_C4MSH5 a_n69_630# a_n69_n1062# a_n199_n1192#
 X0 a_n69_630# a_n69_n1062# a_n199_n1192# sky130_fd_pr__res_xhigh_po_0p69 l=6.3
 .ends
@@ -213,18 +251,24 @@ XXM3 vsw iout vsup sourceM3M4 sky130_fd_pr__pfet_g5v0d10v5_FGK6VM
 XXM4 vbias iout_n vsup sourceM3M4 sky130_fd_pr__pfet_g5v0d10v5_FGK6VM
 .ends
 
-.subckt dac_top_cell in1 in2 in3 in4 vbias07 vgnd vsup out vbias18
-Xdac_cell3_0 vsup in_iref in3 vgnd dac_cell4_0/iout_n vbias07 vgnd dac_cell3
-Xsky130_fd_pr__res_high_po_5p73_6QQPRG_1 in_iref m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
+.subckt dac_top_cell in1 in3 in4 vbias07 vgnd vsup out vbias18 in2
+Xdac_cell3_0 vsup in_iref dac_cell3_0/vsw vgnd dac_cell4_0/iout_n vbias_v vgnd dac_cell3
 Xsky130_fd_pr__res_high_po_5p73_6QQPRG_0 in_iref m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
-Xdac_cell1_0 vsup in_iref in1 vgnd dac_cell4_0/iout_n vbias07 vgnd dac_cell1
+Xsky130_fd_pr__res_high_po_5p73_6QQPRG_1 in_iref m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
+Xdac_cell1_0 vsup in_iref dac_cell1_0/vsw vgnd dac_cell4_0/iout_n vbias_v vgnd dac_cell1
 Xsky130_fd_pr__res_high_po_5p73_6QQPRG_2 vgnd m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
 XXR1 vgnd m1_n10096_n18392# vgnd sky130_fd_pr__res_high_po_5p73_6QQPRG
 XXR2 vgnd op_amp_in m1_8170_n12070# sky130_fd_pr__res_xhigh_po_2p85_5DPYAB
 XXR3 vgnd m1_15440_5366# op_amp_in sky130_fd_pr__res_xhigh_po_0p35_PZAK34
-Xmiel21_opamp_0 op_amp_in vbias18 out vsup vgnd miel21_opamp
-Xdac_cell4_0 vsup in_iref in4 vgnd dac_cell4_0/iout_n vbias07 vgnd dac_cell4
-Xdac_cell2_0 vsup in_iref in2 vgnd dac_cell4_0/iout_n vbias07 vgnd dac_cell2
+Xmiel21_opamp_0 op_amp_in miel21_opamp_0/inNeg out vsup vgnd miel21_opamp
+Xesd_structure_0 vsup in3 dac_cell3_0/vsw vgnd esd_structure
+Xesd_structure_1 vsup in1 dac_cell1_0/vsw vgnd esd_structure
+Xdac_cell4_0 vsup in_iref dac_cell4_0/vsw vgnd dac_cell4_0/iout_n vbias_v vgnd dac_cell4
+Xesd_structure_2 vsup in2 dac_cell2_0/vsw vgnd esd_structure
+Xesd_structure_3 vsup vbias18 miel21_opamp_0/inNeg vgnd esd_structure
+Xesd_structure_4 vsup in4 dac_cell4_0/vsw vgnd esd_structure
+Xesd_structure_5 vsup vbias07 vbias_v vgnd esd_structure
+Xdac_cell2_0 vsup in_iref dac_cell2_0/vsw vgnd dac_cell4_0/iout_n vbias_v vgnd dac_cell2
 Xsky130_fd_pr__res_xhigh_po_2p85_5DPYAB_0 vgnd dac_cell4_0/iout_n m1_8170_n12070#
 + sky130_fd_pr__res_xhigh_po_2p85_5DPYAB
 Xsky130_fd_pr__res_xhigh_po_2p85_5DPYAB_1 vgnd op_amp_in m1_8170_n12070# sky130_fd_pr__res_xhigh_po_2p85_5DPYAB
@@ -235,11 +279,11 @@ Xsky130_fd_pr__res_xhigh_po_0p35_PZAK34_1 vgnd m1_15440_5366# op_amp_in sky130_f
 Xsky130_fd_pr__res_xhigh_po_0p35_PZAK34_2 vgnd m1_15440_5366# out sky130_fd_pr__res_xhigh_po_0p35_PZAK34
 .ends
 
-.subckt user_analog_proj_example dac_top_cell_0/vsup dac_top_cell_0/out dac_top_cell_0/in4
-+ dac_top_cell_0/in3 dac_top_cell_0/in2 dac_top_cell_0/in1 dac_top_cell_0/vbias07
-+ dac_top_cell_0/vbias18 VSUBS
-Xdac_top_cell_0 dac_top_cell_0/in1 dac_top_cell_0/in2 dac_top_cell_0/in3 dac_top_cell_0/in4
-+ dac_top_cell_0/vbias07 VSUBS dac_top_cell_0/vsup dac_top_cell_0/out dac_top_cell_0/vbias18
+.subckt user_analog_proj_example dac_top_cell_0/out dac_top_cell_0/vsup dac_top_cell_0/in4
++ dac_top_cell_0/in2 dac_top_cell_0/in1 dac_top_cell_0/vbias18 dac_top_cell_0/vbias07
++ dac_top_cell_0/in3 VSUBS
+Xdac_top_cell_0 dac_top_cell_0/in1 dac_top_cell_0/in3 dac_top_cell_0/in4 dac_top_cell_0/vbias07
++ VSUBS dac_top_cell_0/vsup dac_top_cell_0/out dac_top_cell_0/vbias18 dac_top_cell_0/in2
 + dac_top_cell
 .ends
 
@@ -250,7 +294,7 @@ Xdac_top_cell_0 dac_top_cell_0/in1 dac_top_cell_0/in2 dac_top_cell_0/in3 dac_top
 + gpio_noesd[11] gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] gpio_noesd[16]
 + gpio_noesd[17] gpio_noesd[1] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4] gpio_noesd[5]
 + gpio_noesd[6] gpio_noesd[7] gpio_noesd[8] gpio_noesd[9] io_analog[0] io_analog[10]
-+ io_analog[1] io_analog[2] io_analog[3] io_analog[7] io_analog[8] io_analog[9] io_analog[4]
++ io_analog[1] io_analog[2] io_analog[3] io_analog[4] io_analog[7] io_analog[8] io_analog[9]
 + io_analog[5] io_analog[6] io_clamp_high[0] io_clamp_high[1] io_clamp_high[2] io_clamp_low[0]
 + io_clamp_low[1] io_clamp_low[2] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
@@ -349,7 +393,7 @@ Xdac_top_cell_0 dac_top_cell_0/in1 dac_top_cell_0/in2 dac_top_cell_0/in3 dac_top
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-Xuser_analog_proj_example_0 io_analog[7] io_analog[3] io_analog[4] io_analog[2] io_analog[1]
-+ io_analog[0] io_analog[6] io_analog[5] vssa1 user_analog_proj_example
+Xuser_analog_proj_example_0 io_analog[3] io_analog[7] io_analog[4] io_analog[1] io_analog[0]
++ io_analog[5] io_analog[6] io_analog[2] vssa1 user_analog_proj_example
 .ends
 
