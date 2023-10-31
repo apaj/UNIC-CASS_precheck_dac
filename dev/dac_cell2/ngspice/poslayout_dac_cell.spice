@@ -1,0 +1,46 @@
+**.subckt tb_dac_cell
+.include ../layout/dac.spice
+
+
+V1 net1 GND 3.3
+V2 net2 GND 3
+V3 net3 GND 0.7
+V4 net6 net7 0
+V5 net5 net4 0
+R1 net4 GND 200 m=1
+R2 net7 GND 200 m=1
+x1 net1 net3 net5 net6 net2 net8 dac
+
+R4 net8 GND 80k m=1
+**** begin user architecture code
+
+
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+*** ANALYSIS TO DO
+
+.dc V2 0.1 3.3 0.1
+.save i(V4) i(V5)
+
+.control
+set wr_vecnames
+set wr_singlescale
+
+run
+******** results filename  ************ nodes to write
+wrdata dac_cell.res i(V4) i(V5)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  dac_cell.sym # of pins=7
+* sym_path: /home/dder/dac_cell/dac_cell.sym
+* sch_path: /home/dder/dac_cell/dac_cell.sch
+
+.GLOBAL GND
+** flattened .save nodes
+.save i(V4) i(V5)
+.end

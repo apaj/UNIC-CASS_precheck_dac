@@ -1,0 +1,31 @@
+**.subckt tb_esd_cell
+V1 net1 GND 3.3
+V2 vpad GND sin(0 20 1k 0 0 0)
+R1 vgate GND 1k m=1
+**** begin user architecture code
+
+
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+*** ANALYSIS TO DO
+
+.tran 0.1 5m 0.001m
+.save vpad vgate
+
+.control
+set wr_vecnames
+set wr_singlescale
+
+run
+******** results filename  ************ nodes to write
+wrdata $DEV_PATH/res/tb_esd_cell_tran_vol.res vpad vgate
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.save vpad vgate
+.end

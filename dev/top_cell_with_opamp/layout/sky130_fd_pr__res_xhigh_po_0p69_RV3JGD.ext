@@ -1,0 +1,17 @@
+timestamp 1697955996
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__res_xhigh_po l=l w=w
+parameters sky130_fd_pr__res_xhigh_po_5p73 l=l
+parameters sky130_fd_pr__res_xhigh_po_2p85 l=l
+parameters sky130_fd_pr__res_xhigh_po_1p41 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p69 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p35 l=l
+node "a_n69_n1732#" 113 804.522 -69 -1732 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119232 2280 49678 1078 0 0 0 0 0 0 0 0 0 0
+node "a_n69_n1300#" 37681 0 -69 -1300 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 358800 5476 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n69_1300#" 113 804.522 -69 1300 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119232 2280 49678 1078 0 0 0 0 0 0 0 0 0 0
+substrate "a_n199_n1862#" 0 0 -199 -1862 ppd 0 0 0 0 0 0 0 0 0 0 275672 16216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 275672 16216 0 0 0 0 0 0 0 0 0 0 0 0
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 -69 -1300 -68 -1299 l=2600 "a_n199_n1862#" "a_n69_n1300#" 0 0 "a_n69_1300#" 138 59616,1140 "a_n69_n1732#" 138 59616,1140

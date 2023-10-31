@@ -1,0 +1,21 @@
+.subckt esd_cell vsup pad vgnd gate
+*.iopin vsup
+*.iopin pad
+*.iopin vgnd
+*.iopin gate
+D1 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D3 gate vsup sky130_fd_pr__diode_pd2nw_05v5 area=0.203e+18
+D4 vgnd gate sky130_fd_pr__diode_pw2nd_05v5 area=0.203e+18
+XR1 gate pad vgnd sky130_fd_pr__res_high_po W=0.35 L=10 mult=1 m=1
+D8 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D2 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D5 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D6 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D7 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D9 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D10 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D11 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D12 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+.ends
+** flattened .save nodes
+.end

@@ -1,0 +1,82 @@
+magic
+tech sky130A
+timestamp 1697621409
+<< checkpaint >>
+rect 6398 4064 10086 4835
+rect 3520 3580 10086 4064
+rect -630 -330 10086 3580
+rect -630 -2160 730 -330
+rect -1010 -5296 5516 -2160
+rect 6930 -5296 13456 -2160
+rect -1100 -8965 13456 -5296
+rect -1100 -8979 7607 -8965
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+rect 0 -800 100 -700
+rect 0 -1000 100 -900
+rect 0 -1200 100 -1100
+rect 0 -1400 100 -1300
+rect 0 -1600 100 -1500
+use dac_cell1  dac_cell1_0 ../../layout_test/layout_cell1
+timestamp 1697617627
+transform 1 0 7346 0 1 872
+box -1951 -917 5496 1506
+use dac_cell2  dac_cell2_0 ../../layout_test/layout_cell2
+timestamp 1697617627
+transform 1 0 1365 0 1 -2245
+box -1645 20 2505 2670
+use dac_cell3  dac_cell3_0 ../../layout_test/layout_cell3
+timestamp 1697617627
+transform 1 0 1972 0 1 -7211
+box -2352 -1059 526 2075
+use dac_cell4  dac_cell4_0 ../../layout_test/layout_cell4
+timestamp 1697461267
+transform 1 0 4729 0 1 -7339
+box -139 -966 2289 2939
+use miel21_opamp  miel21_opamp_0 ../../opamp/layout
+timestamp 1697619488
+transform 1 0 9308 0 1 -7935
+box -1748 -400 3518 5145
+use miel21_opamp  miel21_opamp_1
+timestamp 1697619488
+transform 1 0 1368 0 1 -7935
+box -1748 -400 3518 5145
+use dac_cell1  x1
+timestamp 1697617627
+transform 1 0 1481 0 1 -7432
+box -1951 -917 5496 1506
+use dac_cell2  x2
+timestamp 1697617627
+transform 1 0 1645 0 1 280
+box -1645 20 2505 2670
+use dac_cell3  x3
+timestamp 1697617627
+transform 1 0 6502 0 1 1359
+box -2352 -1059 526 2075
+use dac_cell4  x4
+timestamp 1697461267
+transform 1 0 7167 0 1 1266
+box -139 -966 2289 2939
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 128 0 0 0 in1
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 128 0 0 0 in2
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 128 0 0 0 in3
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 128 0 0 0 in4
+port 3 nsew
+flabel metal1 0 -800 100 -700 0 FreeSans 128 0 0 0 vbias07
+port 4 nsew
+flabel metal1 0 -1000 100 -900 0 FreeSans 128 0 0 0 vgnd
+port 5 nsew
+flabel metal1 0 -1200 100 -1100 0 FreeSans 128 0 0 0 vsup
+port 6 nsew
+flabel metal1 0 -1400 100 -1300 0 FreeSans 128 0 0 0 out
+port 7 nsew
+flabel metal1 0 -1600 100 -1500 0 FreeSans 128 0 0 0 vbias18
+port 8 nsew
+<< end >>

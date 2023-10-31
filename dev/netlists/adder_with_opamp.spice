@@ -1,0 +1,104 @@
+**.subckt adder_with_opamp
+Vsup Vsup GND 3.3
+Rout vout op_amp_in 1k m=1
+x5 Vsup vout op_amp_in net3 GND miel21_opamp
+Vo1 net6 op_amp_in 0
+Rout1 vout GND 1k m=1
+V5 net3 GND 1.8
+R1 in1 net1 1k m=1
+R2 in2 net2 1k m=1
+R3 in3 net4 1k m=1
+R4 in4 net5 1k m=1
+V7 in1 GND pulse(0 1 20ms 1ns 1ns 10m 20m)
+V8 in2 GND pulse(0 20m 20ms 1ns 1ns 20m 40m)
+V9 in3 GND pulse(0 40m 20ms 1ns 1ns 40m 80m)
+V10 in4 GND pulse(0 80m 20ms 1ns 1ns 80m 100m)
+R5 net1 net6 10k m=1
+**** begin user architecture code
+
+
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+*** ANALYSIS TO DO
+
+.tran 0.1 500m 0.001m
+.save vout
+.save i(Vo1)
+.save i(V7)
+.save i(V8)
+.save i(V9)
+.save i(V10)
+.save vb
+.save op_amp_in
+.save in1
+.save in2
+.save in3
+.save in4
+
+
+.control
+set wr_vecnames
+set wr_singlescale
+
+run
+******** results filename  ************ nodes to write
+wrdata $DEV_PATH/res/adder_with_opamp_vout_tran_vol.res vout
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /opt/uniccass/dev/opamp/miel21_opamp.sym # of pins=5
+* sym_path: /opt/uniccass/dev/opamp/miel21_opamp.sym
+* sch_path: /opt/uniccass/dev/opamp/miel21_opamp.sch
+.subckt miel21_opamp  power outSingle inPos inNeg ground
+*.ipin inPos
+*.ipin inNeg
+*.opin outSingle
+*.iopin power
+*.iopin ground
+C1 d2 outSingle 290f m=1
+XM6 d1 d1 power power sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=21 m=21 
+XM7 d2 d1 power power sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=21 m=21 
+XM8 outSingle d2 power power sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=260 m=260 
+XM1 d1 inPos nsources ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=5 m=5 
+XM2 d2 inNeg nsources ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=5 m=5 
+XM3 bias bias ground ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10 
+XM4 nsources bias ground ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 outSingle bias ground ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=48 m=48 
+R1 power bias 52k m=1
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.save vout
+.save i(Vo1)
+.save i(V7)
+.save i(V8)
+.save i(V9)
+.save i(V10)
+.save vb
+.save op_amp_in
+.save in1
+.save in2
+.save in3
+.save in4
+.end

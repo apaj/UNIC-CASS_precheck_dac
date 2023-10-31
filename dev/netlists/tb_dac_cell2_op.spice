@@ -1,0 +1,66 @@
+**.subckt tb_dac_cell2_op
+V1 net1 GND 3.3
+V2 V2 GND 3
+V3 net2 GND 0.7
+V4 net7 net5 0
+V5 net4 net3 0
+R1 net3 GND 200 m=1
+R2 net5 GND 200 m=1
+R4 net6 GND 10k m=1
+x2 net1 net6 GND V2 net2 net7 net4 dac_cell2
+**** begin user architecture code
+
+
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+*** ANALYSIS TO DO
+
+.op
+.save V2 @m.x1.xm1.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm2.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm3.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm4.msky130_fd_pr__pfet_g5v0d10v5[id]
+
+
+.control
+set wr_vecnames
+set wr_singlescale
+
+run
+******** results filename  ************ nodes to write
+wrdata $DEV_PATH/res/dac_cell2_op.res V2 @m.x1.xm1.msky130_fd_pr__pfet_g5v0d10v5[id]
++ @m.x1.xm2.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm3.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm4.msky130_fd_pr__pfet_g5v0d10v5[id]
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  dac_cell2.sym # of pins=7
+* sym_path: /opt/uniccass/dev/dac_cell2/tb/dac_cell2.sym
+* sch_path: /opt/uniccass/dev/dac_cell2/tb/dac_cell2.sch
+.subckt dac_cell2  vsup iref vgnd vsw vbias iout_n iout
+*.iopin vsup
+*.iopin vbias
+*.iopin vsw
+*.iopin iout
+*.iopin iout_n
+*.iopin vgnd
+*.iopin iref
+XM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 net1 iref net2 vsup sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 iout vsw net1 vsup sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 iout_n vbias net1 vsup sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XR4 net2 vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=30 mult=1 m=1
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.save V2 @m.x1.xm1.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm2.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm3.msky130_fd_pr__pfet_g5v0d10v5[id] @m.x1.xm4.msky130_fd_pr__pfet_g5v0d10v5[id]
+.end

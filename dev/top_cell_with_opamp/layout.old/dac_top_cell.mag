@@ -1,0 +1,62 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697623612
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+use dac_cell1  dac_cell1_0 ../../layout_test/layout_cell1
+timestamp 1697617627
+transform 1 0 -13042 0 1 7322
+box -3902 -1834 10992 3012
+use dac_cell2  dac_cell2_0 ../../layout_test/layout_cell2
+timestamp 1697617627
+transform 1 0 -17488 0 1 -776
+box -3290 40 5010 5340
+use dac_cell3  dac_cell3_0 ../../layout_test/layout_cell3
+timestamp 1697617627
+transform 1 0 -9354 0 1 -9488
+box -4704 -2118 1052 4150
+use dac_cell4_a  dac_cell4_a_0 ../../layout_test/layout_cell4
+timestamp 1697461267
+transform 1 0 1220 0 1 -10370
+box -278 -1932 4578 5878
+use miel21_opamp  miel21_opamp_0 ../../opamp/layout
+timestamp 1697621866
+transform 1 0 8014 0 1 -810
+box -3496 -800 7036 10290
+use sky130_fd_pr__res_xhigh_po_5p73_XW4B8B  sky130_fd_pr__res_xhigh_po_5p73_XW4B8B_0
+timestamp 1697623612
+transform 1 0 2718 0 1 1824
+box -739 -723 739 723
+use sky130_fd_pr__res_high_po_5p73_6QQPRG  XR1
+timestamp 0
+transform 1 0 686 0 1 -2530
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 1280 0 0 0 in1
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 1280 0 0 0 in2
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 1280 0 0 0 in3
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 1280 0 0 0 in4
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 1280 0 0 0 vbias07
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 1280 0 0 0 vgnd
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 1280 0 0 0 vsup
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 1280 0 0 0 out
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 1280 0 0 0 vbias18
+port 8 nsew
+<< end >>

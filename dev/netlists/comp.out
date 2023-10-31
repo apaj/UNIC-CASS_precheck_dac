@@ -1,0 +1,227 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_0p69 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_0p69 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_0p69 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_0p69 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_0p69 |Circuit 2: sky130_fd_pr__res_xhigh_po_0p69 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_0p69 and sky130_fd_pr__res_xhigh_po_0p69 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p69_5CVACY in circuit miel21_opamp (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_FJGQ2Y in circuit miel21_opamp (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_NQCFE9 in circuit miel21_opamp (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CJGAEC in circuit miel21_opamp (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_2MGL8M in circuit miel21_opamp (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_X3UTN5 in circuit miel21_opamp (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_AE43MT in circuit miel21_opamp (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CNRWF7 in circuit miel21_opamp (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_C5B489 in circuit miel21_opamp (1)(1 instance)
+
+Cell miel21_opamp (1) disconnected node: inPos
+Cell miel21_opamp (1) disconnected node: inNeg
+Cell miel21_opamp (1) disconnected node: outSingle
+Cell miel21_opamp (1) disconnected node: sky130_fd_pr__cap_mim_m3_1_C5B489:XC1/sky130_fd_pr__cap_mim_m3_1:0/2
+Class miel21_opamp (0):  Merged 2 series devices.
+Class miel21_opamp (1):  Merged 34 parallel devices.
+Class miel21_opamp (1):  Merged 2 series devices.
+Cell miel21_opamp (1) disconnected node: inPos
+Cell miel21_opamp (1) disconnected node: inNeg
+Cell miel21_opamp (1) disconnected node: outSingle
+Cell miel21_opamp (1) disconnected node: sky130_fd_pr__cap_mim_m3_1_C5B489:XC1/sky130_fd_pr__cap_mim_m3_1:0/2
+Subcircuit summary:
+Circuit 1: miel21_opamp                    |Circuit 2: miel21_opamp                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (3)           |sky130_fd_pr__pfet_g5v0d10v5 (26->3)       
+sky130_fd_pr__nfet_g5v0d10v5 (5)           |sky130_fd_pr__nfet_g5v0d10v5 (14->3) **Mis 
+sky130_fd_pr__res_xhigh_po_0p69 (3->1)     |sky130_fd_pr__res_xhigh_po_0p69 (3->1)     
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 10 **Mismatch**         |Number of devices: 8 **Mismatch**          
+Number of nets: 9 **Mismatch**             |Number of nets: 17 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: miel21_opamp                    |Circuit 2: miel21_opamp                    
+
+---------------------------------------------------------------------------------------
+Net: power                                 |Net: power                                 
+  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  |  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  
+  sky130_fd_pr__pfet_g5v0d10v5/4 = 3       |                                           
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   |                                           
+                                           |                                           
+Net: ground                                |Net: m1_n1222_6382#                        
+  sky130_fd_pr__nfet_g5v0d10v5/4 = 5       |  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   |                                           
+  sky130_fd_pr__res_xhigh_po_0p69/3 = 1    |                                           
+                                           |                                           
+Net: bias                                  |Net: m1_n54_6380#                          
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   |  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       
+  sky130_fd_pr__nfet_g5v0d10v5/2 = 3       |                                           
+  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  |                                           
+                                           |                                           
+(no matching net)                          |Net: m1_1392_6382#                         
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_pr__pfet_g5v0d10v5_CNRWF7:X 
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/4 = 1       
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_pr__cap_mim_m3_1_C5B489:XC1 
+                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+                                           |                                           
+(no matching net)                          |Net: m1_624_4748#                          
+                                           |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 2   
+                                           |                                           
+(no matching net)                          |Net: m1_n1264_7502#                        
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 2   
+                                           |                                           
+(no matching net)                          |Net: m1_62_6650#                           
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 2   
+                                           |                                           
+(no matching net)                          |Net: m1_1458_8208#                         
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 2   
+                                           |                                           
+(no matching net)                          |Net: XM7/w_n586_n997#                      
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/4 = 2       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: sky130_fd_pr__nfet_g5v0d10v5_FJGQ2Y:X 
+                                           |  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       
+                                           |                                           
+(no matching net)                          |Net: m1_526_5878#                          
+                                           |  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: nsources                              |(no matching net)                          
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   |                                           
+                                           |                                           
+Net: outSingle                             |(no matching net)                          
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 1   |                                           
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: d2                                    |Net: ground                                
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 1   |  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  
+  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 2   
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   |  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: d1                                    |Net: VSUBS                                 
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 1   |  sky130_fd_pr__res_xhigh_po_0p69/3 = 1    
+  sky130_fd_pr__pfet_g5v0d10v5/2 = 2       |  sky130_fd_pr__nfet_g5v0d10v5/4 = 3       
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: miel21_opamp                    |Circuit 2: miel21_opamp                    
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_g5v0d10v5:M3  |Instance: sky130_fd_pr__nfet_g5v0d10v5_NQC 
+  (1,3) = (9,5)                            |  (1,3) = (4,4)                            
+  2 = 5                                    |  2 = 4                                    
+  4 = 9                                    |  4 = 4                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_g5v0d10v5_2MG 
+                                           |  (1,3) = (2,2)                            
+                                           |  2 = 1                                    
+                                           |  4 = 4                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_g5v0d10v5_FJG 
+                                           |  (1,3) = (1,1)                            
+                                           |  2 = 1                                    
+                                           |  4 = 4                                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__cap_mim_m3_1:C1    |Instance: sky130_fd_pr__cap_mim_m3_1_C5B48 
+  1 = 3                                    |  1 = 1                                    
+  2 = 4                                    |  2 = 0                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_xhigh_po_0p69: |Instance: sky130_fd_pr__res_xhigh_po_0p69_ 
+  (1,2) = (7,5)                            |  (1,2) = (4,1)                            
+  3 = 9                                    |  3 = 4                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_g5v0d10v5:M8  |Instance: sky130_fd_pr__pfet_g5v0d10v5_CNR 
+  (1,3) = (7,3)                            |  (1,3) = (2,2)                            
+  2 = 4                                    |  2 = 1                                    
+  4 = 7                                    |  4 = 1                                    
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_g5v0d10v5_AE4 
+                                           |  (1,3) = (2,2)                            
+                                           |  2 = 1                                    
+                                           |  4 = 2                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_g5v0d10v5_X3U 
+                                           |  (1,3) = (2,2)                            
+                                           |  2 = 1                                    
+                                           |  4 = 2                                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: miel21_opamp                    |Circuit 2: miel21_opamp                    
+-------------------------------------------|-------------------------------------------
+power                                      |power                                      
+ground                                     |(no matching pin)                          
+Cell pin lists are equivalent.
+Device classes miel21_opamp and miel21_opamp are equivalent.
+
+Final result: Netlists do not match.

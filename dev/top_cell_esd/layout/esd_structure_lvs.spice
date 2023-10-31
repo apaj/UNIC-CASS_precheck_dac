@@ -1,0 +1,40 @@
+* NGSPICE file created from esd_structure.ext - technology: sky130A
+
+.subckt sky130_fd_pr__diode_pw2nd_05v5_FT76RJ a_n147_n147# a_n45_n45#
+D0 a_n147_n147# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 pj=1.8 area=0.203e+18
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_JFN4DV a_n35_n1432# a_n35_1000# a_n165_n1562#
+X0 a_n35_1000# a_n35_n1432# a_n165_n1562# sky130_fd_pr__res_high_po w=0.35 l=10
+.ends
+
+.subckt sky130_fd_pr__diode_pw2nd_11v0_2UARL4 a_1132_n1000# a_516_n1000# a_n1332_n1000#
++ a_n100_n1000# a_n716_n1000# a_n1468_n1136# a_380_n1136# a_n852_n1136#
+D0 a_n1468_n1136# a_n716_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10e+18
+D1 a_n1468_n1136# a_n1332_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10e+18
+D2 a_n1468_n1136# a_n100_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10e+18
+D3 a_n1468_n1136# a_1132_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10e+18
+D4 a_n1468_n1136# a_516_n1000# sky130_fd_pr__diode_pw2nd_11v0 pj=22 area=10e+18
+.ends
+
+.subckt sky130_fd_pr__diode_pd2nw_11v0_PWJNKD a_n696_n1000# a_1092_n1000# a_n100_n1000#
++ a_n1292_n1000# w_n1490_n1198# a_496_n1000#
+D0 a_n1292_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10e+18
+D1 a_1092_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10e+18
+D2 a_n696_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10e+18
+D3 a_n100_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10e+18
+D4 a_496_n1000# w_n1490_n1198# sky130_fd_pr__diode_pd2nw_11v0 pj=22 area=10e+18
+.ends
+
+.subckt sky130_fd_pr__diode_pd2nw_05v5_K4SERG a_n45_n45# w_n183_n183#
+D0 a_n45_n45# w_n183_n183# sky130_fd_pr__diode_pd2nw_05v5 pj=1.8 area=0.203e+18
+.ends
+
+.subckt esd_structure vsup pad vgnd gate
+Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 vgnd gate sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
+Xsky130_fd_pr__res_high_po_0p35_JFN4DV_0 pad gate vgnd sky130_fd_pr__res_high_po_0p35_JFN4DV
+Xsky130_fd_pr__diode_pw2nd_11v0_2UARL4_0 pad pad pad pad pad vgnd vgnd vgnd sky130_fd_pr__diode_pw2nd_11v0_2UARL4
+Xsky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0 pad pad pad pad vsup pad sky130_fd_pr__diode_pd2nw_11v0_PWJNKD
+Xsky130_fd_pr__diode_pd2nw_05v5_K4SERG_0 gate vsup sky130_fd_pr__diode_pd2nw_05v5_K4SERG
+.ends
+

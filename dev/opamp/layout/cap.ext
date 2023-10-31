@@ -1,0 +1,18 @@
+timestamp 1697635104
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__cap_mim_m3_1_V32BD9 sky130_fd_pr__cap_mim_m3_1_V32BD9_0 1 0 1150 0 1 1500
+node "rightCapContact" 0 1566.23 2240 830 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2319900 6400 0 0 0 0
+node "leftCapContact" 0 1824.37 -1470 910 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2779500 7280 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "rightCapContact" "leftCapContact" 52.3879
+cap "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/m3_n1150_n1500#" "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/c1_n1050_n1400#" 179.775
+cap "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/c1_n1050_n1400#" "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/m3_n1150_n1500#" -12.4612
+cap "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/c1_n1050_n1400#" "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/m3_n1150_n1500#" 211.929
+cap "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/c1_n1050_n1400#" "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/m3_n1150_n1500#" -13.7328
+merge "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/VSUBS" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/c1_n1050_n1400#" "leftCapContact" -904.042 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1025690 -4062 0 0 0 0
+merge "sky130_fd_pr__cap_mim_m3_1_V32BD9_0/m3_n1150_n1500#" "rightCapContact" -345.426 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -61050 -2330 0 0 0 0

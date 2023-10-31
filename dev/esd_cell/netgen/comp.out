@@ -1,0 +1,59 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po and Circuit 2 cell sky130_fd_pr__res_high_po are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po       |Circuit 2: sky130_fd_pr__res_high_po       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po and sky130_fd_pr__res_high_po are equivalent.
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit esd_structure (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_JFN4DV in circuit esd_structure (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_11v0_2UARL4 in circuit esd_structure (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_11v0_PWJNKD in circuit esd_structure (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_05v5_K4SERG in circuit esd_structure (1)(1 instance)
+
+Class esd_cell (0):  Merged 8 parallel devices.
+Class esd_structure (1):  Merged 8 parallel devices.
+Subcircuit summary:
+Circuit 1: esd_cell                        |Circuit 2: esd_structure                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__diode_pd2nw_11v0 (5->1)      |sky130_fd_pr__diode_pd2nw_11v0 (5->1)      
+sky130_fd_pr__diode_pd2nw_05v5 (1)         |sky130_fd_pr__diode_pd2nw_05v5 (1)         
+sky130_fd_pr__diode_pw2nd_05v5 (1)         |sky130_fd_pr__diode_pw2nd_05v5 (1)         
+sky130_fd_pr__res_high_po (1)              |sky130_fd_pr__res_high_po (1)              
+sky130_fd_pr__diode_pw2nd_11v0 (5->1)      |sky130_fd_pr__diode_pw2nd_11v0 (5->1)      
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__diode_pw2nd_11v0:8 vs. sky130_fd_pr__diode_pw2nd_11v0_2UARL4_0/sky130_fd_pr__diode_pw2nd_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+sky130_fd_pr__diode_pw2nd_05v5:4 vs. sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+sky130_fd_pr__diode_pd2nw_05v5:3 vs. sky130_fd_pr__diode_pd2nw_05v5_K4SERG_0/sky130_fd_pr__diode_pd2nw_05v5:0:
+Property pj in circuit2 has no matching property in circuit1
+sky130_fd_pr__diode_pd2nw_11v0:1 vs. sky130_fd_pr__diode_pd2nw_11v0_PWJNKD_0/sky130_fd_pr__diode_pd2nw_11v0:0:
+Property pj in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: esd_cell                        |Circuit 2: esd_structure                   
+-------------------------------------------|-------------------------------------------
+vsup                                       |vsup                                       
+vgnd                                       |vgnd                                       
+gate                                       |gate                                       
+pad                                        |pad                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes esd_cell and esd_structure are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ esd_cell

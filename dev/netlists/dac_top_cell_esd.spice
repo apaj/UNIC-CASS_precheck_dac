@@ -1,0 +1,220 @@
+.subckt dac_top_cell in1 in2 in3 in4 vbias07 vgnd vsup out vbias18
+*.iopin in1
+*.iopin in2
+*.iopin in3
+*.iopin in4
+*.iopin vbias07
+*.iopin vgnd
+*.iopin vsup
+*.iopin out
+*.iopin vbias18
+x2 vsup in_iref vgnd net3 net1 net6 vgnd dac_cell2
+x3 vsup vgnd in_iref net4 net1 net6 vgnd dac_cell3
+x4 vsup in_iref vgnd net5 net1 net6 vgnd dac_cell4
+x5 vsup out op_amp_in net10 vgnd miel21_opamp
+x1 vsup in_iref vgnd net2 net1 net6 vgnd dac_cell1
+XR1 net7 net6 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR2 op_amp_in net7 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR4 net7 net6 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR3 op_amp_in net7 vgnd sky130_fd_pr__res_xhigh_po_2p85 L=1.25 mult=1 m=1
+XR5 net8 op_amp_in vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR6 out net8 vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR7 net8 op_amp_in vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR8 out net8 vgnd sky130_fd_pr__res_xhigh_po_0p35 L=4.2 mult=1 m=1
+XR9 net9 in_iref vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+XR10 net9 in_iref vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+XR11 vgnd net9 vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+XR12 vgnd net9 vgnd sky130_fd_pr__res_high_po_5p73 L=1.25 mult=1 m=1
+x6 vsup in1 net2 vgnd esd_cell
+x7 vsup in2 net3 vgnd esd_cell
+x8 vsup in3 net4 vgnd esd_cell
+x9 vsup in4 net5 vgnd esd_cell
+x10 vsup vbias07 net1 vgnd esd_cell
+x11 vsup vbias18 net10 vgnd esd_cell
+.ends
+
+* expanding   symbol:  /opt/uniccass/dev/dac_cell2/tb/dac_cell2.sym # of pins=7
+* sym_path: /opt/uniccass/dev/dac_cell2/tb/dac_cell2.sym
+* sch_path: /opt/uniccass/dev/dac_cell2/tb/dac_cell2.sch
+.subckt dac_cell2  vsup iref vgnd vsw vbias iout_n iout
+*.iopin vsup
+*.iopin vgnd
+*.iopin iref
+*.iopin vsw
+*.iopin iout
+*.iopin iout_n
+*.iopin vbias
+XM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 sourceM3M4 iref sourceM2 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 iout vsw sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 iout_n vbias sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+XR2 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+XR3 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+XR4 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=27 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /opt/uniccass/dev/dac_cell3/tb/dac_cell3.sym # of pins=7
+* sym_path: /opt/uniccass/dev/dac_cell3/tb/dac_cell3.sym
+* sch_path: /opt/uniccass/dev/dac_cell3/tb/dac_cell3.sch
+.subckt dac_cell3  vsup vgnd iref vsw vbias iout_n iout
+*.iopin vsup
+*.iopin vgnd
+*.iopin iref
+*.iopin vsw
+*.iopin iout
+*.iopin iout_n
+*.iopin vbias
+XM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 sourceM3M4 iref sourceM2 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 iout vsw sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 iout_n vbias sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=13 mult=1 m=1
+XR2 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=13 mult=1 m=1
+XR3 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=13 mult=1 m=1
+XR4 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=13 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /opt/uniccass/dev/dac_cell4/tb/dac_cell4.sym # of pins=7
+* sym_path: /opt/uniccass/dev/dac_cell4/tb/dac_cell4.sym
+* sch_path: /opt/uniccass/dev/dac_cell4/tb/dac_cell4.sch
+.subckt dac_cell4  vsup iref vgnd vsw vbias iout_n iout
+*.iopin vsup
+*.iopin vgnd
+*.iopin iref
+*.iopin vsw
+*.iopin iout
+*.iopin iout_n
+*.iopin vbias
+XM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 sourceM3M4 iref sourceM2 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 iout vsw sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 iout_n vbias sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=6.3 mult=1 m=1
+XR2 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=6.3 mult=1 m=1
+XR3 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=6.3 mult=1 m=1
+XR4 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=6.3 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /opt/uniccass/dev/opamp/miel21_opamp.sym # of pins=5
+* sym_path: /opt/uniccass/dev/opamp/miel21_opamp.sym
+* sch_path: /opt/uniccass/dev/opamp/miel21_opamp.sch
+.subckt miel21_opamp  power outSingle inPos inNeg ground
+*.ipin inPos
+*.ipin inNeg
+*.opin outSingle
+*.iopin power
+*.iopin ground
+XM6 d1 d1 power power sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=21 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM7 d2 d1 power power sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=21 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM8 outSingle d2 power power sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=260 nf=20 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM1 d1 inPos nsources ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 d2 inNeg nsources ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 bias bias ground ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=10 nf=2 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 nsources bias ground ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=10 nf=2 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 outSingle bias ground ground sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=48 nf=8 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 bias net2 ground sky130_fd_pr__res_xhigh_po_0p69 L=6 mult=1 m=1
+XC1 outSingle d2 sky130_fd_pr__cap_mim_m3_1 W=10 L=14 MF=1 m=1
+XR2 net2 net1 ground sky130_fd_pr__res_xhigh_po_0p69 L=6 mult=1 m=1
+XR3 net1 power ground sky130_fd_pr__res_xhigh_po_0p69 L=6 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /opt/uniccass/dev/dac_cell1/tb/dac_cell1.sym # of pins=7
+* sym_path: /opt/uniccass/dev/dac_cell1/tb/dac_cell1.sym
+* sch_path: /opt/uniccass/dev/dac_cell1/tb/dac_cell1.sch
+.subckt dac_cell1  vsup iref vgnd vsw vbias iout_n iout
+*.iopin vsup
+*.iopin vgnd
+*.iopin iref
+*.iopin vsw
+*.iopin iout
+*.iopin iout_n
+*.iopin vbias
+XM1 iref iref vsup vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 sourceM3M4 iref sourceM2 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 iout vsw sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 iout_n vbias sourceM3M4 vsup sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
+XR2 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
+XR3 parR vsup vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
+XR4 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69 L=58 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /opt/uniccass/dev/esd_cell/tb/esd_cell.sym # of pins=4
+* sym_path: /opt/uniccass/dev/esd_cell/tb/esd_cell.sym
+* sch_path: /opt/uniccass/dev/esd_cell/tb/esd_cell.sch
+.subckt esd_cell  vsup pad gate vgnd
+*.iopin vsup
+*.iopin pad
+*.iopin vgnd
+*.iopin gate
+D1 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D3 gate vsup sky130_fd_pr__diode_pd2nw_05v5 area=0.203e+18
+D4 vgnd gate sky130_fd_pr__diode_pw2nd_05v5 area=0.203e+18
+XR1 gate pad vgnd sky130_fd_pr__res_high_po W=0.35 L=10 mult=1 m=1
+D8 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D2 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D5 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D6 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D7 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+D9 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D10 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D11 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+D12 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+.ends
+
+** flattened .save nodes
+.end

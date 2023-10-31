@@ -1,0 +1,26 @@
+* SPICE3 file created from dac_cell1.ext - technology: sky130A
+
+.option scale=5000u
+
+.subckt dac_cell1 vsup vgnd iref iout iout_n vsw vbias
+X0 vsup m1_n66_3062# vgnd sky130_fd_pr__res_xhigh_po_0p69 l=440
+X1 vsup m1_n66_3062# vgnd sky130_fd_pr__res_xhigh_po_0p69 l=440
+X2 m1_704_2192# m1_n66_3062# vgnd sky130_fd_pr__res_xhigh_po_0p69 l=440
+X3 m1_704_2192# m1_n66_3062# vgnd sky130_fd_pr__res_xhigh_po_0p69 l=440
+X4 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=278400 pd=12384 as=0 ps=0 w=200 l=200
+X5 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X6 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X7 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X8 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X9 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X10 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X11 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X12 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X13 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X14 m1_510_694# vsw iout vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=11600 ps=516 w=200 l=200
+X15 m1_704_2192# iref m1_510_694# vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X16 m1_510_694# vbias iout_n vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=11600 ps=516 w=200 l=200
+X17 vsup iref iref vsup sky130_fd_pr__pfet_g5v0d10v5 ad=11600 pd=516 as=11600 ps=516 w=200 l=200
+X18 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+X19 vgnd vgnd vgnd vsup sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=200 l=200
+.ends

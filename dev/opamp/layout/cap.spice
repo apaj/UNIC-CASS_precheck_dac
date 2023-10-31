@@ -1,0 +1,12 @@
+* NGSPICE file created from cap.ext - technology: sky130A
+
+.subckt sky130_fd_pr__cap_mim_m3_1_V32BD9 c1_n1050_n1400# m3_n1150_n1500#
+X0 c1_n1050_n1400# m3_n1150_n1500# sky130_fd_pr__cap_mim_m3_1 l=14 w=10
+.ends
+
+
+* Top level circuit cap
+
+Xsky130_fd_pr__cap_mim_m3_1_V32BD9_0 leftCapContact rightCapContact sky130_fd_pr__cap_mim_m3_1_V32BD9
+.end
+

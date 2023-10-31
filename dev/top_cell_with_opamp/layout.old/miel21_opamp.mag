@@ -1,0 +1,102 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697622591
+<< checkpaint >>
+rect 5559 6265 15722 6869
+rect 5089 6212 15722 6265
+rect 5089 6159 16139 6212
+rect 5089 -3995 16556 6159
+rect 7805 -4048 16556 -3995
+rect 8222 -4101 16556 -4048
+<< error_s >>
+rect 754 571 771 2387
+rect 808 522 825 2338
+rect 1591 476 1608 2338
+rect 1645 427 1662 2392
+rect 5073 1730 5131 1882
+rect 5114 381 5131 1730
+rect 5132 1730 5197 1766
+rect 5132 1672 5283 1730
+rect 5132 381 5226 1672
+rect 5132 315 5197 381
+rect 5605 286 5652 1719
+rect 5659 232 5706 1665
+rect 6096 221 6143 1654
+rect 6150 167 6197 1600
+rect 6745 156 6792 1589
+rect 6799 102 6846 1535
+rect 7394 91 7441 1535
+rect 7448 37 7495 1589
+rect 9023 38 9026 1658
+rect 9057 26 9091 1724
+rect 9057 7 9060 26
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+use sky130_fd_pr__cap_mim_m3_1_C5B489  XC1
+timestamp 0
+transform 1 0 10641 0 1 1437
+box -1150 -1500 1149 1500
+use sky130_fd_pr__nfet_g5v0d10v5_FJGQ2Y  XM1
+timestamp 0
+transform 1 0 5410 0 1 1008
+box -278 -758 278 758
+use sky130_fd_pr__nfet_g5v0d10v5_FJGQ2Y  XM2
+timestamp 0
+transform 1 0 5901 0 1 943
+box -278 -758 278 758
+use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM3
+timestamp 0
+transform 1 0 6471 0 1 878
+box -357 -758 357 758
+use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM4
+timestamp 0
+transform 1 0 7120 0 1 813
+box -357 -758 357 758
+use sky130_fd_pr__nfet_g5v0d10v5_VNEQJC  XM5
+timestamp 0
+transform 1 0 8243 0 1 848
+box -831 -858 831 858
+use sky130_fd_pr__pfet_g5v0d10v5_KLU9Y6  XM6
+timestamp 0
+transform 1 0 371 0 1 1502
+box -466 -997 466 997
+use sky130_fd_pr__pfet_g5v0d10v5_KLU9Y6  XM7
+timestamp 0
+transform 1 0 1208 0 1 1407
+box -466 -997 466 997
+use sky130_fd_pr__pfet_g5v0d10v5_AQ2R3U  XM8
+timestamp 0
+transform 1 0 3388 0 1 1912
+box -1809 -1597 1809 1597
+use sky130_fd_pr__res_xhigh_po_0p69_5CVACY  XR1
+timestamp 0
+transform 1 0 9256 0 1 1135
+box -235 -1198 235 1198
+use sky130_fd_pr__res_xhigh_po_0p69_5CVACY  XR2
+timestamp 0
+transform 1 0 11972 0 1 1082
+box -235 -1198 235 1198
+use sky130_fd_pr__res_xhigh_po_0p69_5CVACY  XR3
+timestamp 0
+transform 1 0 12389 0 1 1029
+box -235 -1198 235 1198
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 1280 0 0 0 {}
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 1280 0 0 0 power
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 1280 0 0 0 outSingle
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 1280 0 0 0 inPos
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 1280 0 0 0 inNeg
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 1280 0 0 0 ground
+port 5 nsew
+<< end >>

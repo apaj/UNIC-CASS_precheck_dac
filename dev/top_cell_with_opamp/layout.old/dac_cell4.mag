@@ -1,0 +1,63 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697623612
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+use sky130_fd_pr__pfet_g5v0d10v5_FGUWVM#3  XM1
+timestamp 0
+transform 1 0 263 0 1 902
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_FG5HVM#0  XM2
+timestamp 0
+transform 1 0 884 0 1 1507
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_FG5HVM#0  XM3
+timestamp 0
+transform 1 0 1505 0 1 1412
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_FG5HVM#0  XM4
+timestamp 0
+transform 1 0 2126 0 1 1317
+box 0 0 1 1
+use sky130_fd_pr__res_xhigh_po_0p69_C4MSH5#0  XR1
+timestamp 0
+transform 1 0 2666 0 1 1395
+box 0 0 1 1
+use sky130_fd_pr__res_xhigh_po_0p69_C4MSH5#0  XR2
+timestamp 0
+transform 1 0 3083 0 1 1342
+box 0 0 1 1
+use sky130_fd_pr__res_xhigh_po_0p69_C4MSH5#0  XR3
+timestamp 0
+transform 1 0 3500 0 1 1289
+box 0 0 1 1
+use sky130_fd_pr__res_xhigh_po_0p69_C4MSH5#0  XR4
+timestamp 0
+transform 1 0 3917 0 1 1236
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 1280 0 0 0 {}
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 1280 0 0 0 vsup
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 1280 0 0 0 iref
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 1280 0 0 0 vgnd
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 1280 0 0 0 vsw
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 1280 0 0 0 vbias
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 1280 0 0 0 iout_n
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 1280 0 0 0 iout
+port 7 nsew
+<< end >>

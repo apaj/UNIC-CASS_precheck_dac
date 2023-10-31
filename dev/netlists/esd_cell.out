@@ -1,0 +1,33 @@
+
+Note: Compatibility modes selected: hs
+
+warning, can't find model 'sky130_fd_pr__diode_pd2nw_11v0' from line
+    d1 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pd2nw_05v5' from line
+    d3 gate vsup sky130_fd_pr__diode_pd2nw_05v5 area=0.203e+18
+warning, can't find model 'sky130_fd_pr__diode_pw2nd_05v5' from line
+    d4 vgnd gate sky130_fd_pr__diode_pw2nd_05v5 area=0.203e+12
+warning, can't find model 'sky130_fd_pr__diode_pw2nd_11v0' from line
+    d8 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pd2nw_11v0' from line
+    d2 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pd2nw_11v0' from line
+    d5 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pd2nw_11v0' from line
+    d6 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pd2nw_11v0' from line
+    d7 pad vsup sky130_fd_pr__diode_pd2nw_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pw2nd_11v0' from line
+    d9 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pw2nd_11v0' from line
+    d10 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pw2nd_11v0' from line
+    d11 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+warning, can't find model 'sky130_fd_pr__diode_pw2nd_11v0' from line
+    d12 vgnd pad sky130_fd_pr__diode_pw2nd_11v0 area=10e+18
+
+Circuit: **.subckt esd_cell vsup pad vgnd gate
+
+Error: unknown subckt: xr1 gate pad vgnd sky130_fd_pr__res_high_po w=0.35 l=10 mult=1 m=1
+    Simulation interrupted due to error!
+

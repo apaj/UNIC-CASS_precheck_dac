@@ -1,0 +1,15 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697635104
+<< metal4 >>
+rect -1470 910 1080 2000
+rect 2240 830 4330 1940
+use sky130_fd_pr__cap_mim_m3_1_V32BD9  sky130_fd_pr__cap_mim_m3_1_V32BD9_0
+timestamp 1697634109
+transform 1 0 1150 0 1 1500
+box -1150 -1500 1149 1500
+<< labels >>
+rlabel metal4 3600 1120 4050 1620 1 rightCapContact
+rlabel metal4 -1240 1160 -720 1750 1 leftCapContact
+<< end >>

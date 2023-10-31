@@ -1,0 +1,64 @@
+* NGSPICE file created from dac_cell4.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_0p69_C4MSH5 a_n69_630# a_n69_n1062# a_n199_n1192#
+X0 a_n69_630# a_n69_n1062# a_n199_n1192# sky130_fd_pr__res_xhigh_po_0p69 l=6.3
+C0 a_n69_n1062# a_n199_n1192# 0.796f
+C1 a_n69_630# a_n199_n1192# 0.796f
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGUWVM a_n100_n197# a_100_n100# w_n358_n397#
++ a_n158_n100# VSUBS
+X0 a_100_n100# a_n100_n197# a_n158_n100# w_n358_n397# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+C0 a_n158_n100# w_n358_n397# 0.1f
+C1 a_n100_n197# w_n358_n397# 0.2f
+C2 a_100_n100# w_n358_n397# 0.1f
+C3 a_n100_n197# VSUBS 0.282f
+C4 w_n358_n397# VSUBS 2.28f
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FG5HVM a_n100_n897# a_100_n800# a_n158_n800#
++ w_n358_n1097# VSUBS
+X0 a_100_n800# a_n100_n897# a_n158_n800# w_n358_n1097# sky130_fd_pr__pfet_g5v0d10v5 ad=2.32 pd=16.6 as=2.32 ps=16.6 w=8 l=1
+C0 a_n158_n800# a_n100_n897# 0.176f
+C1 a_n158_n800# a_100_n800# 0.486f
+C2 a_100_n800# a_n100_n897# 0.176f
+C3 a_n158_n800# w_n358_n1097# 0.606f
+C4 a_n100_n897# w_n358_n1097# 0.2f
+C5 a_100_n800# w_n358_n1097# 0.606f
+C6 a_100_n800# VSUBS 0.395f
+C7 a_n158_n800# VSUBS 0.395f
+C8 a_n100_n897# VSUBS 0.335f
+C9 w_n358_n1097# VSUBS 6f
+.ends
+
+.subckt dac_cell4 vsup vgnd iref vsw iout iout_n vbias
+XXR1 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69_C4MSH5
+XXR2 sourceM2 parR vgnd sky130_fd_pr__res_xhigh_po_0p69_C4MSH5
+XXR3 vsup parR vgnd sky130_fd_pr__res_xhigh_po_0p69_C4MSH5
+XXR4 vsup parR vgnd sky130_fd_pr__res_xhigh_po_0p69_C4MSH5
+XXM1 iref iref vsup vsup vgnd sky130_fd_pr__pfet_g5v0d10v5_FGUWVM
+XXM2 iref sourceM3M4 sourceM2 vsup vgnd sky130_fd_pr__pfet_g5v0d10v5_FG5HVM
+XXM3 vsw iout sourceM3M4 vsup vgnd sky130_fd_pr__pfet_g5v0d10v5_FG5HVM
+XXM4 vbias iout_n sourceM3M4 vsup vgnd sky130_fd_pr__pfet_g5v0d10v5_FG5HVM
+C0 sourceM3M4 vsup 1.94f
+C1 sourceM3M4 iout 0.537f
+C2 vsup vbias 0.173f
+C3 sourceM2 vsup 2.39f
+C4 iout vsup 0.309f
+C5 vsw vsup 0.173f
+C6 sourceM2 iref 0.263f
+C7 vsup iref 0.99f
+C8 iout_n vbias 0.135f
+C9 vsw iout 0.136f
+C10 vsup iout_n 0.267f
+C11 vsup vgnd 27.4f
+C12 iout_n vgnd 0.972f
+C13 vbias vgnd 0.566f
+C14 iout vgnd 0.679f
+C15 sourceM3M4 vgnd 3.95f
+C16 vsw vgnd 0.645f
+C17 sourceM2 vgnd 3.93f
+C18 iref vgnd 0.948f
+C19 parR vgnd 4.44f
+.ends
+
